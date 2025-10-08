@@ -1,31 +1,49 @@
 import json
-
-ability_name = "Barrier" # Define the ability name
+################################## EDITABLE SECTION BELOW ##################################
+ability_name = "e.g. Time Manipulation" # Define the ability name
 # Copy and paste the excel data between the triple quotes below with the site below
 # https://docs.google.com/spreadsheets/d/1cCXSA-Qvz8-iB6VP6q1-0MHTFir2HCQrm80RGscqDGk/edit?gid=968418214#gid=968418214
-data_text = """
-6.0	7.2P	1S	5.2T	2.6R	10.0D
-6.1	7.5P	1S	5.3T	2.6R	10.0D
-6.2	7.8P	1S	5.5T	2.7R	10.0D
-6.3	8.1P	1S	5.7T	2.8R	10.0D
-6.4	8.4P	1S	5.9T	2.8R	10.0D
-6.5	8.7P	1S	6.1T	2.9R	10.0D
-6.6	9.0P	1S	6.3T	3.0R	10.0D
-6.7	9.3P	1S	6.5T	3.1R	10.0D
-6.8	9.6P	1S	6.7T	3.1R	10.0D
-6.9	9.9P	1S	6.9T	3.2R	10.0D
-7.0	10.0P	1S	7.2T	3.3R	10.0D
-7.1	10.0P	1S	7.6T	3.5R	10.0D
-7.2	10.0P	1S	8.1T	3.7R	10.0D
-7.3	10.0P	1S	8.5T	3.8R	10.0D
-7.4	10.0P	1S	8.9T	4.0R	10.0D
-7.5	10.0P	1S	9.3T	4.1R	10.0D
-7.6	10.0P	1S	9.8T	4.3R	10.0D
-7.7	10.0P	1S	10.0T	4.7R	10.0D
-7.8	10.0P	1S	10.0T	5.3R	10.0D
-7.9	10.0P	1S	10.0T	5.9R	10.0D
-8.0	10.0P	1S	10.0T	6.5R	10.0D
-""" # copy and paste excel data here the six columns are level, Pow, Spd, Trick, Recv, Def make sure to only copy that and nothing else
+# data_text = """
+# 6.5	7.7P	9.5S	6.6T	3.8R	1.2D
+# 6.6	7.7P	9.7S	6.8T	3.9R	1.2D
+# 6.7	7.9P	9.9S	6.9T	4R	1.2D
+# 6.8	8.1P	10S	7.1T	4R	1.3D
+# 6.9	8.3P	10S	7.3T	4.1R	1.3D
+# 7.0	8.6P	10S	7.5T	4.2R	1.3D
+# 7.1	8.8P	10S	7.7T	4.3R	1.3D
+# 7.2	9.1P	10S	7.9T	4.5R	1.3D
+# 7.3	9.3P	10S	8.1T	4.6R	1.3D
+# 7.4	9.6P	10S	8.3T	4.7R	1.3D
+# 7.5	9.8P	10S	8.6T	4.8R	1.3D
+# 7.6	10P	10S	8.8T	4.9R	1.3D
+# 7.7	10P	10S	9.2T	5.1R	1.3D
+# 7.8	10P	10S	9.6T	5.3R	1.4D
+# 7.9	10P	10S	10T	5.5R	1.4D
+# 8.0	10P	10S	10T	6R	1.4D
+# 8.1	10P	10S	10T	6.6R	1.5D
+# 8.2	10P	10S	10T	7.2R	1.6D
+# 8.3	10P	10S	10T	7.7R	1.6D
+# 8.4	10P	10S	10T	8.3R	1.7D
+# 8.5	10P	10S	10T	8.8R	1.7D
+# 8.6	10P	10S	10T	9.4R	1.7D
+# 8.7	10P	10S	10T	10R	1.7D
+# 8.8	10P	10S	10T	10R	2.4D
+# 8.9	10P	10S	10T	10R	3D
+# 9.0	10P	10S	10T	10R	3.6D
+# 9.1	10P	10S	10T	10R	4.2D
+# 9.2	10P	10S	10T	10R	4.9D
+# 9.3	10P	10S	10T	10R	5.5D
+# 9.4	10P	10S	10T	10R	6.1D
+# 9.5	10P	10S	10T	10R	6.8D
+# 9.6	10P	10S	10T	10R	7.4D
+# 9.7	10P	10S	10T	10R	8.1D
+# 9.8	10P	10S	10T	10R	8.7D
+# 9.9	10P	10S	10T	10R	9.4D
+# 10	10P	10S	10T	10R	10D
+# """
+######################################## UNCOMMENT AND PASTE EXCEL DATA ABOVE THIS LINE ############################
+
+# uncomment data_text variable copy and paste excel data here the six columns are level, Pow, Spd, Trick, Recv, Def make sure to only copy that and nothing else
 # make sure to use tabs to separate the columns but when pasting excel data it should automatically do that
 # if there is any missing data just delete the entire row from the data_text variable above or any quesiton marks within the data variable
 
