@@ -28,25 +28,35 @@ To generate `abilities.json` for the visualizer:
 3. Run the script to create `pydump.json`.
 4. Copy the contents of `pydump.json` into `abilities.json`.
 
-**Example Python workflow:**
+**Updated Python workflow (reflecting your latest script):**
 
 ```python
 import json
 
-# Ability name
-ability_name = "Phase Shift (ATK)"
+ability_name = "Barrier"  # Change to the ability you are converting
 
-# Tab-separated spreadsheet data
 data_text = """
-3.5	3.3P	3.3S	4.9T	1R	1D
-3.6	3.4P	3.4S	5.1T	1R	1D
-3.8	3.7P	3.7S	5.5T	1R	1D
-3.9	3.8P	3.8S	5.7T	1R	1D
-4.0	3.9P	3.9S	5.9T	1R	1D
-4.1	4.1P	4.1S	6.1T	1R	1D
-4.2	4.2P	4.2S	6.3T	1R	1D
-...
-7.5	10P	10S	10T	2.2R	2.2D
+6.0	7.2P	1S	5.2T	2.6R	10.0D
+6.1	7.5P	1S	5.3T	2.6R	10.0D
+6.2	7.8P	1S	5.5T	2.7R	10.0D
+6.3	8.1P	1S	5.7T	2.8R	10.0D
+6.4	8.4P	1S	5.9T	2.8R	10.0D
+6.5	8.7P	1S	6.1T	2.9R	10.0D
+6.6	9.0P	1S	6.3T	3.0R	10.0D
+6.7	9.3P	1S	6.5T	3.1R	10.0D
+6.8	9.6P	1S	6.7T	3.1R	10.0D
+6.9	9.9P	1S	6.9T	3.2R	10.0D
+7.0	10.0P	1S	7.2T	3.3R	10.0D
+7.1	10.0P	1S	7.6T	3.5R	10.0D
+7.2	10.0P	1S	8.1T	3.7R	10.0D
+7.3	10.0P	1S	8.5T	3.8R	10.0D
+7.4	10.0P	1S	8.9T	4.0R	10.0D
+7.5	10.0P	1S	9.3T	4.1R	10.0D
+7.6	10.0P	1S	9.8T	4.3R	10.0D
+7.7	10.0P	1S	10.0T	4.7R	10.0D
+7.8	10.0P	1S	10.0T	5.3R	10.0D
+7.9	10.0P	1S	10.0T	5.9R	10.0D
+8.0	10.0P	1S	10.0T	6.5R	10.0D
 """
 
 abilities = {}
@@ -65,7 +75,15 @@ for line in data_text.strip().splitlines():
     }
     abilities[level] = stats
 
-output_json = json.dumps({ability_name: abilities}, indent=2)
+output_lines = ['{', f'  "{ability_name}": {{']
+for i, (level, stats) in enumerate(abilities.items()):
+    comma = ',' if i < len(abilities) - 1 else ''
+    stats_str = json.dumps(stats, separators=(',', ': '))
+    output_lines.append(f'    "{level}": {stats_str}{comma}')
+output_lines.append('  }')
+output_lines.append('}')
+
+output_json = '\n'.join(output_lines)
 
 with open('pydump.json', 'w') as f:
     f.write(output_json)
@@ -73,10 +91,11 @@ with open('pydump.json', 'w') as f:
 print(output_json)
 ```
 
-> **Note:**
+> ⚠️ **Notes:**
 >
-> * `data_text` should be **tab-separated**: Level, Power (P), Speed (S), Trick (T), Recovery (R), Defense (D).
-> * After running, copy `pydump.json` into `abilities.json` for the web visualizer.
+> * Ensure `data_text` is **tab-separated**: Level, Power (P), Speed (S), Trick (T), Recovery (R), Defense (D).
+> * The script will generate a properly formatted `pydump.json`.
+> * Copy its content into `abilities.json` to be used by the web visualizer.
 
 ---
 
