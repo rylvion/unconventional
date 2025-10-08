@@ -1,5 +1,5 @@
 {
-  "_comment": "⚠️ AUTO-GENERATED FILE — DO NOT EDIT. export_data.py will overwrite this file. If you want to create or update a new version manually, copy and paste the template above into abilities.json.",
+  "_comment": "⚠️ AUTO-GENERATED FILE — DO NOT EDIT. export_data.py will overwrite this file. If you want to create or update a new ability manually, copy and paste the template above into abilities.json.",
   "Time Manipulation": {
     "6.5": {"Pow": 7.7,"Spd": 9.5,"Trick": 6.6,"Recv": 3.8,"Def": 1.2},
     "6.6": {"Pow": 7.7,"Spd": 9.7,"Trick": 6.8,"Recv": 3.9,"Def": 1.2},
