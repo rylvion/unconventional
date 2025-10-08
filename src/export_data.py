@@ -50,6 +50,7 @@ ability_name = "e.g. Time Manipulation" # Define the ability name
 ############################ EXPECTED OUTPUT FROM pydump.json ############################
 # (with different numbers of values depending on the data above)
 # {
+#   "_comment": "⚠️ AUTO-GENERATED FILE. DO NOT EDIT. export_data.py will overwrite this file.",
 #   "Arachnid": {
 #     "5.0": {"Pow": 4.1,"Spd": 4.1,"Trick": 4.1,"Recv": 2.0,"Def": 6.2},
 #     "5.1": {"Pow": 4.2,"Spd": 4.2,"Trick": 4.2,"Recv": 2.1,"Def": 6.4},
@@ -99,7 +100,12 @@ for line in data_text.strip().splitlines():
     }
     abilities[level] = stats
 
-output_lines = ['{', f'  "{ability_name}": {{']
+output_lines = [ 
+    '{',
+    '  "_comment": "⚠️ AUTO-GENERATED FILE — DO NOT EDIT. export_data.py will overwrite this file. '
+    'If you want to create or update a new ability manually, copy and paste the template above into abilities.json.",',
+    f'  "{ability_name}": {{'
+]
 
 for i, (level, stats) in enumerate(abilities.items()):
     comma = ',' if i < len(abilities) - 1 else ''
@@ -111,7 +117,7 @@ output_lines.append('}')
 
 output_json = '\n'.join(output_lines)
 
-with open('pydump.json', 'w') as f:
+with open('pydump.json', 'w', encoding="utf-8") as f:
     f.write(output_json)
 
 print(output_json)
