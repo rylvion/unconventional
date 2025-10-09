@@ -245,7 +245,7 @@
     "6.9": {"Pow": 3.7,"Spd": 3.7,"Trick": 3.7,"Recv": 10.0,"Def": 10.0}
   },
 
-  "Teleporation": {
+  "Teleportation": {
     "3.5": {"Pow": 2.5,"Spd": 5.6,"Trick": 3.3,"Recv": 1.0,"Def": 1.0},
     "3.6": {"Pow": 2.6,"Spd": 5.9,"Trick": 3.4,"Recv": 1.0,"Def": 1.0},
     "3.7": {"Pow": 2.7,"Spd": 6.1,"Trick": 3.6,"Recv": 1.0,"Def": 1.0},
@@ -808,7 +808,7 @@
     "8.0": {"Pow": 10.0,"Spd": 6.4,"Trick": 10.0,"Recv": 4.6,"Def": 6.4}
   },
 
-  "Telekeniesis": {
+  "Telekinesis": {
     "6.5": {"Pow": 10.0,"Spd": 1.0,"Trick": 7.7,"Recv": 3.7,"Def": 6.4},
     "6.6": {"Pow": 10.0,"Spd": 1.0,"Trick": 7.9,"Recv": 3.8,"Def": 6.6},
     "6.7": {"Pow": 10.0,"Spd": 1.0,"Trick": 8.2,"Recv": 3.9,"Def": 6.8},
