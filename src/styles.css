@@ -2,8 +2,11 @@ html, body {
   height: 100%;
   margin: 0;
   font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: linear-gradient(145deg, #e0eafc, #cfdef3); /* soft gradient background */
+  color: #333;
 }
 
+/* Wrapper */
 .wrap {
   min-height: 100%;
   display: flex;
@@ -14,51 +17,224 @@ html, body {
   box-sizing: border-box;
 }
 
+/* Card */
 .card {
   width: 100%;
-  max-width: 760px;
+  max-width: 800px;
   background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
-  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  padding: 30px 25px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.18);
+}
+
+/* Chart */
 canvas {
   width: 600px;
   height: 400px;
   max-width: 100%;
   display: block;
+  margin-top: 20px;
 }
 
+/* Controls */
 .controls {
-  margin-top: 12px;
+  margin-top: 15px;
   display: flex;
-  gap: 8px;
+  gap: 10px;
   flex-wrap: wrap;
   align-items: center;
 }
 
-select,
-.btn {
-  padding: 8px 12px;
-  border-radius: 8px;
+/* Selects */
+select {
+  padding: 10px 14px;
+  border-radius: 10px;
   border: 1px solid #ccc;
-}
-
-.btn {
-  background: #0366d6;
-  color: #fff;
+  font-size: 14px;
+  background: #fff;
   cursor: pointer;
-  border: none;
+  transition: all 0.2s ease;
 }
 
+select:hover {
+  border-color: #0366d6;
+  box-shadow: 0 2px 6px rgba(3,102,214,0.2);
+}
+
+/* Buttons */
+.btn, #compareToggle {
+  padding: 10px 20px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+#compareToggle {
+  background: linear-gradient(135deg, #ff6b6b, #f06595);
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+#compareToggle:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+#compareToggle:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* Stats display */
 .stats-display {
-  margin-top: 12px;
+  margin-top: 15px;
   font-size: 15px;
   display: flex;
   flex-wrap: wrap;
-  gap: 12px 20px;
+  gap: 25px 40px;
+  justify-content: center;
+}
+
+/* Container for stats cards */
+.stats-cards-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+/* Individual stats card */
+.stats-card {
+  background: #f7f9fc;
+  border-radius: 12px;
+  padding: 15px 20px;
+  min-width: 140px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stats-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+.stats-card h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 16px;
+  text-align: center;
+  color: #0366d6;
+}
+
+.stats-card div {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+/* Blue card (first ability) */
+.stats-card-blue {
+  background: linear-gradient(145deg, #e6f0ff, #d0e2ff);
+  border: 2px solid #0366d6;
+}
+
+.stats-card-blue h3 {
+  color: #0366d6;
+}
+
+.stats-card-blue span {
+  color: #0366d6;
+  font-weight: bold;
+}
+
+/* Red card (second ability) */
+.stats-card-red {
+  background: linear-gradient(145deg, #ffe6eb, #ffd0da);
+  border: 2px solid #ff4c6d;
+}
+
+.stats-card-red h3 {
+  color: #ff4c6d;
+}
+
+.stats-card-red span {
+  color: #ff4c6d;
+  font-weight: bold;
+}
+
+/* Keep hover effect */
+.stats-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+
+
+/* Comparison table */
+.comparison-summary {
+  margin-top: 25px;
+  padding: 1em;
+  border-radius: 12px;
+  border-top: 1px solid #ccc;
+  font-family: monospace;
+  background: #f9f9f9;
+  width: 100%;
+  max-width: 760px;
+}
+
+.comparison-summary table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.comparison-summary th,
+.comparison-summary td {
+  text-align: center;
+  padding: 6px;
+  border-bottom: 1px solid #ddd;
+}
+
+.comparison-summary th {
+  background: #e3e7f0;
+  font-weight: 600;
+}
+
+.comparison-summary tbody tr:nth-child(even) {
+  background: #f4f6fb;
+}
+
+/* Hidden utility class */
+.hidden {
+  display: none !important;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .card {
+    padding: 20px 15px;
+  }
+  canvas {
+    width: 100%;
+    height: 300px;
+  }
+  .stats-display {
+    flex-direction: column;
+    gap: 12px 0;
+  }
+  .controls {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
