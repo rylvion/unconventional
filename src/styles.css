@@ -1,12 +1,101 @@
-html, body {
-  height: 100%;
-  margin: 0;
-  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-  background: linear-gradient(145deg, #e0eafc, #cfdef3); /* soft gradient background */
-  color: #333;
+:root {
+  --bg-color: linear-gradient(145deg, #e0eafc, #cfdef3);
+  --text-color: #333;
+  --font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
 }
 
-/* Wrapper */
+body.dark-mode {
+  --bg-color: linear-gradient(145deg, #1a1a1a, #2a2a2a);
+  --text-color: #f0f0f0;
+}
+
+body.dark-mode .wrap {
+  background: transparent;
+}
+
+body.dark-mode .card {
+  background: #1e1e1e;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+  color: #f0f0f0;
+}
+
+body.dark-mode select {
+  background: #2c2c2c;
+  color: #f0f0f0;
+  border: 1px solid #555;
+}
+
+body.dark-mode select:hover {
+  border-color: #888;
+  box-shadow: 0 2px 6px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .btn,
+body.dark-mode #compareToggle {
+  background: linear-gradient(135deg, #ff6b6b, #f06595);
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode #compareToggle:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-mode .stats-card {
+  background: #2a2a2a !important;
+  border: 1px solid #555 !important;
+  color: #f0f0f0;
+}
+
+body.dark-mode .stats-card h3 {
+  color: #90caf9;
+}
+
+body.dark-mode .stats-card-blue {
+  background: linear-gradient(145deg, #1e2a38, #263a4f);
+  border: 2px solid #90caf9;
+}
+
+body.dark-mode .stats-card-blue h3,
+body.dark-mode .stats-card-blue span {
+  color: #90caf9;
+}
+
+body.dark-mode .stats-card-red {
+  background: linear-gradient(145deg, #3a1e2a, #4f263a);
+  border: 2px solid #ff6b81;
+}
+
+body.dark-mode .stats-card-red h3,
+body.dark-mode .stats-card-red span {
+  color: #ff6b81;
+}
+
+body.dark-mode .comparison-summary {
+  background: #1e1e1e;
+  color: #f0f0f0;
+  border-color: #444;
+}
+
+body.dark-mode .comparison-summary th {
+  background: #2c2c2c;
+}
+
+body.dark-mode .comparison-summary tbody tr:nth-child(even) {
+  background: #262626;
+}
+
+body.dark-mode .hidden-toggle {
+  background: #444;
+  color: #fff;
+}
+
+html, body {
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-family);
+}
+
 .wrap {
   min-height: 100%;
   display: flex;
@@ -17,7 +106,6 @@ html, body {
   box-sizing: border-box;
 }
 
-/* Card */
 .card {
   width: 100%;
   max-width: 800px;
@@ -36,7 +124,6 @@ html, body {
   box-shadow: 0 12px 28px rgba(0,0,0,0.18);
 }
 
-/* Chart */
 canvas {
   width: 600px;
   height: 400px;
@@ -45,7 +132,6 @@ canvas {
   margin-top: 20px;
 }
 
-/* Controls */
 .controls {
   margin-top: 15px;
   display: flex;
@@ -54,7 +140,6 @@ canvas {
   align-items: center;
 }
 
-/* Selects */
 select {
   padding: 10px 14px;
   border-radius: 10px;
@@ -70,7 +155,6 @@ select:hover {
   box-shadow: 0 2px 6px rgba(3,102,214,0.2);
 }
 
-/* Buttons */
 .btn, #compareToggle {
   padding: 10px 20px;
   border-radius: 12px;
@@ -97,7 +181,6 @@ select:hover {
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
-/* Stats display */
 .stats-display {
   margin-top: 15px;
   font-size: 15px;
@@ -107,7 +190,6 @@ select:hover {
   justify-content: center;
 }
 
-/* Container for stats cards */
 .stats-cards-container {
   display: flex;
   gap: 20px;
@@ -116,7 +198,6 @@ select:hover {
   margin-top: 15px;
 }
 
-/* Individual stats card */
 .stats-card {
   background: #f7f9fc;
   border-radius: 12px;
@@ -144,7 +225,6 @@ select:hover {
   margin-bottom: 4px;
 }
 
-/* Blue card (first ability) */
 .stats-card-blue {
   background: linear-gradient(145deg, #e6f0ff, #d0e2ff);
   border: 2px solid #0366d6;
@@ -159,7 +239,6 @@ select:hover {
   font-weight: bold;
 }
 
-/* Red card (second ability) */
 .stats-card-red {
   background: linear-gradient(145deg, #ffe6eb, #ffd0da);
   border: 2px solid #ff4c6d;
@@ -174,15 +253,11 @@ select:hover {
   font-weight: bold;
 }
 
-/* Keep hover effect */
 .stats-card:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 16px rgba(0,0,0,0.12);
 }
 
-
-
-/* Comparison table */
 .comparison-summary {
   margin-top: 25px;
   padding: 1em;
@@ -215,12 +290,10 @@ select:hover {
   background: #f4f6fb;
 }
 
-/* Hidden utility class */
 .hidden {
   display: none !important;
 }
 
-/* Responsive */
 @media (max-width: 700px) {
   .card {
     padding: 20px 15px;
@@ -237,4 +310,30 @@ select:hover {
     flex-direction: column;
     gap: 10px;
   }
+}
+
+.hidden-toggle {
+  position: fixed;
+  bottom: 8px;
+  right: 8px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: none;
+  background: #333;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  z-index: 1000;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+
+.hidden-toggle:hover {
+  opacity: 1;
+}
+
+.hidden-toggle:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(3,102,214,0.5);
 }

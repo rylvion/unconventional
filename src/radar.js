@@ -23,6 +23,67 @@ const radarChart = new Chart(ctx, {
   }
 });
 
+function updateChartColors() {
+  const isDark = document.body.classList.contains('dark-mode');
+
+  radarChart.data.datasets.forEach((dataset, i) => {
+    if (i === 0) { 
+      dataset.borderColor = isDark ? 'rgba(100,180,255,1)' : 'rgba(3,102,214,1)';
+      dataset.backgroundColor = isDark ? 'rgba(100,180,255,0.2)' : 'rgba(3,102,214,0.15)';
+      dataset.pointBackgroundColor = isDark ? 'rgba(100,180,255,1)' : 'rgba(3,102,214,1)';
+    } else {
+      dataset.borderColor = isDark ? 'rgba(255,130,150,1)' : 'rgba(255,99,132,1)';
+      dataset.backgroundColor = isDark ? 'rgba(255,130,150,0.2)' : 'rgba(255,99,132,0.15)';
+      dataset.pointBackgroundColor = isDark ? 'rgba(255,130,150,1)' : 'rgba(255,99,132,1)';
+    }
+  });
+
+  radarChart.options.scales.r = {
+    suggestedMin: 0,
+    suggestedMax: 10,
+    ticks: {
+      stepSize: 2,
+      color: isDark ? '#aaa' : '#666',
+      backdropColor: 'transparent'
+    },
+    grid: {
+      color: isDark ? '#444' : '#ccc'
+    },
+    angleLines: {
+      color: isDark ? '#444' : '#ccc'
+    },
+    pointLabels: {
+      color: isDark ? '#f0f0f0' : '#333',
+      font: {
+        size: 14
+      }
+    }
+  };
+
+  radarChart.options.plugins.legend = {
+    labels: {
+      color: isDark ? '#f0f0f0' : '#333'
+    }
+  };
+
+  radarChart.options.plugins.tooltip = {
+    backgroundColor: isDark ? '#333' : '#fff',
+    titleColor: isDark ? '#f0f0f0' : '#000',
+    bodyColor: isDark ? '#ddd' : '#000',
+    borderColor: isDark ? '#555' : '#ccc',
+    borderWidth: 1
+  };
+
+  radarChart.update();
+}
+
+
+
+const darkModeToggle = document.getElementById('darkModeToggle');
+darkModeToggle.addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
+  updateChartColors();
+});
 
 console.log('Loading abilities.json...');
 fetch('abilities.json')
@@ -39,7 +100,7 @@ fetch('abilities.json')
     updateChart(); 
   })
   .catch(err => console.error('Error loading abilities.json:', err));
-
+  
 function populateAbilities(selectEl = abilitySelect) {
   if (!AbilitiesData || Object.keys(AbilitiesData).length === 0) {
     console.warn('AbilitiesData is empty!');
@@ -107,6 +168,8 @@ function getStats(tier, ability, level, mode) {
 function updateChart() {
   console.log('Updating chart...');
 
+  const isDark = document.body.classList.contains('dark-mode');
+
   const [tier, ability] = abilitySelect.value.split('::');
   const level = levelSelect.value;
   const mode = ampModeSelect.value;
@@ -123,9 +186,9 @@ function updateChart() {
     label: `${ability} (${mode})`,
     data: dataValues1,
     fill: true,
-    backgroundColor: 'rgba(3,102,214,0.25)',
-    borderColor: 'rgba(3,102,214,1)',
-    pointBackgroundColor: 'rgba(3,102,214,1)',
+    backgroundColor: isDark ? 'rgba(100,180,255,0.2)' : 'rgba(3,102,214,0.25)',
+    borderColor: isDark ? 'rgba(100,180,255,1)' : 'rgba(3,102,214,1)',
+    pointBackgroundColor: isDark ? 'rgba(100,180,255,1)' : 'rgba(3,102,214,1)',
     pointRadius: 4,
     borderWidth: 2
   }];
@@ -146,9 +209,9 @@ function updateChart() {
         label: `${ability2} (${mode2})`,
         data: dataValues2,
         fill: true,
-        backgroundColor: 'rgba(255,99,132,0.25)',
-        borderColor: 'rgba(255,99,132,1)',
-        pointBackgroundColor: 'rgba(255,99,132,1)',
+        backgroundColor: isDark ? 'rgba(255,130,150,0.2)' : 'rgba(255,99,132,0.25)',
+        borderColor: isDark ? 'rgba(255,130,150,1)' : 'rgba(255,99,132,1)',
+        pointBackgroundColor: isDark ? 'rgba(255,130,150,1)' : 'rgba(255,99,132,1)',
         pointRadius: 3,
         borderWidth: 2
       });
@@ -156,7 +219,6 @@ function updateChart() {
   }
 
   radarChart.options.plugins.tooltip = { enabled: true };
-
   radarChart.update();
 
   renderStatsCompare(stats1, stats2, ability, ability2);
@@ -164,7 +226,6 @@ function updateChart() {
   if (compareMode && stats2) renderComparison(stats1, stats2, ability, ability2);
   else document.getElementById('comparisonSummary').classList.add('hidden');
 }
-
 
 function renderStatsCompare(statsA, statsB, nameA, nameB) {
   let html = `<div class="stats-cards-container">`;
