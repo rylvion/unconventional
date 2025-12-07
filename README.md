@@ -11,9 +11,11 @@ It uses data from a [Google Spreadsheet](https://docs.google.com/spreadsheets/d/
 ## Overview
 
 * Based on the **Roblox game *Unconventional***, which is inspired by the webcomic *UnOrdinary*
-* The website visualizes **ability stats** using an interactive **radar chart (pentagram chart)**
+* The website visualizes **ability stats** using an interactive **radar chart (pentagram chart)** by Chart.js
 * Shows stats such as: Power, Speed, Trick, Recovery, and Defense
 * Data is pulled from a spreadsheet and converted into `.json` format for use by the site
+* Users can select different abilities and levels to see how stats change
+* Compare Mode now enables side-by-side ability comparisons within the same radar chart and a table overview of stats changes and differences.
 
 ---
 

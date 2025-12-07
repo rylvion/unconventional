@@ -1,0 +1,2192 @@
+{
+  "Low-Tier": {
+    "_meta": {
+      "faq": "Low-Tier abilities are generally considered weak and not very viable in competitive play. They are often used for fun or novelty rather than serious combat.",
+      "description": "Low-Tier abilities are those that are generally outclassed by other abilities in terms of power, utility, or versatility. They may have niche uses and often used for comedic effect & trolling but are not typically favored in competitive scenarios.",
+      "level-range": {
+        "obtainable-from": [1.0, 1.9],
+        "upgrade-limit": 3.4
+      }
+    },
+    "Illumination": {
+      "assets": {
+        "icon": "/abilities-assets/low-tier/Illumination/icon/image.png",
+        "r": ["/abilities-assets/low-tier/Illumination/r/1.gif"]
+      },
+      "_meta": {
+        "faq": "Illumination is obtainable from 1.0-1.9 in the shop NOT possible to roll due to the way current rarity works",
+        "description": "Illumination is an ability that lacks viability due to its meagre stats, and is commonly used as a joking point between players, similarly to how Needles is.",
+        "tags": ["Rage-Bait-Effective", "Debuff", "Short-Ranged", "Feeble", "Skill-Less", "Support", "Melee"],
+        "ability-state": ["Copyable", "Obtainable"],
+        "target-rating": {
+          "score": 4,
+          "explanation": "I'm giving it a 4 as it rage-baits enemies into attacking you by blinding you for a few seconds, really annoying, but its not a threat on its own.",
+          "Weaknesses": ["High Mobility", "Ranged Attacks", "Stunning Effects", "Wide-Ranged Debuffs", "AOE", "High Burst Damage", "Damage Over Time"]
+        }
+      },
+
+      "levels": {
+        "1.5": {"Pow": 1.1,"Spd": 1.0,"Trick": 2.0,"Recv": 1.0,"Def": 1.0},
+        "1.6": {"Pow": 1.1,"Spd": 1.0,"Trick": 2.2,"Recv": 1.0,"Def": 1.0},
+        "1.7": {"Pow": 1.1,"Spd": 1.0,"Trick": 2.5,"Recv": 1.0,"Def": 1.0},
+        "1.8": {"Pow": 1.2,"Spd": 1.0,"Trick": 2.8,"Recv": 1.0,"Def": 1.0},
+        "1.9": {"Pow": 1.2,"Spd": 1.0,"Trick": 3.1,"Recv": 1.0,"Def": 1.0},
+        "2.0": {"Pow": 1.2,"Spd": 1.0,"Trick": 3.4,"Recv": 1.0,"Def": 1.0},
+        "2.1": {"Pow": 1.3,"Spd": 1.0,"Trick": 3.7,"Recv": 1.0,"Def": 1.0},
+        "2.2": {"Pow": 1.3,"Spd": 1.0,"Trick": 4.0,"Recv": 1.0,"Def": 1.0},
+        "2.3": {"Pow": 1.3,"Spd": 1.0,"Trick": 4.3,"Recv": 1.0,"Def": 1.0},
+        "2.4": {"Pow": 1.4,"Spd": 1.0,"Trick": 4.6,"Recv": 1.0,"Def": 1.0},
+        "2.5": {"Pow": 1.4,"Spd": 1.0,"Trick": 5.0,"Recv": 1.0,"Def": 1.0},
+        "2.6": {"Pow": 1.4,"Spd": 1.0,"Trick": 5.3,"Recv": 1.0,"Def": 1.0},
+        "2.7": {"Pow": 1.5,"Spd": 1.0,"Trick": 5.7,"Recv": 1.0,"Def": 1.0},
+        "2.8": {"Pow": 1.5,"Spd": 1.0,"Trick": 6.0,"Recv": 1.0,"Def": 1.0},
+        "2.9": {"Pow": 1.5,"Spd": 1.0,"Trick": 6.4,"Recv": 1.0,"Def": 1.0},
+        "3.0": {"Pow": 1.6,"Spd": 1.0,"Trick": 6.8,"Recv": 1.0,"Def": 1.0},
+        "3.1": {"Pow": 1.6,"Spd": 1.0,"Trick": 7.2,"Recv": 1.0,"Def": 1.0},
+        "3.2": {"Pow": 1.7,"Spd": 1.0,"Trick": 7.6,"Recv": 1.0,"Def": 1.0},
+        "3.3": {"Pow": 1.7,"Spd": 1.0,"Trick": 7.9,"Recv": 1.0,"Def": 1.0},
+        "3.4": {"Pow": 1.7,"Spd": 1.0,"Trick": 8.3,"Recv": 1.0,"Def": 1.0},
+        "3.5": {"Pow": 1.8,"Spd": 1.0,"Trick": 8.7,"Recv": 1.0,"Def": 1.0},
+        "3.6": {"Pow": 1.8,"Spd": 1.0,"Trick": 9.1,"Recv": 1.0,"Def": 1.0},
+        "3.7": {"Pow": 1.9,"Spd": 1.0,"Trick": 9.6,"Recv": 1.0,"Def": 1.0},
+        "3.8": {"Pow": 1.9,"Spd": 1.0,"Trick": 10.0,"Recv": 1.0,"Def": 1.0},
+        "3.9": {"Pow": 2.3,"Spd": 1.0,"Trick": 10.0,"Recv": 1.0,"Def": 1.0},
+        "4.0": {"Pow": 2.8,"Spd": 1.0,"Trick": 10.0,"Recv": 1.0,"Def": 1.0},
+        "4.1": {"Pow": 3.3,"Spd": 1.0,"Trick": 10.0,"Recv": 1.0,"Def": 1.0},
+        "4.2": {"Pow": 3.7,"Spd": 1.0,"Trick": 10.0,"Recv": 1.0,"Def": 1.0},
+        "4.3": {"Pow": 4.2,"Spd": 1.0,"Trick": 10.0,"Recv": 1.0,"Def": 1.0},
+        "4.4": {"Pow": 4.7,"Spd": 1.0,"Trick": 10.0,"Recv": 1.0,"Def": 1.0}
+      },
+
+      "abilities": {
+        "R": {
+          "name": "Flash",
+          "state": ["Instant"],
+          "effects": ["miss-debuff"],
+          "description": "When Used, A flash of light emits from the user's palm, blinding anyone nearby for a few seconds (duration based on trick stat), whilst this ability is active it debuffs a player into missing any attack they do.",
+          "cooldown": 12
+        } 
+      }
+    },
+    
+    "Needles": {
+      "assets": {
+        "icon": "/abilities-assets/low-tier/Needles/icon/image.png",
+        "r": ["/abilities-assets/low-tier/Needles/r/1.gif"]
+      },
+
+      "_meta": {
+        "faq": "Needles is obtainable from 1.0-1.9 in the shop NOT possible to roll due to the way current rarity work",
+        "tags": ["Feeble", "Short-Ranged", "Bursts", "Melee"],
+        "state": ["Copyable", "Obtainable"],
+        "target-rating": {
+          "score": 1,
+          "explanation": "A needles user can never even hope to scale to your power unless they are really good at powerless, since its cancellable, it doesn't leave enough time to deal significant damage, so you can attack them and get them into a combo before they can do anything.",
+          "Weaknesses": ["High Mobility", "Ranged Attacks", "Stunning Effects", "Wide-Ranged Debuffs", "AOE", "High Burst Damage", "Damage Over Time"]
+        }
+      },
+
+      "levels": {
+        "1.5": {"Pow": 1.3,"Spd": 1.0,"Trick": 1.8,"Recv": 1.0,"Def": 1.0},
+        "1.6": {"Pow": 1.4,"Spd": 1.0,"Trick": 2.0,"Recv": 1.0,"Def": 1.0},
+        "1.7": {"Pow": 1.5,"Spd": 1.0,"Trick": 2.2,"Recv": 1.0,"Def": 1.0},
+        "1.8": {"Pow": 1.6,"Spd": 1.0,"Trick": 2.4,"Recv": 1.0,"Def": 1.0},
+        "1.9": {"Pow": 1.6,"Spd": 1.0,"Trick": 2.6,"Recv": 1.0,"Def": 1.0},
+        "2.0": {"Pow": 1.7,"Spd": 1.0,"Trick": 2.8,"Recv": 1.0,"Def": 1.0},
+        "2.1": {"Pow": 1.8,"Spd": 1.0,"Trick": 3.1,"Recv": 1.0,"Def": 1.0},
+        "2.2": {"Pow": 1.9,"Spd": 1.0,"Trick": 3.3,"Recv": 1.0,"Def": 1.0},
+        "2.3": {"Pow": 2.0,"Spd": 1.0,"Trick": 3.6,"Recv": 1.0,"Def": 1.0},
+        "2.4": {"Pow": 2.1,"Spd": 1.0,"Trick": 3.9,"Recv": 1.0,"Def": 1.0},
+        "2.5": {"Pow": 2.3,"Spd": 1.0,"Trick": 4.1,"Recv": 1.0,"Def": 1.0},
+        "2.6": {"Pow": 2.4,"Spd": 1.0,"Trick": 4.4,"Recv": 1.0,"Def": 1.0},
+        "2.7": {"Pow": 2.5,"Spd": 1.0,"Trick": 4.7,"Recv": 1.0,"Def": 1.0},
+        "2.8": {"Pow": 2.6,"Spd": 1.0,"Trick": 5.0,"Recv": 1.0,"Def": 1.0},
+        "2.9": {"Pow": 2.7,"Spd": 1.0,"Trick": 5.3,"Recv": 1.0,"Def": 1.0},
+        "3.0": {"Pow": 2.8,"Spd": 1.0,"Trick": 5.5,"Recv": 1.0,"Def": 1.0},
+        "3.1": {"Pow": 2.9,"Spd": 1.0,"Trick": 5.8,"Recv": 1.0,"Def": 1.0},
+        "3.2": {"Pow": 3.1,"Spd": 1.0,"Trick": 6.1,"Recv": 1.0,"Def": 1.0},
+        "3.3": {"Pow": 3.2,"Spd": 1.0,"Trick": 6.5,"Recv": 1.0,"Def": 1.0},
+        "3.4": {"Pow": 3.3,"Spd": 1.0,"Trick": 6.8,"Recv": 1.0,"Def": 1.0},
+        "3.5": {"Pow": 3.4,"Spd": 1.0,"Trick": 7.1,"Recv": 1.0,"Def": 1.0},
+        "3.6": {"Pow": 3.6,"Spd": 1.0,"Trick": 7.4,"Recv": 1.0,"Def": 1.0},
+        "3.7": {"Pow": 3.7,"Spd": 1.0,"Trick": 7.7,"Recv": 1.0,"Def": 1.0},
+        "3.8": {"Pow": 3.8,"Spd": 1.0,"Trick": 8.0,"Recv": 1.0,"Def": 1.0},
+        "3.9": {"Pow": 3.9,"Spd": 1.0,"Trick": 8.4,"Recv": 1.0,"Def": 1.0},
+        "4.0": {"Pow": 4.1,"Spd": 1.0,"Trick": 8.7,"Recv": 1.0,"Def": 1.0},
+        "4.1": {"Pow": 4.2,"Spd": 1.0,"Trick": 9.0,"Recv": 1.0,"Def": 1.0},
+        "4.2": {"Pow": 4.4,"Spd": 1.0,"Trick": 9.4,"Recv": 1.0,"Def": 1.0},
+        "4.3": {"Pow": 4.5,"Spd": 1.0,"Trick": 9.7,"Recv": 1.0,"Def": 1.0},
+        "4.4": {"Pow": 4.7,"Spd": 1.0,"Trick": 10.0,"Recv": 1.0,"Def": 1.0}
+      },
+
+      "abilities": {
+        "R": {
+          "name": "Needles",
+          "state": ["cancellable", "blockable", "holdable", "damage-dealing", "projectile", "Aimable"],
+          "effects": ["interrupt-enemies-attack"],
+          "description": "The user points a hand forwards and shoots a barrage of large damaging needles towards a target, dealing strong damage, although this move is canceled if the user is stunned for any amount of time.",
+          "cooldown": 10
+        }
+      }
+    }
+  },
+
+  "Mid-Tier": {
+    "_meta": {
+      "faq": "Mid-Tier abilities are more viable than Low-Tier but still have significant drawbacks or limitations that prevent them from being top-tier choices. They can be effective in certain situations but may struggle against more versatile or powerful abilities.",
+      "description": "Mid-Tier abilities strike a balance between power and utility, offering decent performance in various scenarios. They may have some situational uses and can be effective when used strategically, but they often lack the overall impact of higher-tier abilities.",
+      "level-range": {
+        "obtainable-from": [2.0, 3.4],
+        "upgrade-limit": 4.9
+      }
+    },
+    "Strong Punch": {
+      "assets": {
+        "icon": "/abilities-assets/mid-tier/Strong-Punch/icon/strong-punch.png",
+        "r": ["/abilities-assets/mid-tier/Strong-Punch/r/Clobber.gif"]
+      },
+      "_meta": {
+        "faq": "Strong Punch is obtainable from 2.0-2.9 in the shop and is rollable in the ability reroller",
+        "tags": ["Melee", "Short-Range", "Heavy", "Feeble"],
+        "state": ["Copyable", "Obtainable"],
+        "target-rating": {
+          "score": 4,
+          "explanation": "A strong punch user can be a threat if they manage to get close to you, but if you keep your distance and use ranged attacks, you can easily avoid their attacks and take them down. They could easily kill you with when you have low defence.",
+          "Weaknesses": ["High Mobility", "Ranged Attacks", "Stunning Effects", "Wide-Ranged Debuffs", "AOE", "High Burst Damage", "Damage Over Time"]
+        }
+      },
+      "levels": {
+        "2.0": {"Pow": 3.0,"Spd": 1.0,"Trick": 1.6,"Recv": 1.0,"Def": 1.0},
+        "2.1": {"Pow": 3.3,"Spd": 1.0,"Trick": 1.6,"Recv": 1.0,"Def": 1.0},
+        "2.2": {"Pow": 3.6,"Spd": 1.0,"Trick": 1.7,"Recv": 1.0,"Def": 1.0},
+        "2.3": {"Pow": 3.8,"Spd": 1.0,"Trick": 1.8,"Recv": 1.0,"Def": 1.0},
+        "2.4": {"Pow": 4.1,"Spd": 1.0,"Trick": 1.9,"Recv": 1.0,"Def": 1.0},
+        "2.5": {"Pow": 4.4,"Spd": 1.0,"Trick": 2.0,"Recv": 1.0,"Def": 1.0},
+        "2.6": {"Pow": 4.7,"Spd": 1.0,"Trick": 2.0,"Recv": 1.0,"Def": 1.0},
+        "2.7": {"Pow": 5.0,"Spd": 1.0,"Trick": 2.1,"Recv": 1.0,"Def": 1.0},
+        "2.8": {"Pow": 5.3,"Spd": 1.0,"Trick": 2.2,"Recv": 1.0,"Def": 1.0},
+        "2.9": {"Pow": 5.7,"Spd": 1.0,"Trick": 2.3,"Recv": 1.0,"Def": 1.0},
+        "3.0": {"Pow": 6.0,"Spd": 1.0,"Trick": 2.4,"Recv": 1.0,"Def": 1.0},
+        "3.1": {"Pow": 6.3,"Spd": 1.0,"Trick": 2.5,"Recv": 1.0,"Def": 1.0},
+        "3.2": {"Pow": 6.6,"Spd": 1.0,"Trick": 2.6,"Recv": 1.0,"Def": 1.0},
+        "3.3": {"Pow": 7.0,"Spd": 1.0,"Trick": 2.7,"Recv": 1.0,"Def": 1.0},
+        "3.4": {"Pow": 7.3,"Spd": 1.0,"Trick": 2.8,"Recv": 1.0,"Def": 1.0},
+        "3.5": {"Pow": 7.7,"Spd": 1.0,"Trick": 2.9,"Recv": 1.0,"Def": 1.0},
+        "3.6": {"Pow": 8.0,"Spd": 1.0,"Trick": 2.9,"Recv": 1.0,"Def": 1.0},
+        "3.7": {"Pow": 8.4,"Spd": 1.0,"Trick": 3.0,"Recv": 1.0,"Def": 1.0},
+        "3.8": {"Pow": 8.7,"Spd": 1.0,"Trick": 3.1,"Recv": 1.0,"Def": 1.0},
+        "3.9": {"Pow": 9.1,"Spd": 1.0,"Trick": 3.2,"Recv": 1.0,"Def": 1.0},
+        "4.0": {"Pow": 9.4,"Spd": 1.0,"Trick": 3.3,"Recv": 1.0,"Def": 1.0},
+        "4.1": {"Pow": 9.8,"Spd": 1.0,"Trick": 3.4,"Recv": 1.0,"Def": 1.0},
+        "4.2": {"Pow": 10.0,"Spd": 1.0,"Trick": 3.7,"Recv": 1.0,"Def": 1.0},
+        "4.3": {"Pow": 10.0,"Spd": 1.0,"Trick": 4.2,"Recv": 1.0,"Def": 1.0},
+        "4.4": {"Pow": 10.0,"Spd": 1.0,"Trick": 4.7,"Recv": 1.0,"Def": 1.0},
+        "4.5": {"Pow": 10.0,"Spd": 1.0,"Trick": 5.2,"Recv": 1.0,"Def": 1.0},
+        "4.6": {"Pow": 10.0,"Spd": 1.0,"Trick": 5.7,"Recv": 1.0,"Def": 1.0},
+        "4.7": {"Pow": 10.0,"Spd": 1.0,"Trick": 6.2,"Recv": 1.0,"Def": 1.0},
+        "4.8": {"Pow": 10.0,"Spd": 1.0,"Trick": 6.7,"Recv": 1.0,"Def": 1.0},
+        "4.9": {"Pow": 10.0,"Spd": 1.0,"Trick": 7.2,"Recv": 1.0,"Def": 1.0},
+        "5.0": {"Pow": 10.0,"Spd": 1.0,"Trick": 7.7,"Recv": 1.0,"Def": 1.0},
+        "5.1": {"Pow": 10.0,"Spd": 1.0,"Trick": 8.2,"Recv": 1.0,"Def": 1.0},
+        "5.2": {"Pow": 10.0,"Spd": 1.0,"Trick": 8.7,"Recv": 1.0,"Def": 1.0},
+        "5.3": {"Pow": 10.0,"Spd": 1.0,"Trick": 9.2,"Recv": 1.0,"Def": 1.0},
+        "5.4": {"Pow": 10.0,"Spd": 1.0,"Trick": 9.7,"Recv": 1.0,"Def": 1.0},
+        "5.5": {"Pow": 10.0,"Spd": 1.1,"Trick": 10.0,"Recv": 1.1,"Def": 1.1},
+        "5.6": {"Pow": 10.0,"Spd": 1.3,"Trick": 10.0,"Recv": 1.3,"Def": 1.3},
+        "5.7": {"Pow": 10.0,"Spd": 1.4,"Trick": 10.0,"Recv": 1.4,"Def": 1.4},
+        "5.8": {"Pow": 10.0,"Spd": 1.6,"Trick": 10.0,"Recv": 1.6,"Def": 1.6},
+        "5.9": {"Pow": 10.0,"Spd": 1.8,"Trick": 10.0,"Recv": 1.8,"Def": 1.8}
+      },
+
+      "abilities": {
+        "R": {
+          "name": "Clobber",
+          "state": ["cancellable", "damage-dealing"],
+          "effects": ["interrupt-enemies-attack"],
+          "description": "The user winds up their fist slowly and delivers a powerful punch to a nearby target, dealing heavy damage, creating an explosion on impact no aoe ",
+          "cooldown": 12
+        }
+      }
+    },
+
+    "Speed": {
+      "assets": {
+        "icon": "/abilities-assets/mid-tier/Speed/icon/speed.png"
+      },
+      "_meta": {
+        "faq": "Speed is obtainable from 2.0-3.4 in the shop and is rollable in the ability reroller",
+        "tags": ["Speedster", "Melee", "Feeble", "Stat-Based"],
+        "state": ["Copyable", "Obtainable"],
+        "target-rating": {
+          "score": 3,
+          "explanation": "A speed user can be quite a nuisance to deal with due to their high speed, making it difficult to land hits on them. However, they lack power and defence, so if you can catch them off guard, you can take them down quickly.",
+          "Weaknesses": ["AOE", "Ranged Attacks", "Stunning Effects", "Wide-Ranged Debuffs"]
+        }
+      },
+
+      "levels": {
+        "2.0": {"Pow": 1.6,"Spd": 3.0,"Trick": 1.0,"Recv": 1.0,"Def": 1.0},
+        "2.1": {"Pow": 1.7,"Spd": 3.3,"Trick": 1.0,"Recv": 1.0,"Def": 1.0},
+        "2.2": {"Pow": 1.8,"Spd": 3.5,"Trick": 1.0,"Recv": 1.0,"Def": 1.0},
+        "2.3": {"Pow": 1.8,"Spd": 3.8,"Trick": 1.0,"Recv": 1.0,"Def": 1.0},
+        "2.4": {"Pow": 1.9,"Spd": 4.1,"Trick": 1.0,"Recv": 1.0,"Def": 1.0},
+        "2.5": {"Pow": 2.0,"Spd": 4.4,"Trick": 1.0,"Recv": 1.0,"Def": 1.0},
+        "2.6": {"Pow": 2.1,"Spd": 4.7,"Trick": 1.0,"Recv": 1.0,"Def": 1.0},
+        "2.7": {"Pow": 2.2,"Spd": 5.0,"Trick": 1.0,"Recv": 1.0,"Def": 1.0},
+        "2.8": {"Pow": 2.3,"Spd": 5.3,"Trick": 1.0,"Recv": 1.0,"Def": 1.0},
+        "2.9": {"Pow": 2.4,"Spd": 5.6,"Trick": 1.0,"Recv": 1.0,"Def": 1.0},
+        "3.0": {"Pow": 2.5,"Spd": 5.9,"Trick": 1.0,"Recv": 1.0,"Def": 1.0},
+        "3.1": {"Pow": 2.6,"Spd": 6.2,"Trick": 1.0,"Recv": 1.0,"Def": 1.0},
+        "3.2": {"Pow": 2.7,"Spd": 6.5,"Trick": 1.0,"Recv": 1.0,"Def": 1.0},
+        "3.3": {"Pow": 2.8,"Spd": 6.9,"Trick": 1.0,"Recv": 1.0,"Def": 1.0},
+        "3.4": {"Pow": 2.9,"Spd": 7.2,"Trick": 1.0,"Recv": 1.0,"Def": 1.0},
+        "3.5": {"Pow": 3.0,"Spd": 7.5,"Trick": 1.0,"Recv": 1.0,"Def": 1.0},
+        "3.6": {"Pow": 3.1,"Spd": 7.9,"Trick": 1.0,"Recv": 1.0,"Def": 1.0},
+        "3.7": {"Pow": 3.2,"Spd": 8.2,"Trick": 1.0,"Recv": 1.0,"Def": 1.0},
+        "3.8": {"Pow": 3.3,"Spd": 8.6,"Trick": 1.0,"Recv": 1.0,"Def": 1.0},
+        "3.9": {"Pow": 3.4,"Spd": 8.9,"Trick": 1.0,"Recv": 1.0,"Def": 1.0},
+        "4.0": {"Pow": 3.5,"Spd": 9.3,"Trick": 1.0,"Recv": 1.0,"Def": 1.0},
+        "4.1": {"Pow": 3.6,"Spd": 9.7,"Trick": 1.0,"Recv": 1.0,"Def": 1.0},
+        "4.2": {"Pow": 3.7,"Spd": 10.0,"Trick": 1.0,"Recv": 1.0,"Def": 1.0},
+        "4.3": {"Pow": 4.2,"Spd": 10.0,"Trick": 1.0,"Recv": 1.0,"Def": 1.0},
+        "4.4": {"Pow": 4.7,"Spd": 10.0,"Trick": 1.0,"Recv": 1.0,"Def": 1.0},
+        "4.5": {"Pow": 5.2,"Spd": 10.0,"Trick": 1.0,"Recv": 1.0,"Def": 1.0},
+        "4.6": {"Pow": 5.7,"Spd": 10.0,"Trick": 1.0,"Recv": 1.0,"Def": 1.0},
+        "4.7": {"Pow": 6.2,"Spd": 10.0,"Trick": 1.0,"Recv": 1.0,"Def": 1.0},
+        "4.8": {"Pow": 6.7,"Spd": 10.0,"Trick": 1.0,"Recv": 1.0,"Def": 1.0},
+        "4.9": {"Pow": 7.2,"Spd": 10.0,"Trick": 1.0,"Recv": 1.0,"Def": 1.0},
+        "5.0": {"Pow": 7.7,"Spd": 10.0,"Trick": 1.0,"Recv": 1.0,"Def": 1.0},
+        "5.1": {"Pow": 8.2,"Spd": 10.0,"Trick": 1.0,"Recv": 1.0,"Def": 1.0},
+        "5.2": {"Pow": 8.7,"Spd": 10.0,"Trick": 1.0,"Recv": 1.0,"Def": 1.0},
+        "5.3": {"Pow": 9.2,"Spd": 10.0,"Trick": 1.0,"Recv": 1.0,"Def": 1.0},
+        "5.4": {"Pow": 9.7,"Spd": 10.0,"Trick": 1.0,"Recv": 1.0,"Def": 1.0},
+        "5.5": {"Pow": 10.0,"Spd": 10.0,"Trick": 1.1,"Recv": 1.1,"Def": 1.1},
+        "5.6": {"Pow": 10.0,"Spd": 10.0,"Trick": 1.3,"Recv": 1.3,"Def": 1.3},
+        "5.7": {"Pow": 10.0,"Spd": 10.0,"Trick": 1.4,"Recv": 1.4,"Def": 1.4},
+        "5.8": {"Pow": 10.0,"Spd": 10.0,"Trick": 1.6,"Recv": 1.6,"Def": 1.6},
+        "5.9": {"Pow": 10.0,"Spd": 10.0,"Trick": 1.8,"Recv": 1.8,"Def": 1.8}
+      },
+
+      "abilities": null
+    },
+
+    "Regeneration": {
+      "assets": {
+        "icon": "/abilities-assets/mid-tier/Regeneration/icon/regeneration.png",
+        "passive": ["/abilities-assets/mid-tier/Regeneration/passive/Regeneration_Passive.gif"]
+      },
+      "_meta": {
+        "faq": "Regeneration is obtainable from 2.0-3.4 in the shop and is rollable in the ability reroller",
+        "tags": ["Tank", "Passive", "Stat-Based"],
+        "state": ["Copyable", "Obtainable"],
+        "target-rating": {
+          "score": 5,
+          "explanation": "A regeneration user can be quite difficult to take down due to their healing abilities, allowing them to recover from damage quickly. However, they lack offensive capabilities, so if you can outlast their healing, you can eventually wear them down. They excel in long fights. Weakness is bleeding effects which nullifies regeneration capabilities.",
+          "Weaknesses": ["Bleeding Effects", "High Burst Damage"]
+        }
+      },
+
+      "levels": {
+        "2.0": {"Pow": 1.0,"Spd": 1.0,"Trick": 1.6,"Recv": 2.3,"Def": 1.6},
+        "2.1": {"Pow": 1.0,"Spd": 1.0,"Trick": 1.7,"Recv": 2.5,"Def": 1.7},
+        "2.2": {"Pow": 1.0,"Spd": 1.0,"Trick": 1.8,"Recv": 2.6,"Def": 1.8},
+        "2.3": {"Pow": 1.0,"Spd": 1.0,"Trick": 1.9,"Recv": 2.8,"Def": 1.9},
+        "2.4": {"Pow": 1.0,"Spd": 1.0,"Trick": 2.0,"Recv": 3.0,"Def": 2.0},
+        "2.5": {"Pow": 1.0,"Spd": 1.0,"Trick": 2.1,"Recv": 3.2,"Def": 2.1},
+        "2.6": {"Pow": 1.0,"Spd": 1.0,"Trick": 2.2,"Recv": 3.4,"Def": 2.2},
+        "2.7": {"Pow": 1.0,"Spd": 1.0,"Trick": 2.3,"Recv": 3.6,"Def": 2.3},
+        "2.8": {"Pow": 1.0,"Spd": 1.0,"Trick": 2.4,"Recv": 3.8,"Def": 2.4},
+        "2.9": {"Pow": 1.0,"Spd": 1.0,"Trick": 2.5,"Recv": 4.0,"Def": 2.5},
+        "3.0": {"Pow": 1.0,"Spd": 1.0,"Trick": 2.6,"Recv": 4.2,"Def": 2.6},
+        "3.1": {"Pow": 1.0,"Spd": 1.0,"Trick": 2.7,"Recv": 4.4,"Def": 2.7},
+        "3.2": {"Pow": 1.0,"Spd": 1.0,"Trick": 2.8,"Recv": 4.6,"Def": 2.8},
+        "3.3": {"Pow": 1.0,"Spd": 1.0,"Trick": 2.9,"Recv": 4.8,"Def": 2.9},
+        "3.4": {"Pow": 1.0,"Spd": 1.0,"Trick": 3.0,"Recv": 5.0,"Def": 3.0},
+        "3.5": {"Pow": 1.0,"Spd": 1.0,"Trick": 3.1,"Recv": 5.3,"Def": 3.1},
+        "3.6": {"Pow": 1.0,"Spd": 1.0,"Trick": 3.2,"Recv": 5.5,"Def": 3.2},
+        "3.7": {"Pow": 1.0,"Spd": 1.0,"Trick": 3.4,"Recv": 5.7,"Def": 3.4},
+        "3.8": {"Pow": 1.0,"Spd": 1.0,"Trick": 3.5,"Recv": 5.9,"Def": 3.5},
+        "3.9": {"Pow": 1.0,"Spd": 1.0,"Trick": 3.6,"Recv": 6.2,"Def": 3.6},
+        "4.0": {"Pow": 1.0,"Spd": 1.0,"Trick": 3.7,"Recv": 6.4,"Def": 3.7},
+        "4.1": {"Pow": 1.0,"Spd": 1.0,"Trick": 3.8,"Recv": 6.6,"Def": 3.8},
+        "4.2": {"Pow": 1.0,"Spd": 1.0,"Trick": 3.9,"Recv": 6.9,"Def": 3.9},
+        "4.3": {"Pow": 1.0,"Spd": 1.0,"Trick": 4.1,"Recv": 7.1,"Def": 4.1},
+        "4.4": {"Pow": 1.0,"Spd": 1.0,"Trick": 4.2,"Recv": 7.3,"Def": 4.2},
+        "4.5": {"Pow": 1.0,"Spd": 1.0,"Trick": 4.3,"Recv": 7.6,"Def": 4.3},
+        "4.6": {"Pow": 1.0,"Spd": 1.0,"Trick": 4.4,"Recv": 7.8,"Def": 4.4},
+        "4.7": {"Pow": 1.0,"Spd": 1.0,"Trick": 4.5,"Recv": 8.1,"Def": 4.5},
+        "4.8": {"Pow": 1.0,"Spd": 1.0,"Trick": 4.7,"Recv": 8.3,"Def": 4.7},
+        "4.9": {"Pow": 1.0,"Spd": 1.0,"Trick": 4.8,"Recv": 8.6,"Def": 4.8},
+        "5.0": {"Pow": 1.0,"Spd": 1.0,"Trick": 4.9,"Recv": 8.8,"Def": 4.9},
+        "5.1": {"Pow": 1.0,"Spd": 1.0,"Trick": 5.0,"Recv": 9.1,"Def": 5.0},
+        "5.2": {"Pow": 1.0,"Spd": 1.0,"Trick": 5.2,"Recv": 9.4,"Def": 5.2},
+        "5.3": {"Pow": 1.0,"Spd": 1.0,"Trick": 5.3,"Recv": 9.6,"Def": 5.3},
+        "5.4": {"Pow": 1.0,"Spd": 1.0,"Trick": 5.4,"Recv": 9.9,"Def": 5.4},
+        "5.5": {"Pow": 1.0,"Spd": 1.0,"Trick": 5.6,"Recv": 10.0,"Def": 5.6},
+        "5.6": {"Pow": 1.0,"Spd": 1.0,"Trick": 5.9,"Recv": 10.0,"Def": 5.9},
+        "5.7": {"Pow": 1.0,"Spd": 1.0,"Trick": 6.2,"Recv": 10.0,"Def": 6.2},
+        "5.8": {"Pow": 1.0,"Spd": 1.0,"Trick": 6.4,"Recv": 10.0,"Def": 6.4},
+        "5.9": {"Pow": 1.0,"Spd": 1.0,"Trick": 6.7,"Recv": 10.0,"Def": 6.7}
+      },
+
+      "abilities": null,
+
+      "Passive": {
+        "effects": {
+          "1": {
+            "name": "Hyper Recovery",
+            "description": "Unlike every other ability, which heals in ticks, Regeneration has passively increased recovery, and constant recovery. (a different ability with the same amount of recovery stat would heal slower than Regeneration)",
+            "effects": ["Health-Regeneration"]
+          }
+      }
+    },
+
+    "Strong Kick": {
+      "assets": {
+        "icon": "/abilities-assets/mid-tier/Strong-Kick/icon/strong-kick.png",
+        "r": ["/abilities-assets/mid-tier/Strong-Kick/r/Kick-Off.gif"],
+        "f": ["/abilities-assets/mid-tier/Strong-Kick/f/StrengthVarientA.gif",
+              "/abilities-assets/mid-tier/Strong-Kick/f/StrengthVarientB.gif"],
+        "passive": ["/abilities-assets/mid-tier/Strong-Kick/passive/Strong_kick_-_Heavy.gif"]
+      },
+      "_meta": {
+        "faq": "Strong Kick is obtainable from 2.0-3.4 in the shop and is rollable in the ability reroller",
+        "tags": ["Melee", "Short-Range", "Heavy", "Feeble", "Passive"],
+        "state": ["Copyable", "Obtainable"],
+        "target-rating": {
+          "score": 4,
+          "explanation": "A strong kick user can be a threat if they manage to get close to you, but if you keep your distance and use ranged attacks, you can easily avoid their attacks and take them down. They have low defence so easy to kill. Among all the low-tiers, strong kick in my opinion is the most balanced on most stats so if you have skill, you could defeat a high tier or even god."
+        }
+      },
+
+      "levels": {
+        "3.0": {"Pow": 4.3,"Spd": 1.5,"Trick": 2.1,"Recv": 1.4,"Def": 2.1},
+        "3.3": {"Pow": 4.9,"Spd": 1.7,"Trick": 2.3,"Recv": 1.4,"Def": 2.3},
+        "3.6": {"Pow": 5.6,"Spd": 1.8,"Trick": 2.5,"Recv": 1.5,"Def": 2.5},
+        "3.7": {"Pow": 5.8,"Spd": 1.8,"Trick": 2.6,"Recv": 1.5,"Def": 2.6},
+        "3.8": {"Pow": 6.1,"Spd": 1.8,"Trick": 2.7,"Recv": 1.6,"Def": 2.7},
+        "3.9": {"Pow": 6.3,"Spd": 1.9,"Trick": 2.8,"Recv": 1.6,"Def": 2.8},
+        "4.9": {"Pow": 8.8,"Spd": 2.3,"Trick": 3.6,"Recv": 1.9,"Def": 3.6},
+        "5.0": {"Pow": 9.1,"Spd": 2.3,"Trick": 3.7,"Recv": 1.9,"Def": 3.7},
+        "5.1": {"Pow": 9.3,"Spd": 2.4,"Trick": 3.8,"Recv": 1.9,"Def": 3.8},
+        "5.2": {"Pow": 9.6,"Spd": 2.4,"Trick": 3.9,"Recv": 2.0,"Def": 3.9},
+        "5.4": {"Pow": 10.0,"Spd": 2.5,"Trick": 4.1,"Recv": 2.0,"Def": 4.1},
+        "5.5": {"Pow": 10.0,"Spd": 2.6,"Trick": 4.3,"Recv": 2.1,"Def": 4.3}
+      },
+
+      "abilities": {
+        "R": {
+          "name": "Kick Off",
+          "state": ["holdable", "evasive"],
+          "effects": ["Push"],
+          "description": "The user Leaps Forward into the air, launching themselves away from danger, and doing a little knockback (very little) no damage",
+          "cooldown": 10
+        },
+
+        "F": {
+          "Varient A": {
+            "name": "Strength",
+            "state": ["cancellable", "damage-dealing", "Short-Range", "AOE"],
+            "effects": ["Fling", "interrupt-enemies-attack", "damage-dealing"],
+            "description": "The user kicks with their right leg with immense force, dealing little damage in a small area and launching anyone hit up in the air.",
+            "cooldown": 10
+          },
+          "Varient B": {
+            "name": "Strength",
+            "state": ["damage-dealing", "Medium-Range", "AOE"],
+            "effects": ["interrupt-enemies-attack", "damage-dealing"],
+            "description": "After attempting to do R ability, The user press F move to that whilst in the air the user slams downwards dealing moderate damage in a medium area upon landing.",
+            "cooldown": 10
+          }
+        }
+      },
+
+      "Passive": {
+        "effects": {
+          "1": {
+          "name": "Enhanced Kicks (Heavy)",
+          "description": "Instead of a normal heavy punch like other abilities have, Strong Kick.. kicks(you never would've guessed it), creating an explosion (no aoe) on impact deals extra damage.",
+          "effects": ["Increased-Damage"]
+          }
+        }
+      }
+    },
+
+    "Stone-Skin": {
+      "assets": {
+        "icon": "/abilities-assets/mid-tier/StoneSkin/icon/stone-skin.png",
+        "passive": ["/abilities-assets/mid-tier/StoneSkin/passive/Stone-Skin.gif"]
+      },
+      "_meta": {
+        "faq": "Stone-Skin is obtainable from 2.0-3.4 in the shop and is rollable in the ability reroller",
+        "tags": ["Tank", "Stat-Based"],
+        "state": ["Copyable", "Obtainable"],
+        "target-rating": {
+          "score": 4,
+          "explanation": "A stone-skin user can be quite difficult to take down due to their high defence, allowing them to withstand a lot of damage. However, they lack offensive capabilities and recovery capabilities, so if you can outlast their defence, you can eventually wear them down.",
+          "Weaknesses": ["High Burst Damage", "Crowd-Control", "Ranged Attacks", "Stunning Effects"]
+        }
+      },
+      
+      "levels": {
+        "2.0": {"Pow": 1.7,"Spd": 1.7,"Trick": 1.0,"Recv": 1.0,"Def": 2.1},
+        "2.1": {"Pow": 1.8,"Spd": 1.8,"Trick": 1.0,"Recv": 1.0,"Def": 2.3},
+        "2.2": {"Pow": 1.9,"Spd": 1.9,"Trick": 1.0,"Recv": 1.0,"Def": 2.4},
+        "2.3": {"Pow": 2.0,"Spd": 2.0,"Trick": 1.0,"Recv": 1.0,"Def": 2.6},
+        "2.4": {"Pow": 2.1,"Spd": 2.1,"Trick": 1.0,"Recv": 1.0,"Def": 2.7},
+        "2.5": {"Pow": 2.3,"Spd": 2.3,"Trick": 1.0,"Recv": 1.0,"Def": 2.9},
+        "2.6": {"Pow": 2.4,"Spd": 2.4,"Trick": 1.0,"Recv": 1.0,"Def": 3.0},
+        "2.7": {"Pow": 2.5,"Spd": 2.5,"Trick": 1.0,"Recv": 1.0,"Def": 3.2},
+        "2.8": {"Pow": 2.6,"Spd": 2.6,"Trick": 1.0,"Recv": 1.0,"Def": 3.4},
+        "2.9": {"Pow": 2.7,"Spd": 2.7,"Trick": 1.0,"Recv": 1.0,"Def": 3.6},
+        "3.0": {"Pow": 2.8,"Spd": 2.8,"Trick": 1.0,"Recv": 1.0,"Def": 3.7},
+        "3.1": {"Pow": 2.9,"Spd": 2.9,"Trick": 1.0,"Recv": 1.0,"Def": 3.9},
+        "3.2": {"Pow": 3.1,"Spd": 3.1,"Trick": 1.0,"Recv": 1.0,"Def": 4.1},
+        "3.3": {"Pow": 3.2,"Spd": 3.2,"Trick": 1.0,"Recv": 1.0,"Def": 4.3},
+        "3.4": {"Pow": 3.3,"Spd": 3.3,"Trick": 1.0,"Recv": 1.0,"Def": 4.5},
+        "3.5": {"Pow": 3.4,"Spd": 3.4,"Trick": 1.0,"Recv": 1.0,"Def": 4.6},
+        "3.6": {"Pow": 3.6,"Spd": 3.6,"Trick": 1.0,"Recv": 1.0,"Def": 4.8},
+        "3.7": {"Pow": 3.7,"Spd": 3.7,"Trick": 1.0,"Recv": 1.0,"Def": 5.0},
+        "3.8": {"Pow": 3.8,"Spd": 3.8,"Trick": 1.0,"Recv": 1.0,"Def": 5.2},
+        "3.9": {"Pow": 3.9,"Spd": 3.9,"Trick": 1.0,"Recv": 1.0,"Def": 5.4},
+        "4.0": {"Pow": 4.1,"Spd": 4.1,"Trick": 1.0,"Recv": 1.0,"Def": 5.6},
+        "4.1": {"Pow": 4.2,"Spd": 4.2,"Trick": 1.0,"Recv": 1.0,"Def": 5.8},
+        "4.2": {"Pow": 4.4,"Spd": 4.4,"Trick": 1.0,"Recv": 1.0,"Def": 6.0},
+        "4.3": {"Pow": 4.5,"Spd": 4.5,"Trick": 1.0,"Recv": 1.0,"Def": 6.2},
+        "4.4": {"Pow": 4.6,"Spd": 4.6,"Trick": 1.0,"Recv": 1.0,"Def": 6.4},
+        "4.5": {"Pow": 4.8,"Spd": 4.8,"Trick": 1.0,"Recv": 1.0,"Def": 6.6},
+        "4.6": {"Pow": 4.9,"Spd": 4.9,"Trick": 1.0,"Recv": 1.0,"Def": 6.9},
+        "4.7": {"Pow": 5.0,"Spd": 5.0,"Trick": 1.0,"Recv": 1.0,"Def": 7.1},
+        "4.8": {"Pow": 5.2,"Spd": 5.2,"Trick": 1.0,"Recv": 1.0,"Def": 7.3},
+        "4.9": {"Pow": 5.3,"Spd": 5.3,"Trick": 1.0,"Recv": 1.0,"Def": 7.5},
+        "5.0": {"Pow": 5.5,"Spd": 5.5,"Trick": 1.0,"Recv": 1.0,"Def": 7.7},
+        "5.1": {"Pow": 5.6,"Spd": 5.6,"Trick": 1.0,"Recv": 1.0,"Def": 7.9},
+        "5.2": {"Pow": 5.8,"Spd": 5.8,"Trick": 1.0,"Recv": 1.0,"Def": 8.2},
+        "5.3": {"Pow": 5.9,"Spd": 5.9,"Trick": 1.0,"Recv": 1.0,"Def": 8.4},
+        "5.4": {"Pow": 6.1,"Spd": 6.1,"Trick": 1.0,"Recv": 1.0,"Def": 8.6},
+        "5.5": {"Pow": 6.2,"Spd": 6.2,"Trick": 1.0,"Recv": 1.0,"Def": 8.8},
+        "5.6": {"Pow": 6.4,"Spd": 6.4,"Trick": 1.0,"Recv": 1.0,"Def": 9.1},
+        "5.7": {"Pow": 6.5,"Spd": 6.5,"Trick": 1.0,"Recv": 1.0,"Def": 9.3},
+        "5.8": {"Pow": 6.7,"Spd": 6.7,"Trick": 1.0,"Recv": 1.0,"Def": 9.5},
+        "5.9": {"Pow": 6.8,"Spd": 6.8,"Trick": 1.0,"Recv": 1.0,"Def": 9.7}
+      },
+
+      "abilities": null,
+
+      "Passive": {
+        "effects": {
+          "1": {
+            "name": "Hardened Skin",
+            "color": "stone-gray"
+          }
+        }
+      }
+    }
+  }
+  },
+
+  "Elite-Tier": {
+    "_meta": {
+      "faq": "Elite-Tiers is obtainable from 3.5-4.9 via rolling or purchasing the ability from the shop",
+      "description": "Elite-Tier is an ability tier that offers enhanced stats and unique abilities compared to lower tiers, its in par with god-tiers/high-tiers",
+      "level-range": {
+        "obtainable-from": [3.5, 4.9],
+        "upgrade-limit": 6.5
+      }
+    },
+
+    "Healing": {
+      "_assets": {
+        "icon": "/abilities-assets/elite-tier/Healing/icon/healing.png",
+        "r": ["/abiltiies-assets/elite-tier/Healing/r/Healing_-_Heal.gif"]
+      },
+      "_meta": {
+        "faq": "Healing is obtainable from 3.5-4.9 in the shop and is rollable in the ability reroller",
+        "tags": ["Support", "Passive", "Stat-Based"],
+        "state": ["Copyable", "Obtainable"],
+        "target-rating": {
+          "score": [-2, 5],
+          "explanation": "Its been given a target range between (-2) attack them then you will get targetted, and 5, attacking a healer who is biased and heal one-sidedly in which the target range would go exponentionally up.A healing user can be quite difficult to take down due to their healing abilities, allowing them to recover from damage quickly. They excel in long fights and team battles. However, they lack offensive capabilities, so if you can outlast their healing, you can eventually wear them down.",
+          "Weaknesses": ["High Burst Damage", "Stunning Effects", "Teaming", "AOE", "Crowd-Control"]
+        }
+      },
+
+      "levels": {
+        "3.5": {"Pow": 1.0,"Spd": 1.0,"Trick": 1.0,"Recv": 7.4,"Def": 3.1},
+        "3.6": {"Pow": 1.0,"Spd": 1.0,"Trick": 1.0,"Recv": 7.7,"Def": 3.2},
+        "3.7": {"Pow": 1.0,"Spd": 1.0,"Trick": 1.0,"Recv": 8.1,"Def": 3.4},
+        "3.8": {"Pow": 1.0,"Spd": 1.0,"Trick": 1.0,"Recv": 8.4,"Def": 3.5},
+        "3.9": {"Pow": 1.0,"Spd": 1.0,"Trick": 1.0,"Recv": 8.7,"Def": 3.6},
+        "4.0": {"Pow": 1.0,"Spd": 1.0,"Trick": 1.0,"Recv": 9.1,"Def": 3.7},
+        "4.1": {"Pow": 1.0,"Spd": 1.0,"Trick": 1.0,"Recv": 9.4,"Def": 3.8},
+        "4.2": {"Pow": 1.0,"Spd": 1.0,"Trick": 1.0,"Recv": 9.8,"Def": 3.9},
+        "4.3": {"Pow": 1.0,"Spd": 1.0,"Trick": 1.0,"Recv": 10.0,"Def": 4.2},
+        "4.4": {"Pow": 1.0,"Spd": 1.0,"Trick": 1.0,"Recv": 10.0,"Def": 4.7},
+        "4.5": {"Pow": 1.0,"Spd": 1.0,"Trick": 1.0,"Recv": 10.0,"Def": 5.2},
+        "4.6": {"Pow": 1.0,"Spd": 1.0,"Trick": 1.0,"Recv": 10.0,"Def": 5.7},
+        "4.7": {"Pow": 1.0,"Spd": 1.0,"Trick": 1.0,"Recv": 10.0,"Def": 6.2},
+        "4.8": {"Pow": 1.0,"Spd": 1.0,"Trick": 1.0,"Recv": 10.0,"Def": 6.7},
+        "4.9": {"Pow": 1.0,"Spd": 1.0,"Trick": 1.0,"Recv": 10.0,"Def": 7.2},
+        "5.0": {"Pow": 1.0,"Spd": 1.0,"Trick": 1.0,"Recv": 10.0,"Def": 7.7},
+        "5.1": {"Pow": 1.0,"Spd": 1.0,"Trick": 1.0,"Recv": 10.0,"Def": 8.2},
+        "5.2": {"Pow": 1.0,"Spd": 1.0,"Trick": 1.0,"Recv": 10.0,"Def": 8.7},
+        "5.3": {"Pow": 1.0,"Spd": 1.0,"Trick": 1.0,"Recv": 10.0,"Def": 9.2},
+        "5.4": {"Pow": 1.0,"Spd": 1.0,"Trick": 1.0,"Recv": 10.0,"Def": 9.7},
+        "5.5": {"Pow": 1.1,"Spd": 1.1,"Trick": 1.1,"Recv": 10.0,"Def": 10.0},
+        "5.6": {"Pow": 1.3,"Spd": 1.3,"Trick": 1.3,"Recv": 10.0,"Def": 10.0},
+        "5.7": {"Pow": 1.4,"Spd": 1.4,"Trick": 1.4,"Recv": 10.0,"Def": 10.0},
+        "5.8": {"Pow": 1.6,"Spd": 1.6,"Trick": 1.6,"Recv": 10.0,"Def": 10.0},
+        "5.9": {"Pow": 1.8,"Spd": 1.8,"Trick": 1.8,"Recv": 10.0,"Def": 10.0},
+        "6.0": {"Pow": 2.0,"Spd": 2.0,"Trick": 2.0,"Recv": 10.0,"Def": 10.0},
+        "6.1": {"Pow": 2.2,"Spd": 2.2,"Trick": 2.2,"Recv": 10.0,"Def": 10.0},
+        "6.2": {"Pow": 2.4,"Spd": 2.4,"Trick": 2.4,"Recv": 10.0,"Def": 10.0},
+        "6.3": {"Pow": 2.5,"Spd": 2.5,"Trick": 2.5,"Recv": 10.0,"Def": 10.0},
+        "6.4": {"Pow": 2.7,"Spd": 2.7,"Trick": 2.7,"Recv": 10.0,"Def": 10.0},
+        "6.5": {"Pow": 2.9,"Spd": 2.9,"Trick": 2.9,"Recv": 10.0,"Def": 10.0},
+        "6.6": {"Pow": 3.1,"Spd": 3.1,"Trick": 3.1,"Recv": 10.0,"Def": 10.0},
+        "6.7": {"Pow": 3.3,"Spd": 3.3,"Trick": 3.3,"Recv": 10.0,"Def": 10.0},
+        "6.8": {"Pow": 3.5,"Spd": 3.5,"Trick": 3.5,"Recv": 10.0,"Def": 10.0},
+        "6.9": {"Pow": 3.7,"Spd": 3.7,"Trick": 3.7,"Recv": 10.0,"Def": 10.0}
+      },
+
+      "abilities": {
+        "R": {
+          "name": "Heal",
+          "state": ["target-single", "holdable", "cancellable", "support", "Aimable"],
+          "effects": ["Heal"],
+          "description": "The user extends one arm and heals the player closest to their cursor, within a small range per tick max is 2.5hp per tick gives 100xp per tick and can be inf held.",
+          "cooldown": 2
+        }
+      }
+    },
+
+    "Teleportation": {
+      "assets": {
+        "icon":  "/abilities-assets/elite-tier/Teleportation/icon/teleportation.png",
+        "r": ["/abilities-assets/elite-tier/Teleportation/r/Teleportation_Warp.gif"],
+        "f": ["/abilities-assets/elite-tier/Teleportation/f/Teleportation_Teleport.gif"]
+      },
+      "_meta": {
+        "faq": "Teleportation is obtainable from 3.5-4.9 in the shop and is rollable in the ability reroller",
+        "tags": ["Mobility", "Stat-Based", "High-Skill", "Feeble", "Evasive", "Short-Range"],
+        "state": ["Copyable", "Obtainable"],
+        "target-rating": {
+          "score": 4,
+          "explanation": "A teleportation user can be a significant threat due to their high mobility (but still has 1 speed) and moderate damage output, they have no offensive skills so they rely on timings to calculate precision of teleportation and its frame, allowing them to quickly close by teleporting or escape danger. They can surprise opponents with sudden attacks, making them unpredictable, skilled teleportation utilises the ~0.3 second of using r skill effectively (they has around ~2.5 seconds of cooldown) to make up for example they are a great counter to minefield which relies on explosions every 3 seconds, they can teleport and take no damage.However, they lack recovery and defensive capabilities. ",
+          "Weaknesses": ["Crowd-Control", "Stunning Effects"]
+        }
+      },
+      "levels": {
+        "3.5": {"Pow": 2.5,"Spd": 5.6,"Trick": 3.3,"Recv": 1.0,"Def": 1.0},
+        "3.6": {"Pow": 2.6,"Spd": 5.9,"Trick": 3.4,"Recv": 1.0,"Def": 1.0},
+        "3.7": {"Pow": 2.7,"Spd": 6.1,"Trick": 3.6,"Recv": 1.0,"Def": 1.0},
+        "3.8": {"Pow": 2.8,"Spd": 6.4,"Trick": 3.7,"Recv": 1.0,"Def": 1.0},
+        "3.9": {"Pow": 2.9,"Spd": 6.6,"Trick": 3.8,"Recv": 1.0,"Def": 1.0},
+        "4.0": {"Pow": 3.0,"Spd": 6.9,"Trick": 4.9,"Recv": 1.0,"Def": 1.0},
+        "4.1": {"Pow": 3.0,"Spd": 7.1,"Trick": 4.1,"Recv": 1.0,"Def": 1.0},
+        "4.2": {"Pow": 3.1,"Spd": 7.4,"Trick": 4.2,"Recv": 1.0,"Def": 1.0},
+        "4.3": {"Pow": 3.2,"Spd": 7.7,"Trick": 4.3,"Recv": 1.0,"Def": 1.0},
+        "4.4": {"Pow": 3.3,"Spd": 7.9,"Trick": 4.5,"Recv": 1.0,"Def": 1.0},
+        "4.5": {"Pow": 3.4,"Spd": 8.2,"Trick": 4.6,"Recv": 1.0,"Def": 1.0},
+        "4.6": {"Pow": 3.5,"Spd": 8.5,"Trick": 4.7,"Recv": 1.0,"Def": 1.0},
+        "4.7": {"Pow": 3.6,"Spd": 8.7,"Trick": 4.9,"Recv": 1.0,"Def": 1.0},
+        "4.8": {"Pow": 3.7,"Spd": 9.0,"Trick": 5.0,"Recv": 1.0,"Def": 1.0},
+        "4.9": {"Pow": 3.8,"Spd": 9.3,"Trick": 5.1,"Recv": 1.0,"Def": 1.0},
+        "5.0": {"Pow": 3.9,"Spd": 9.6,"Trick": 5.3,"Recv": 1.0,"Def": 1.0},
+        "5.1": {"Pow": 3.9,"Spd": 9.8,"Trick": 5.4,"Recv": 1.0,"Def": 1.0},
+        "5.2": {"Pow": 4.1,"Spd": 10.0,"Trick": 5.6,"Recv": 1.0,"Def": 1.0},
+        "5.3": {"Pow": 4.3,"Spd": 10.0,"Trick": 5.9,"Recv": 1.0,"Def": 1.0},
+        "5.4": {"Pow": 4.5,"Spd": 10.0,"Trick": 6.2,"Recv": 1.0,"Def": 1.0},
+        "5.5": {"Pow": 4.7,"Spd": 10.0,"Trick": 6.6,"Recv": 1.0,"Def": 1.0},
+        "5.6": {"Pow": 4.9,"Spd": 10.0,"Trick": 6.9,"Recv": 1.0,"Def": 1.0},
+        "5.7": {"Pow": 5.1,"Spd": 10.0,"Trick": 7.2,"Recv": 1.0,"Def": 1.0},
+        "5.8": {"Pow": 5.4,"Spd": 10.0,"Trick": 7.5,"Recv": 1.0,"Def": 1.0},
+        "5.9": {"Pow": 5.6,"Spd": 10.0,"Trick": 7.8,"Recv": 1.0,"Def": 1.0},
+        "6.0": {"Pow": 5.8,"Spd": 10.0,"Trick": 8.2,"Recv": 1.0,"Def": 1.0},
+        "6.1": {"Pow": 6.0,"Spd": 10.0,"Trick": 8.5,"Recv": 1.0,"Def": 1.0},
+        "6.2": {"Pow": 6.2,"Spd": 10.0,"Trick": 8.9,"Recv": 1.0,"Def": 1.0},
+        "6.3": {"Pow": 6.4,"Spd": 10.0,"Trick": 9.2,"Recv": 1.0,"Def": 1.0},
+        "6.4": {"Pow": 6.7,"Spd": 10.0,"Trick": 9.5,"Recv": 1.0,"Def": 1.0},
+        "6.5": {"Pow": 6.9,"Spd": 10.0,"Trick": 9.8,"Recv": 1.0,"Def": 1.0},
+        "6.6": {"Pow": 7.3,"Spd": 10.0,"Trick": 10.0,"Recv": 1.0,"Def": 1.0},
+        "6.7": {"Pow": 7.9,"Spd": 10.0,"Trick": 10.0,"Recv": 1.0,"Def": 1.0},
+        "6.8": {"Pow": 8.4,"Spd": 10.0,"Trick": 10.0,"Recv": 1.0,"Def": 1.0},
+        "6.9": {"Pow": 9.0,"Spd": 10.0,"Trick": 10.0,"Recv": 1.0,"Def": 1.0},
+        "7.0": {"Pow": 9.6,"Spd": 10.0,"Trick": 10.0,"Recv": 1.0,"Def": 1.0},
+        "7.1": {"Pow": 10.0,"Spd": 10.0,"Trick": 10.0,"Recv": 1.1,"Def": 1.1},
+        "7.2": {"Pow": 10.0,"Spd": 10.0,"Trick": 10.0,"Recv": 1.4,"Def": 1.4}
+      },
+
+      "abilities": {
+        "R": {
+          "name": "Warp",
+          "state": ["Instant", "Short-Range", "evasive", "Aimable"],
+          "description": "The user warps a short distance towards their cursor. During this time the user gets tiny amount of incincibility frame ~0.3-4. Which could be used to evade attacks.",
+          "self-effects": ["iframes"],
+          "cooldown": "(Base ~5 Second Cooldown, every .1 level reduces cooldown by 0.05 seconds)"
+        },
+
+       "F": {
+          "name": "Teleport",
+          "state": ["Holdable", "cancellable", "evasive", "Long-Range", "target-multi", "AOE"],
+          "effects": ["support"],
+          "description": "The user enters a free-cam like state, and can freely move around with a small glowing effect that indicates their position. Once the F key is released, the user and any players that were in close proximity to the user when the move was originally used will be teleported to that location. If a player leaves the proximity of the user before the move goes off, then they will not be teleported",
+          "cooldown": "Based on distance travelled"
+        }
+      }
+    },
+    
+    "Energy Discharge": {
+      "assets": {
+        "icon": "/abilities-assets/elite-tier/Energy_Discharge/icon/energy-discharge.png",
+        "r": ["/abilities-assets/elite-tier/Energy_Discharge/r/Energy_Discharge_-_Energy_Beam_Blocked.gif",
+        "/abilities-assets/elite-tier/Energy_Discharge/r/Energy_Discharge_-_Energy_Beam_Headshot.gif"],
+        "f": ["/abilities-assets/elite-tier/Energy_Discharge/f/Energy_Discharge_-_Laser_Dash.gif"],
+        "t": ["/abilities-assets/elite-tier/Energy_Discharge/t/Energy_Discharge_-_Shockwave.gif"]
+      },
+      "_meta":{
+        "faq": "Energy Discharge is obtainable from 3.5-4.9 in the shop and is rollable in the ability reroller",
+        "tags": ["Balanced", "Hybrid", "Ranged", "Melee", "Bursts", "High-Skill"],
+        "state": ["Copyable", "Obtainable"],
+        "target-rating": {
+          "score": 5,
+          "explanation": "An energy discharge user has a balanced stat distribution, allowing them to adapt to various combat situations. They can deal moderate damage, evade attacks, and recover from damage reasonably well. Known as the best specialisation on all areas but lacks in excelling in any particular area, there is literally no weakness to this, not to mention there is no specific counter to this ability, making it a versatile choice for many players but you need medium-high skill to aim, time your moves, there is no specific counter to this ability, making it a versatile choice for many players.",
+          "Weaknesses": ["AOE", "Crowd-Control"]
+        }
+      },
+
+      "levels": {
+        "3.5": {"Pow": 4.2,"Spd": 2.6,"Trick": 2.6,"Recv": 2.1,"Def": 2.1},
+        "3.6": {"Pow": 4.4,"Spd": 2.6,"Trick": 2.7,"Recv": 2.1,"Def": 2.1},
+        "3.7": {"Pow": 4.5,"Spd": 2.8,"Trick": 2.8,"Recv": 2.2,"Def": 2.2},
+        "3.8": {"Pow": 4.7,"Spd": 2.8,"Trick": 2.8,"Recv": 2.2,"Def": 2.2},
+        "3.9": {"Pow": 4.9,"Spd": 2.9,"Trick": 2.9,"Recv": 2.3,"Def": 2.3},
+        "4.0": {"Pow": 5.0,"Spd": 3.0,"Trick": 3.0,"Recv": 2.3,"Def": 2.3},
+        "4.1": {"Pow": 5.2,"Spd": 3.1,"Trick": 3.1,"Recv": 2.4,"Def": 2.4},
+        "4.2": {"Pow": 5.4,"Spd": 3.2,"Trick": 3.2,"Recv": 2.5,"Def": 2.5},
+        "4.3": {"Pow": 5.6,"Spd": 3.3,"Trick": 3.3,"Recv": 2.5,"Def": 2.5},
+        "4.4": {"Pow": 5.8,"Spd": 3.4,"Trick": 3.4,"Recv": 2.6,"Def": 2.6},
+        "4.5": {"Pow": 5.9,"Spd": 3.5,"Trick": 3.5,"Recv": 2.6,"Def": 2.6},
+        "4.6": {"Pow": 6.1,"Spd": 3.6,"Trick": 3.6,"Recv": 2.7,"Def": 2.7},
+        "4.7": {"Pow": 6.3,"Spd": 3.7,"Trick": 3.7,"Recv": 2.8,"Def": 2.8},
+        "4.8": {"Pow": 6.5,"Spd": 3.8,"Trick": 3.8,"Recv": 2.8,"Def": 2.8},
+        "4.9": {"Pow": 6.7,"Spd": 3.8,"Trick": 3.8,"Recv": 2.9,"Def": 2.9},
+        "5.0": {"Pow": 6.9,"Spd": 3.9,"Trick": 3.9,"Recv": 3.0,"Def": 3.0},
+        "5.1": {"Pow": 7.1,"Spd": 4.0,"Trick": 4.0,"Recv": 3.0,"Def": 3.0},
+        "5.2": {"Pow": 7.3,"Spd": 4.1,"Trick": 4.1,"Recv": 3.1,"Def": 3.1},
+        "5.3": {"Pow": 7.5,"Spd": 4.2,"Trick": 4.2,"Recv": 3.2,"Def": 3.2},
+        "5.4": {"Pow": 7.7,"Spd": 4.3,"Trick": 4.3,"Recv": 3.2,"Def": 3.2},
+        "5.5": {"Pow": 7.9,"Spd": 4.4,"Trick": 4.4,"Recv": 3.3,"Def": 3.3},
+        "5.6": {"Pow": 8.1,"Spd": 4.5,"Trick": 4.5,"Recv": 3.4,"Def": 3.4},
+        "5.7": {"Pow": 8.3,"Spd": 4.6,"Trick": 4.6,"Recv": 3.4,"Def": 3.4},
+        "5.8": {"Pow": 8.5,"Spd": 4.7,"Trick": 4.7,"Recv": 3.5,"Def": 3.5},
+        "5.9": {"Pow": 8.7,"Spd": 4.8,"Trick": 4.8,"Recv": 3.6,"Def": 3.6},
+        "6.0": {"Pow": 8.9,"Spd": 4.9,"Trick": 4.9,"Recv": 3.6,"Def": 3.6},
+        "6.1": {"Pow": 9.1,"Spd": 5.0,"Trick": 5.0,"Recv": 3.7,"Def": 3.7},
+        "6.2": {"Pow": 9.3,"Spd": 5.1,"Trick": 5.1,"Recv": 3.8,"Def": 3.8},
+        "6.3": {"Pow": 9.5,"Spd": 5.2,"Trick": 5.2,"Recv": 3.8,"Def": 3.8},
+        "6.4": {"Pow": 9.7,"Spd": 5.3,"Trick": 5.3,"Recv": 3.9,"Def": 3.9},
+        "6.5": {"Pow": 9.9,"Spd": 5.4,"Trick": 5.4,"Recv": 4.0,"Def": 4.0},
+        "6.6": {"Pow": 10.0,"Spd": 5.6,"Trick": 5.6,"Recv": 4.1,"Def": 4.1},
+        "6.7": {"Pow": 10.0,"Spd": 5.8,"Trick": 5.8,"Recv": 4.2,"Def": 4.2},
+        "6.8": {"Pow": 10.0,"Spd": 5.9,"Trick": 5.9,"Recv": 4.3,"Def": 4.3},
+        "6.9": {"Pow": 10.0,"Spd": 6.1,"Trick": 6.1,"Recv": 4.4,"Def": 4.4}
+      },
+
+      "abilities": {
+        "R": {
+          "name": "Energy Beam",
+          "state": ["Holdable", "cancellable", "Long-Range", "semi-blockable", "Instant", "projectile", "Headshot", "Aimable", "damage-dealing"],
+          "effects": [],
+          "description": "The user releases a concentrated beam (charges for 4 seconds (optional)) of energy towards their cursor, dealing damage to the first player hit.",
+          "cooldown": 5.5
+        },
+
+        "F": {
+          "name": "Laser Dash",
+          "state": ["Instant", "evasive", "Short-Range"],
+          "effects": [],
+          "description": "The user performs 2 energy beams from their hands, and uses them to propel themselves forward in the direction they are moving",
+          "cooldown": 4.5
+        },
+        
+        "T": {
+          "name": "Shockwave",
+          "state": ["Instant", "AOE", "damage-dealing", "holdable", "cancellable"],
+          "effects": ["knockback", "interrupt-enemies-attack"],
+          "description": "The user releases a burst of energy around them, dealing damage to all players within a small radius.",
+          "cooldown": 13
+        }
+      }
+    },
+
+    "Hunter": {
+      "assets": {
+        "icon": "/abilities-assets/elite-tier/Hunter/icon/hunter.png",
+        "r": ["/abilities-assets/elite-tier/Hunter/r/Hunter_-_Precision_Strike.gif"],
+        "f": ["/abilities-assets/elite-tier/Hunter/f/Hunter_-_Pinpoint.gif"],
+        "t": ["/abilities-assets/elite-tier/Hunter/t/Hunter_-_Solarplexus_Strike.gif"],
+        "passive": ["/abilities-assets/elite-tier/Hunter/passive/Hunter_-_Passive_using.gif"]
+      },
+      "_meta":{
+        "faq": "Hunter is obtainable from 3.5-4.9 in the shop and is rollable in the ability reroller",
+        "tags": ["Melee", "Passive", "Hybrid"],
+        "state": ["Copyable", "Obtainable"],
+        "target-rating": {
+          "score": 3,
+          "explanation": "A hunter user is a formidable opponent due to their mid offensive capabilities and decent speed. They excel in close combat, allowing them to quickly close the gap between themselves and their targets. Their medium damage output enables them to deal significant damage, making them a threat to most players. However, they lack recovery and defensive capabilities, so if you can keep your distance and avoid close combat, you can outlast them.",
+          "Weaknesses": ["Ranged Attacks", "High Burst Damage", "AOE" ,"Crowd-Control", "Teaming", "Stunning Effects"]
+        }
+      },
+
+      "levels": {
+        "3.5": {"Pow": 3.3,"Spd": 2.2,"Trick": 2.5,"Recv": 1.8,"Def": 3.7},
+        "3.6": {"Pow": 3.4,"Spd": 2.2,"Trick": 2.6,"Recv": 1.8,"Def": 3.8},
+        "3.7": {"Pow": 3.6,"Spd": 2.3,"Trick": 2.7,"Recv": 1.9,"Def": 4.0},
+        "3.8": {"Pow": 3.7,"Spd": 2.3,"Trick": 2.8,"Recv": 1.9,"Def": 4.1},
+        "3.9": {"Pow": 3.8,"Spd": 2.4,"Trick": 2.9,"Recv": 1.9,"Def": 4.3},
+        "4.0": {"Pow": 3.9,"Spd": 2.5,"Trick": 3.0,"Recv": 2.0,"Def": 4.4},
+        "4.1": {"Pow": 4.1,"Spd": 2.5,"Trick": 3.0,"Recv": 2.0,"Def": 4.6},
+        "4.2": {"Pow": 4.2,"Spd": 2.6,"Trick": 3.1,"Recv": 2.1,"Def": 4.7},
+        "4.3": {"Pow": 4.3,"Spd": 2.7,"Trick": 3.2,"Recv": 2.1,"Def": 4.9},
+        "4.4": {"Pow": 4.5,"Spd": 2.7,"Trick": 3.3,"Recv": 2.2,"Def": 5.0},
+        "4.5": {"Pow": 4.6,"Spd": 2.8,"Trick": 3.4,"Recv": 2.2,"Def": 5.2},
+        "4.6": {"Pow": 4.7,"Spd": 2.9,"Trick": 3.5,"Recv": 2.2,"Def": 5.4},
+        "4.7": {"Pow": 4.9,"Spd": 2.9,"Trick": 3.6,"Recv": 2.3,"Def": 5.5},
+        "4.8": {"Pow": 5.0,"Spd": 3.0,"Trick": 3.7,"Recv": 2.3,"Def": 5.7},
+        "4.9": {"Pow": 5.1,"Spd": 3.1,"Trick": 3.8,"Recv": 2.4,"Def": 5.8},
+        "5.0": {"Pow": 5.3,"Spd": 3.1,"Trick": 3.9,"Recv": 2.4,"Def": 6.0},
+        "5.1": {"Pow": 5.4,"Spd": 3.2,"Trick": 3.9,"Recv": 2.5,"Def": 6.2},
+        "5.2": {"Pow": 5.6,"Spd": 3.3,"Trick": 4.0,"Recv": 2.5,"Def": 6.3},
+        "5.3": {"Pow": 5.7,"Spd": 3.3,"Trick": 4.1,"Recv": 2.6,"Def": 6.5},
+        "5.4": {"Pow": 5.8,"Spd": 3.4,"Trick": 4.2,"Recv": 2.6,"Def": 6.6},
+        "5.5": {"Pow": 6.0,"Spd": 3.5,"Trick": 4.3,"Recv": 2.7,"Def": 6.8},
+        "5.6": {"Pow": 6.1,"Spd": 3.6,"Trick": 4.4,"Recv": 2.7,"Def": 7.0},
+        "5.7": {"Pow": 6.3,"Spd": 3.6,"Trick": 4.5,"Recv": 2.8,"Def": 7.2},
+        "5.8": {"Pow": 6.4,"Spd": 3.7,"Trick": 4.6,"Recv": 2.8,"Def": 7.3},
+        "5.9": {"Pow": 6.6,"Spd": 3.8,"Trick": 4.7,"Recv": 2.9,"Def": 7.5},
+        "6.0": {"Pow": 6.7,"Spd": 3.9,"Trick": 4.8,"Recv": 2.9,"Def": 7.7},
+        "6.1": {"Pow": 6.9,"Spd": 3.9,"Trick": 4.9,"Recv": 3.0,"Def": 7.8},
+        "6.2": {"Pow": 7.0,"Spd": 4.0,"Trick": 5.0,"Recv": 3.0,"Def": 8.0},
+        "6.3": {"Pow": 7.2,"Spd": 4.1,"Trick": 5.1,"Recv": 3.1,"Def": 8.2},
+        "6.4": {"Pow": 7.3,"Spd": 4.2,"Trick": 5.2,"Recv": 3.1,"Def": 8.4},
+        "6.5": {"Pow": 7.5,"Spd": 4.2,"Trick": 5.3,"Recv": 3.2,"Def": 8.5},
+        "6.6": {"Pow": 7.6,"Spd": 4.3,"Trick": 5.4,"Recv": 3.2,"Def": 8.7},
+        "6.7": {"Pow": 7.8,"Spd": 4.4,"Trick": 5.5,"Recv": 3.3,"Def": 8.9},
+        "6.8": {"Pow": 7.9,"Spd": 4.5,"Trick": 5.6,"Recv": 3.3,"Def": 9.1},
+        "6.9": {"Pow": 8.1,"Spd": 4.5,"Trick": 5.7,"Recv": 3.4,"Def": 9.3}
+      },
+
+      "abilities": {
+        "R": {
+          "name": "Precision Blow",
+          "state": ["Melee", "damage-dealing", "cancellable", "Short-Range"],
+          "effects": ["damage-dealing", "Stun", "interrupt-enemies-attack"],
+          "description": "The user delivers a powerful blow to their target, dealing significant damage and stunning them for 1 second. This move is not blockeable and can interrupt enemy attacks, which would then lead to a m1 combo opportunity.",
+          "cooldown": 9
+        },
+        "F": {
+          "name": "Pinpoint",
+          "state": ["Instant", "support","self-buff"],
+          "self-effects": ["damage-boost"],
+          "description": "Increases the damage of the user's attacks, as well as making their attacks ignore blocks for 10 seconds",
+          "cooldown": 20
+        },
+
+        "T": {
+          "name": "Solarplexus Strike",
+          "state": ["Melee", "defensive", "counterattack", "Short-Range"],
+          "effects": ["counterattack", "bleed", "knockback"],
+          "self-effects": ["damage-negation"],
+          "unlockable-at-level": 5.0,
+          "description": "The user enters a defensive stance. During this time, if hit by an m1 (normal punch) or E (heavy) attack, the user will counterattack and negate all damage with a powerful strike that deals moderate damage and knocks back the attacker, applying 1 stack of bleed. Weekness if no one hit then the user is practically stunned and open to attacks.",
+          "cooldown": 15
+        }
+      },
+
+      "Passive": {
+        "effects": {
+          "Tracking": {
+            "description": "The user has a marker on every person in the game, allowing user to track their locations through walls and terrain."
+          }
+        }
+      }
+    },
+
+    "Phase Shift": {
+      "assets": {
+        "icon": "/abilities-assets/elite-tier/Phase-Shift/icon/phase-shift.png",
+        "r": ["Phase_Shift_-_Shift_Phase.gif"]
+      },
+      "_meta":{
+        "faq": "Phase Shift is obtainable from 3.5-4.9 in the shop and is rollable in the ability reroller",
+        "tags": ["High Damage", "Melee", "Stat-Based", "Evasive", "Short-Range", "Tank", "Feeble", "Light", "Speedster", "High-Skill"],
+        "state": ["Copyable", "Obtainable"],
+        "target-rating": {
+          "score": 4,
+          "explanation": "A phase shift user can phase between 2 modes - offensive and defensive. In offensive mode, they have high power and trick stats, allowing them to deal significant damage and evade attacks effectively. In defensive mode, they have increased speed and recovery, making them more resilient in combat. This versatility allows them to adapt to various situations, but they lack consistent damage output and may struggle against opponents who can exploit their mode-switching. Skilled players can leverage the phase shift ability to outmaneuver and outlast their opponents, but it requires good timing and awareness to maximize its potential. Noobs often struggle to use this ability effectively due to its complexity. Bleeding effects is there counter.",
+          "Weaknesses": ["Ranged Attacks", "High Burst Damage", "AOE" ,"Crowd-Control", "Teaming", "Stunning Effects", "Damage Over Time", "Bleeding Effects", "Wide-Ranged Debuffs"]
+        }
+      },
+
+      "levels": {
+        "ATK": {
+          "3.5": {"Pow": 3.3,"Spd": 3.3,"Trick": 4.9,"Recv": 1.0,"Def": 1.0},
+          "3.6": {"Pow": 3.4,"Spd": 3.4,"Trick": 5.1,"Recv": 1.0,"Def": 1.0},
+          "3.8": {"Pow": 3.7,"Spd": 3.7,"Trick": 5.5,"Recv": 1.0,"Def": 1.0},
+          "3.9": {"Pow": 3.8,"Spd": 3.8,"Trick": 5.7,"Recv": 1.0,"Def": 1.0},
+          "4.0": {"Pow": 3.9,"Spd": 3.9,"Trick": 5.9,"Recv": 1.0,"Def": 1.0},
+          "4.1": {"Pow": 4.1,"Spd": 4.1,"Trick": 6.1,"Recv": 1.0,"Def": 1.0},
+          "4.2": {"Pow": 4.2,"Spd": 4.2,"Trick": 6.3,"Recv": 1.0,"Def": 1.0},
+          "4.3": {"Pow": 4.3,"Spd": 4.3,"Trick": 6.6,"Recv": 1.0,"Def": 1.0},
+          "4.4": {"Pow": 4.5,"Spd": 4.5,"Trick": 6.8,"Recv": 1.0,"Def": 1.0},
+          "4.5": {"Pow": 4.6,"Spd": 4.6,"Trick": 7.0,"Recv": 1.0,"Def": 1.0},
+          "4.6": {"Pow": 4.7,"Spd": 4.7,"Trick": 7.2,"Recv": 1.0,"Def": 1.0},
+          "4.7": {"Pow": 4.9,"Spd": 4.9,"Trick": 7.4,"Recv": 1.0,"Def": 1.0},
+          "4.8": {"Pow": 5.0,"Spd": 5.0,"Trick": 7.7,"Recv": 1.0,"Def": 1.0},
+          "4.9": {"Pow": 5.1,"Spd": 5.1,"Trick": 7.9,"Recv": 1.0,"Def": 1.0},
+          "5.0": {"Pow": 5.3,"Spd": 5.3,"Trick": 8.1,"Recv": 1.0,"Def": 1.0},
+          "5.1": {"Pow": 5.4,"Spd": 5.4,"Trick": 8.4,"Recv": 1.0,"Def": 1.0},
+          "5.2": {"Pow": 5.6,"Spd": 5.6,"Trick": 8.6,"Recv": 1.0,"Def": 1.0},
+          "5.3": {"Pow": 5.7,"Spd": 5.7,"Trick": 8.8,"Recv": 1.0,"Def": 1.0},
+          "5.4": {"Pow": 5.8,"Spd": 5.8,"Trick": 9.1,"Recv": 1.0,"Def": 1.0},
+          "5.5": {"Pow": 6.0,"Spd": 6.0,"Trick": 9.3,"Recv": 1.0,"Def": 1.0},
+          "5.6": {"Pow": 6.1,"Spd": 6.1,"Trick": 9.5,"Recv": 1.0,"Def": 1.0},
+          "5.7": {"Pow": 6.3,"Spd": 6.3,"Trick": 9.8,"Recv": 1.0,"Def": 1.0},
+          "5.8": {"Pow": 6.4,"Spd": 6.4,"Trick": 10.0,"Recv": 1.0,"Def": 1.0},
+          "5.9": {"Pow": 6.7,"Spd": 6.7,"Trick": 10.0,"Recv": 1.0,"Def": 1.0},
+          "6.0": {"Pow": 7.0,"Spd": 7.0,"Trick": 10.0,"Recv": 1.0,"Def": 1.0},
+          "6.1": {"Pow": 7.3,"Spd": 7.3,"Trick": 10.0,"Recv": 1.0,"Def": 1.0},
+          "6.2": {"Pow": 7.5,"Spd": 7.5,"Trick": 10.0,"Recv": 1.0,"Def": 1.0},
+          "6.3": {"Pow": 7.8,"Spd": 7.8,"Trick": 10.0,"Recv": 1.0,"Def": 1.0},
+          "6.4": {"Pow": 8.1,"Spd": 8.1,"Trick": 10.0,"Recv": 1.0,"Def": 1.0},
+          "6.5": {"Pow": 8.4,"Spd": 8.4,"Trick": 10.0,"Recv": 1.0,"Def": 1.0},
+          "6.6": {"Pow": 8.6,"Spd": 8.6,"Trick": 10.0,"Recv": 1.0,"Def": 1.0},
+          "6.7": {"Pow": 8.9,"Spd": 8.9,"Trick": 10.0,"Recv": 1.0,"Def": 1.0},
+          "6.8": {"Pow": 9.2,"Spd": 9.2,"Trick": 10.0,"Recv": 1.0,"Def": 1.0},
+          "6.9": {"Pow": 9.5,"Spd": 9.5,"Trick": 10.0,"Recv": 1.0,"Def": 1.0},
+          "7.1": {"Pow": 10.0,"Spd": 10.0,"Trick": 10.0,"Recv": 1.1,"Def": 1.1},
+          "7.2": {"Pow": 10.0,"Spd": 10.0,"Trick": 10.0,"Recv": 1.4,"Def": 1.4},
+          "7.3": {"Pow": 10.0,"Spd": 10.0,"Trick": 10.0,"Recv": 1.7,"Def": 1.7},
+          "7.4": {"Pow": 10.0,"Spd": 10.0,"Trick": 10.0,"Recv": 1.9,"Def": 1.9},
+          "7.5": {"Pow": 10.0,"Spd": 10.0,"Trick": 10.0,"Recv": 2.2,"Def": 2.2}
+        },
+        "DEF": {
+          "3.5": {"Pow": 1.0,"Spd": 1.0,"Trick": 4.4,"Recv": 3.6,"Def": 3.6},
+          "3.6": {"Pow": 1.0,"Spd": 1.0,"Trick": 4.6,"Recv": 3.7,"Def": 3.7},
+          "3.7": {"Pow": 1.0,"Spd": 1.0,"Trick": 4.8,"Recv": 3.8,"Def": 3.8},
+          "3.8": {"Pow": 1.0,"Spd": 1.0,"Trick": 4.9,"Recv": 4.0,"Def": 4.0},
+          "3.9": {"Pow": 1.0,"Spd": 1.0,"Trick": 5.1,"Recv": 4.1,"Def": 4.1},
+          "4.0": {"Pow": 1.0,"Spd": 1.0,"Trick": 5.3,"Recv": 4.2,"Def": 4.2},
+          "4.1": {"Pow": 1.0,"Spd": 1.0,"Trick": 5.5,"Recv": 4.4,"Def": 4.4},
+          "4.2": {"Pow": 1.0,"Spd": 1.0,"Trick": 5.7,"Recv": 4.5,"Def": 4.5},
+          "4.3": {"Pow": 1.0,"Spd": 1.0,"Trick": 5.9,"Recv": 4.7,"Def": 4.7},
+          "4.4": {"Pow": 1.0,"Spd": 1.0,"Trick": 6.1,"Recv": 4.8,"Def": 4.8},
+          "4.5": {"Pow": 1.0,"Spd": 1.0,"Trick": 6.3,"Recv": 5.0,"Def": 5.0},
+          "4.6": {"Pow": 1.0,"Spd": 1.0,"Trick": 6.5,"Recv": 5.1,"Def": 5.1},
+          "4.7": {"Pow": 1.0,"Spd": 1.0,"Trick": 6.7,"Recv": 5.3,"Def": 5.3},
+          "4.8": {"Pow": 1.0,"Spd": 1.0,"Trick": 6.9,"Recv": 5.4,"Def": 5.4},
+          "4.9": {"Pow": 1.0,"Spd": 1.0,"Trick": 7.1,"Recv": 5.6,"Def": 5.6},
+          "5.0": {"Pow": 1.0,"Spd": 1.0,"Trick": 7.3,"Recv": 5.7,"Def": 5.7},
+          "5.1": {"Pow": 1.0,"Spd": 1.0,"Trick": 7.5,"Recv": 5.9,"Def": 5.9},
+          "5.2": {"Pow": 1.0,"Spd": 1.0,"Trick": 7.7,"Recv": 6.0,"Def": 6.0},
+          "5.3": {"Pow": 1.0,"Spd": 1.0,"Trick": 7.9,"Recv": 6.2,"Def": 6.2},
+          "5.4": {"Pow": 1.0,"Spd": 1.0,"Trick": 8.1,"Recv": 6.3,"Def": 6.3},
+          "5.5": {"Pow": 1.0,"Spd": 1.0,"Trick": 8.3,"Recv": 6.5,"Def": 6.5},
+          "5.6": {"Pow": 1.0,"Spd": 1.0,"Trick": 8.5,"Recv": 6.6,"Def": 6.6},
+          "5.7": {"Pow": 1.0,"Spd": 1.0,"Trick": 8.7,"Recv": 6.8,"Def": 6.8},
+          "5.8": {"Pow": 1.0,"Spd": 1.0,"Trick": 9.0,"Recv": 7.0,"Def": 7.0},
+          "5.9": {"Pow": 1.0,"Spd": 1.0,"Trick": 9.2,"Recv": 7.1,"Def": 7.1},
+          "6.0": {"Pow": 1.0,"Spd": 1.0,"Trick": 9.4,"Recv": 7.3,"Def": 7.3},
+          "6.1": {"Pow": 1.0,"Spd": 1.0,"Trick": 9.6,"Recv": 7.5,"Def": 7.5},
+          "6.2": {"Pow": 1.0,"Spd": 1.0,"Trick": 9.8,"Recv": 7.6,"Def": 7.6},
+          "6.3": {"Pow": 1.0,"Spd": 1.0,"Trick": 10.0,"Recv": 7.8,"Def": 7.8},
+          "6.4": {"Pow": 1.0,"Spd": 1.0,"Trick": 10.0,"Recv": 8.1,"Def": 8.1},
+          "6.5": {"Pow": 1.0,"Spd": 1.0,"Trick": 10.0,"Recv": 8.4,"Def": 8.4},
+          "6.6": {"Pow": 1.0,"Spd": 1.0,"Trick": 10.0,"Recv": 8.6,"Def": 8.6},
+          "6.7": {"Pow": 1.0,"Spd": 1.0,"Trick": 10.0,"Recv": 8.9,"Def": 8.9},
+          "6.8": {"Pow": 1.0,"Spd": 1.0,"Trick": 10.0,"Recv": 9.2,"Def": 9.2},
+          "6.9": {"Pow": 1.0,"Spd": 1.0,"Trick": 10.0,"Recv": 9.5,"Def": 9.5},
+          "7.1": {"Pow": 1.1,"Spd": 1.1,"Trick": 10.0,"Recv": 10.0,"Def": 10.0},
+          "7.2": {"Pow": 1.4,"Spd": 1.4,"Trick": 10.0,"Recv": 10.0,"Def": 10.0},
+          "7.3": {"Pow": 1.7,"Spd": 1.7,"Trick": 10.0,"Recv": 10.0,"Def": 10.0},
+          "7.4": {"Pow": 1.9,"Spd": 1.9,"Trick": 10.0,"Recv": 10.0,"Def": 10.0},
+          "7.5": {"Pow": 2.2,"Spd": 2.2,"Trick": 10.0,"Recv": 10.0,"Def": 10.0}
+        }
+      },
+
+      "abilities": {
+        "R": {
+          "name": "Shift Phase",
+          "state": ["Instant", "self-buff", "usable-in-stun"],
+          "self-effects": ["mode-switch"],
+          "description": "The user shifts between offensive and defensive modes. In offensive mode, they gain increased power and speed stats with 1.25x damage, while in defensive mode, they gain increased defense and recovery stats negating damage by 25%. The user can switch modes at will, allowing them to adapt to different combat situations.",
+          "cooldown": 0
+        }
+      }
+    },
+
+    "Nightmare": {
+      "assets": {
+        "icon": "/abilities-assets/elite-tier/Nightmare/icon/nightmare.png",
+        "r": ["/abilities-assets/elite-tier/Nightmare/r/Nightmare_-Scare.gif"],
+        "f": ["/abilities-assets/elite-tier/Nightmare/f/Nightmare_Eerie_Enemy_POV.gif",
+              "/abilities-assets/elite-tier/Nightmare/f/Nightmare_Eerie_Resonance_Nightmare_POV.gif"],
+        "t": ["/abilities-assets/elite-tier/Nightmare/t/Nightmare_Heart_Attack.gif"]
+      },
+      "_meta":{
+        "_faq": "Nightmare is obtainable from 3.5-5.9 in the shop and is rollable in the ability reroller. It is a mental ability therefore Uncopyable by aura manipulation. During Halloween event, this ability was a high tier ability in which their level cap and rollable increased to an average high tier.",
+        "tags": ["Crowd-Control", "Mental", "Bursts", "Melee", "Rage-Bait-Effective", "Passive"],
+        "state": ["Uncopyable", "Obtainable"],
+        "target-rating": {
+          "score": 4,
+          "explanation": "A nightmare user is a formidable opponent due to their mid power and trick stats, allowing them to deal significant damage, they use their eerie aura. However, they lack speed and defensive capabilities, making them vulnerable to fast-moving or heavily armored opponents. Skilled players can leverage the nightmare's abilities to outmaneuver and outlast their opponents, but it requires good timing and awareness to maximize its potential.",
+          "Weaknesses": ["Ranged Attacks", "High Burst Damage", "AOE", "Teaming", "Stunning Effects"]
+        }
+      },
+
+      "levels": {
+        "3.5": {"Pow": 2.1,"Spd": 1.5,"Trick": 4.7,"Recv": 2.6,"Def": 2.6},
+        "3.6": {"Pow": 2.1,"Spd": 1.6,"Trick": 4.9,"Recv": 2.7,"Def": 2.7},
+        "3.7": {"Pow": 2.2,"Spd": 1.6,"Trick": 5.1,"Recv": 2.8,"Def": 2.8},
+        "3.8": {"Pow": 2.2,"Spd": 1.6,"Trick": 5.3,"Recv": 2.8,"Def": 2.8},
+        "3.9": {"Pow": 2.3,"Spd": 1.6,"Trick": 5.5,"Recv": 2.9,"Def": 2.9},
+        "4.0": {"Pow": 2.3,"Spd": 1.7,"Trick": 5.7,"Recv": 3.0,"Def": 3.0},
+        "4.1": {"Pow": 2.4,"Spd": 1.7,"Trick": 5.9,"Recv": 3.1,"Def": 3.1},
+        "4.2": {"Pow": 2.5,"Spd": 1.8,"Trick": 6.1,"Recv": 3.2,"Def": 3.2},
+        "4.3": {"Pow": 2.5,"Spd": 1.8,"Trick": 6.3,"Recv": 3.3,"Def": 3.3},
+        "4.4": {"Pow": 2.6,"Spd": 1.8,"Trick": 6.6,"Recv": 3.4,"Def": 3.4},
+        "4.5": {"Pow": 2.6,"Spd": 1.9,"Trick": 6.8,"Recv": 3.5,"Def": 3.5},
+        "4.6": {"Pow": 2.7,"Spd": 1.9,"Trick": 7.0,"Recv": 3.6,"Def": 3.6},
+        "4.7": {"Pow": 2.8,"Spd": 1.9,"Trick": 7.2,"Recv": 3.7,"Def": 3.7},
+        "4.8": {"Pow": 2.8,"Spd": 1.9,"Trick": 7.4,"Recv": 3.8,"Def": 3.8},
+        "4.9": {"Pow": 2.9,"Spd": 2.0,"Trick": 7.6,"Recv": 3.8,"Def": 3.8},
+        "5.0": {"Pow": 3.0,"Spd": 2.0,"Trick": 7.9,"Recv": 3.9,"Def": 3.9},
+        "5.1": {"Pow": 3.0,"Spd": 2.0,"Trick": 8.1,"Recv": 4.0,"Def": 4.0},
+        "5.2": {"Pow": 3.1,"Spd": 2.0,"Trick": 8.3,"Recv": 4.1,"Def": 4.1},
+        "5.3": {"Pow": 3.2,"Spd": 2.1,"Trick": 8.5,"Recv": 4.2,"Def": 4.2},
+        "5.4": {"Pow": 3.2,"Spd": 2.1,"Trick": 8.8,"Recv": 4.3,"Def": 4.3},
+        "5.5": {"Pow": 3.3,"Spd": 2.2,"Trick": 9.0,"Recv": 4.4,"Def": 4.4},
+        "5.6": {"Pow": 3.4,"Spd": 2.2,"Trick": 9.2,"Recv": 4.5,"Def": 4.5},
+        "5.7": {"Pow": 3.4,"Spd": 2.2,"Trick": 9.5,"Recv": 4.6,"Def": 4.6},
+        "5.8": {"Pow": 3.5,"Spd": 2.2,"Trick": 9.7,"Recv": 4.7,"Def": 4.7},
+        "5.9": {"Pow": 3.6,"Spd": 2.3,"Trick": 9.9,"Recv": 4.8,"Def": 4.8},
+        "6.0": {"Pow": 3.7,"Spd": 2.4,"Trick": 10.0,"Recv": 5.0,"Def": 5.0},
+        "6.1": {"Pow": 3.8,"Spd": 2.5,"Trick": 10.0,"Recv": 5.2,"Def": 5.2},
+        "6.2": {"Pow": 3.9,"Spd": 2.5,"Trick": 10.0,"Recv": 5.4,"Def": 5.4},
+        "6.3": {"Pow": 4.0,"Spd": 2.6,"Trick": 10.0,"Recv": 5.5,"Def": 5.5},
+        "6.4": {"Pow": 4.1,"Spd": 2.6,"Trick": 10.0,"Recv": 5.7,"Def": 5.7},
+        "6.5": {"Pow": 4.3,"Spd": 2.7,"Trick": 10.0,"Recv": 5.9,"Def": 5.9},
+        "6.6": {"Pow": 4.4,"Spd": 2.8,"Trick": 10.0,"Recv": 6.1,"Def": 6.1},
+        "6.7": {"Pow": 4.5,"Spd": 2.8,"Trick": 10.0,"Recv": 6.3,"Def": 6.3},
+        "6.8": {"Pow": 4.6,"Spd": 2.9,"Trick": 10.0,"Recv": 6.5,"Def": 6.5},
+        "6.9": {"Pow": 4.8,"Spd": 2.9,"Trick": 10.0,"Recv": 6.7,"Def": 6.7},
+        "7.0": {"Pow": 4.9,"Spd": 3.0,"Trick": 10.0,"Recv": 6.9,"Def": 6.9}
+      },
+
+      "abilities": {
+        "R": {
+          "name": "Scare",
+          "state": ["Medium-Range", "damage-dealing", "Instant"],
+          "effects": ["Stun", "interrupt-enemies-attack"],
+          "description": "The user send a short shockwave, stunning the opponents for half a second and dealing moderate damage. This move is not blockeable and can interrupt enemy attacks, which would then lead to a m1 combo opportunity.",
+          "cooldown": 12
+        },
+        "F": {
+          "name": "Eerie Resonance",
+          "state": ["Instant", "AOE", "debuff", "Medium-Range"],
+          "effects": ["Debuff", "wide-range-debuff"],
+          "description": "The user enveloped in an aura of pure nightmare for 10 seconds. Anyone nearby recieves a debuff that reduces vision, as well as their trick, power, speed, and recovery stats, with the reduction increasing the closer they are to the user.",
+          "cooldown": 20
+        },
+        "T": {
+          "name": "Heart Attack",
+          "unlockable-at-level": 5.0,
+          "state": ["Short-Range", "damage-dealing", "Melee", "Instant", "Aimable"],
+          "effects": ["damage-dealing", "Stun", "interrupt-enemies-attack"],
+          "description": "The user dashes towards their cursor. If landed on a player, the opponent will take mild damage and be stunned for 4 seconds, the opponents will suffer heart attack and takes MASSIVE damage over time for 6 seconds. This move is unblockeable and can be used to initiate combos."
+        }
+      },
+
+      "Passive": {
+        "effects": {
+          "Nightmare Aura": {
+            "description": "The user is enveloped in an aura of nightmare energy, purely cosmetic effect but is activate when powered on."
+          }
+        }
+      }
+    },
+
+    "Explosion": {
+      "assets": {
+        "icon": "/abilities-assets/elite-tier/Explosion/icon/explosion.png",
+        "r": ["/abilities-assets/elite-tier/Explosion/r/Explosion_-_Destructive_blast.gif"],
+        "passive": ["/abilities-assets/elite-tier/Explosion/passive/Explosion_-_M1s_and_Heavy.gif"]
+      },
+      "_meta": {
+        "faq": "Explosion is obtainable from 3.5-4.9 via rolling or purschasing in the shop.",
+        "tags": ["High Damage", "Melee", "Short-Range", "Brain-Dead", "Fragile"],
+        "description": "A explosion user is a powerful combatant due to their high power and trick stats, allowing them to deal significant damage and evade attacks effectively. However, they lack speed and defensive capabilities, making them vulnerable to fast-moving or heavily armored opponents. Skilled players can leverage the explosion's abilities to outmaneuver and outlast their opponents, it deals way more damage than the reflective powerstats, it is known as the highest damage output from m1 and heavies attack in the game",
+        "state": ["Copyable", "Obtainable"],
+        "target-rating": {
+          "score": 3,
+          "explanation": "A explosion user can deal significant damage with their high power and trick stats, allowing them to break through enemy defenses and evade attacks effectively. However, they lack speed and defensive capabilities, stay away at all costs in close quarters combat.",
+          "Weaknesses": ["Ranged Attacks", "High Burst Damage", "AOE", "Teaming", "Stunning Effects"]
+        }
+      },
+
+      "levels": {
+        "3.6": {"Pow": 4.6,"Spd": 1.9,"Trick": 4.6,"Recv": 1.0,"Def": 1.9},
+        "3.7": {"Pow": 4.8,"Spd": 1.9,"Trick": 4.8,"Recv": 1.0,"Def": 1.9},
+        "3.8": {"Pow": 4.9,"Spd": 2.0,"Trick": 4.9,"Recv": 1.0,"Def": 2.0},
+        "3.9": {"Pow": 5.1,"Spd": 2.0,"Trick": 5.1,"Recv": 1.0,"Def": 2.0},
+        "4.0": {"Pow": 5.3,"Spd": 2.1,"Trick": 5.3,"Recv": 1.0,"Def": 2.1},
+        "4.1": {"Pow": 5.5,"Spd": 2.1,"Trick": 5.5,"Recv": 1.0,"Def": 2.1},
+        "4.5": {"Pow": 6.3,"Spd": 2.3,"Trick": 6.3,"Recv": 1.0,"Def": 2.3},
+        "4.9": {"Pow": 7.1,"Spd": 2.5,"Trick": 7.1,"Recv": 1.0,"Def": 2.5},
+        "5.0": {"Pow": 7.3,"Spd": 2.6,"Trick": 7.3,"Recv": 1.0,"Def": 2.6},
+        "5.1": {"Pow": 7.5,"Spd": 2.6,"Trick": 7.5,"Recv": 1.0,"Def": 2.6},
+        "5.2": {"Pow": 7.7,"Spd": 2.7,"Trick": 7.7,"Recv": 1.0,"Def": 2.7},
+        "5.3": {"Pow": 7.9,"Spd": 2.7,"Trick": 7.9,"Recv": 1.0,"Def": 2.7},
+        "5.4": {"Pow": 8.1,"Spd": 2.8,"Trick": 8.1,"Recv": 1.0,"Def": 2.8},
+        "5.5": {"Pow": 8.3,"Spd": 2.8,"Trick": 8.3,"Recv": 1.0,"Def": 2.8},
+        "5.6": {"Pow": 8.5,"Spd": 2.9,"Trick": 8.5,"Recv": 1.0,"Def": 2.9},
+        "5.7": {"Pow": 8.7,"Spd": 2.9,"Trick": 8.7,"Recv": 1.0,"Def": 2.9},
+        "5.8": {"Pow": 9.0,"Spd": 3.0,"Trick": 9.0,"Recv": 1.0,"Def": 3.0},
+        "5.9": {"Pow": 9.2,"Spd": 3.0,"Trick": 9.2,"Recv": 1.0,"Def": 3.0},
+        "6.0": {"Pow": 9.4,"Spd": 3.1,"Trick": 9.4,"Recv": 1.0,"Def": 3.1},
+        "6.1": {"Pow": 9.6,"Spd": 3.2,"Trick": 9.6,"Recv": 1.0,"Def": 3.2},
+        "6.2": {"Pow": 9.8,"Spd": 3.2,"Trick": 9.8,"Recv": 1.0,"Def": 3.2},
+        "6.3": {"Pow": 10.0,"Spd": 3.3,"Trick": 10.0,"Recv": 1.0,"Def": 3.3},
+        "6.4": {"Pow": 10.0,"Spd": 3.6,"Trick": 10.0,"Recv": 1.0,"Def": 3.6},
+        "6.9": {"Pow": 10.0,"Spd": 5.0,"Trick": 10.0,"Recv": 1.0,"Def": 5.0}
+      },
+
+      "abilities": {
+        "R": {
+          "name": "Destructive Blast",
+          "state": ["Short-Range", "damage-dealing", "AOE"],
+          "effects": ["High-Damage", "interrupt-enemies-attack"],
+          "description": "The user causes a massive explosion around them, dealing high damage to all nearby opponents and interrupting their attacks. This move is ideal for clearing out groups of enemies or creating space in close-quarters combat.",
+          "cooldown": 15
+        }
+      },
+
+      "Passive": {
+        "effects": {
+          "Explosion Fists (M1s / Heavy)": {
+            "description": "Explosion has significantly stronger M1s and Heavies, along with unique sfx and vfx to go along with it. Explosion M1s and Heavies deal massive damage compared to other abilities with similar power stats.",
+            "effect": ["increased-damage"]
+          }
+        }
+      }
+    }
+  },
+
+  "High-Tier": {
+    "_meta": {
+      "faq": "High tier abilities are obtainable from 5.0-5.9 via rolling or purchasing in the shop.",
+      "description": "High Tier abilities are powerful combat options that offer a balance of offense and defense. They are characterized by their moderate to high power, speed, trick, recovery, and defense stats, making them versatile choices for various combat scenarios. Skilled players can leverage the strengths of high tier abilities to outmaneuver and outlast their opponents, but they require good timing and awareness to maximize their potential.",
+      "level-range": {
+        "obtainable-from": [5.0, 5.9],
+        "upgrade-limit": 7.0
+      }
+    },
+    "Energy Blades": {
+      "assets": {
+        "icon": "/abilities-assets/high-tier/low-high-tier/EnergyBlades/icon/energy_blades.png",
+        "r": ["/abilities-assets/high-tier/low-high-tier/EnergyBlades/r/EB-BladeMaster_-_Swordstorm_Unblocked.gif"]
+      },
+
+      "_meta": {
+        "faq": "Energy Blades is obtainable from 5.0-6.5 in the shop and is rollable in the ability reroller. When it reaches level 6.0, the name of the ability changes to 'Blade Mastery'",
+        "tags": ["Melee", "High-Skill", "Balanced", "Ranged", "Bursts", "Passive"],
+        "description": "An energy blades user is a formidable opponent due to their balanced stats and high damage output, allowing them to deal significant damage while maintaining decent speed and defense. Skilled players can leverage the energy blades' versatility to adapt to different combat situations, making them a well-rounded choice for various playstyles. Below 6.0 they are not much a threat but once they hit 6.0 and above they awaken a skill that deals 1.5x more damage and become a major threat in combat.",
+        "state": ["Copyable", "Obtainable"]
+      },
+      "levels": {
+        "5.2": {"Pow": 7.4,"Spd": 4.2,"Trick": 4.2,"Recv": 2.6,"Def": 3.4},
+        "5.3": {"Pow": 7.6,"Spd": 4.3,"Trick": 4.3,"Recv": 2.6,"Def": 3.5},
+        "5.4": {"Pow": 7.8,"Spd": 4.4,"Trick": 4.4,"Recv": 2.7,"Def": 3.5},
+        "5.5": {"Pow": 8.0,"Spd": 4.5,"Trick": 4.5,"Recv": 2.7,"Def": 3.6},
+        "5.6": {"Pow": 8.2,"Spd": 4.6,"Trick": 4.6,"Recv": 2.8,"Def": 3.7},
+        "5.7": {"Pow": 8.4,"Spd": 4.7,"Trick": 4.7,"Recv": 2.8,"Def": 3.8},
+        "5.8": {"Pow": 8.6,"Spd": 4.8,"Trick": 4.8,"Recv": 2.9,"Def": 3.8},
+        "5.9": {"Pow": 8.8,"Spd": 4.9,"Trick": 4.9,"Recv": 2.9,"Def": 3.9},
+        "6.0": {"Pow": 9.0,"Spd": 5.0,"Trick": 5.0,"Recv": 3.0,"Def": 4.0},
+        "6.1": {"Pow": 9.2,"Spd": 5.1,"Trick": 5.1,"Recv": 3.0,"Def": 4.1},
+        "6.2": {"Pow": 9.4,"Spd": 5.2,"Trick": 5.2,"Recv": 3.1,"Def": 4.2},
+        "6.3": {"Pow": 9.6,"Spd": 5.3,"Trick": 5.3,"Recv": 3.2,"Def": 4.2},
+        "6.4": {"Pow": 9.8,"Spd": 5.4,"Trick": 5.4,"Recv": 3.2,"Def": 4.3},
+        "6.5": {"Pow": 10.0,"Spd": 5.5,"Trick": 5.5,"Recv": 3.3,"Def": 4.4},
+        "6.6": {"Pow": 10.0,"Spd": 5.7,"Trick": 5.7,"Recv": 3.4,"Def": 4.5},
+        "6.7": {"Pow": 10.0,"Spd": 5.9,"Trick": 5.9,"Recv": 3.4,"Def": 4.7},
+        "6.8": {"Pow": 10.0,"Spd": 6.1,"Trick": 6.1,"Recv": 3.5,"Def": 4.8},
+        "6.9": {"Pow": 10.0,"Spd": 6.2,"Trick": 6.2,"Recv": 3.6,"Def": 4.9},
+        "7.0": {"Pow": 10.0,"Spd": 6.4,"Trick": 6.4,"Recv": 3.7,"Def": 5.1},
+        "7.3": {"Pow": 10.0,"Spd": 6.9,"Trick": 6.9,"Recv": 4.0,"Def": 5.5}
+      },
+
+      "abilities": {
+        "R": {
+          "name": "Sword Storm",
+          "state": ["Melee", "damage-dealing", "semi-blockable", "holdable", "semi-cancellable", "projectile", "Long-Range", "Aimable"],
+          "effects": ["slow", "bleed"],
+          "description": "The user holds their sword forward and begins summoning blades for up to 2 seconds. On-release, the user will fire all their swords at once, dealing massive damage if they all connect. Each blade inflict a stacking Bleed & slow effect onto the target but since the swords are thin, they could dodge them. 50% reduced damage and no bleed from block .",
+          "cooldown": 15
+        },
+        "F": {
+          "name": "Knives",
+          "state": ["Melee", "damage-dealing", "instant", "projectile", "semi-blockable", "Short-Range"],
+          "effects": ["bleed"],
+          "description": "The user quickly throws a set of energy knives in front of them whilst making a small dash backwards, each knife inflicts a Bleed effect on hit. The knives travel in a straight line and can be blocked by opponents, making it important to aim carefully. Block reduces damage by 50% and no bleed effect.",
+          "cooldown": 15
+        },
+        "T": {
+          "name": "Blur",
+          "state": ["instant", "Medium-Range", "Melee", "damage-dealing", "semi-blockable"],
+          "effects": ["bleed"],
+          "description": "The user dashes forward and swings their blades, dealing large amount of damage and inflicting bleed onto anyone they hit. This move is blockable with 50% reduced damage and no bleed.",
+          "cooldown": 15
+        },
+        "G": {
+          "name": "Awakening",
+          "unlockable-at-level": 6.0,
+          "state": ["self-buff"],
+          "self-effects": ["damage-boost"],
+          "description": "For the duration of the ability, the user enters an awakened state where the held blade will grow larger and the user will have 33% increased Blur damage, increased M1 range, and 50% increased M1/Heavy damage",
+          "cooldown": 30,
+          "duration": 15.5
+        }
+      },
+
+      "Passive": {
+        "effects": {
+          "Energy Blades": {
+            "effect": ["bleed", "increased-damage"],
+            "description": "The user is holding a sword making their m1 (swing attacks) and heavies (spins around with blade) have increased damage and inflict bleed"
+          },
+
+          "Riposte": {
+            "effects": ["block-effects", "rebound"],
+            "description": "When the user successfully blocks an m1 attack, they gain a brief moment of heightened awareness, allowing them to counterattack with increased precision and speed for 0.5 seconds. This rapid response is nearly or fully imperceptible to the opponent, the effect casts bleed and rebound 100% of the damage back to the attacker."
+          }
+        }
+      }
+    },
+
+    "Lightning": {
+      "lightning": {
+        "icon": "/abilities-assets/high-tier/low-high-tier/lightning/icon/lightning.png",
+        "r": ["/abilities-assets/high-tier/low-high-tier/lightning/r/Lightning_-_Thunder_Strike.gif"]
+      },
+      "image": "abilities-assets/high-tier/low-high-tier/lightning.png",
+      "_meta": {
+        "faq": "Lightning is obtainable from 5.0-5.9 in the shop and is rollable in the ability reroller. ",
+        "tags": ["Balanced", "Ranged", "Bursts", "Passive"],
+        "description": "A lightning user is a versatile combatant due to their balanced stats, allowing them to adapt to various combat situations. Their moderate power, speed, trick, recovery, and defense stats make them effective at both offense and defense, enabling skilled players to leverage their abilities to outmaneuver and outlast opponents. You can easily get them into combos.",
+        "state": ["Copyable", "Obtainable"]
+      },
+
+      "levels": {
+        "5.0": { "Pow": 5.7, "Spd": 4.9, "Trick": 4.1, "Recv": 3.4, "Def": 2.6 },
+        "5.1": { "Pow": 5.9, "Spd": 5.0, "Trick": 4.2, "Recv": 3.4, "Def": 2.6 },
+        "5.2": { "Pow": 6.0, "Spd": 5.2, "Trick": 4.3, "Recv": 3.5, "Def": 2.7 },
+        "5.3": { "Pow": 6.2, "Spd": 5.3, "Trick": 4.4, "Recv": 3.6, "Def": 2.7 },
+        "5.4": { "Pow": 6.3, "Spd": 5.4, "Trick": 4.5, "Recv": 3.7, "Def": 2.8 },
+        "5.5": { "Pow": 6.5, "Spd": 5.6, "Trick": 4.7, "Recv": 3.7, "Def": 2.8 },
+        "5.6": { "Pow": 6.6, "Spd": 5.7, "Trick": 4.8, "Recv": 3.8, "Def": 2.9 },
+        "5.7": { "Pow": 6.8, "Spd": 5.8, "Trick": 4.9, "Recv": 3.9, "Def": 2.9 },
+        "5.8": { "Pow": 7.0, "Spd": 6.0, "Trick": 5.0, "Recv": 4.0, "Def": 3.0 },
+        "5.9": { "Pow": 7.1, "Spd": 6.1, "Trick": 5.1, "Recv": 4.1, "Def": 3.0 },
+        "6.0": { "Pow": 7.3, "Spd": 6.2, "Trick": 5.2, "Recv": 4.1, "Def": 3.1 },
+        "6.1": { "Pow": 7.5, "Spd": 6.4, "Trick": 5.3, "Recv": 4.2, "Def": 3.2 },
+        "6.2": { "Pow": 7.6, "Spd": 6.5, "Trick": 5.4, "Recv": 4.3, "Def": 3.2 },
+        "6.3": { "Pow": 7.8, "Spd": 6.7, "Trick": 5.5, "Recv": 4.4, "Def": 3.3 },
+        "6.4": { "Pow": 7.9, "Spd": 6.8, "Trick": 5.6, "Recv": 4.5, "Def": 3.3 },
+        "6.5": { "Pow": 8.1, "Spd": 6.9, "Trick": 5.7, "Recv": 4.6, "Def": 3.4 },
+        "6.6": { "Pow": 8.3, "Spd": 7.1, "Trick": 5.9, "Recv": 4.6, "Def": 3.4 },
+        "6.7": { "Pow": 8.5, "Spd": 7.2, "Trick": 6.0, "Recv": 4.7, "Def": 3.5 },
+        "6.8": { "Pow": 8.6, "Spd": 7.4, "Trick": 6.1, "Recv": 4.8, "Def": 3.5 },
+        "6.9": { "Pow": 8.8, "Spd": 7.5, "Trick": 6.2, "Recv": 4.9, "Def": 3.6 },
+        "7.0": { "Pow": 9.0, "Spd": 7.6, "Trick": 6.3, "Recv": 5.0, "Def": 3.7 },
+        "7.1": { "Pow": 9.1, "Spd": 7.8, "Trick": 6.4, "Recv": 5.1, "Def": 3.7 },
+        "7.2": { "Pow": 9.3, "Spd": 7.9, "Trick": 6.5, "Recv": 5.2, "Def": 3.8 },
+        "7.3": { "Pow": 9.5, "Spd": 8.1, "Trick": 6.7, "Recv": 5.2, "Def": 3.8 },
+        "7.4": { "Pow": 9.7, "Spd": 8.2, "Trick": 6.8, "Recv": 5.3, "Def": 3.9 },
+        "7.5": { "Pow": 9.8, "Spd": 8.4, "Trick": 6.9, "Recv": 5.4, "Def": 3.9 }
+      },
+
+      "abilities": {
+        "R": {
+          "name": "Shock",
+          "state": ["Medium-Range", "damage-dealing", "projectile", "Instant", "Holdable", "semi-blockable", "cancellable", "Aimable"],
+          "effects": ["stun"],
+          "description": "The user holds their hands forward, charges Shock for up to 2 seconds. A long bolt of lightning is then fired towards their cursor, dealing damage to any target hit and stunning them briefly. Blockable reduced damaged by 25%",
+          "cooldown": 12
+        },
+        "F": {
+          "name": "Surge",
+          "state": ["Holdable", "Instant", "semi-cancellable", "semi-blockable", "AOE", "Instant", "Medium-Range", "damage-dealing"],
+          "effects": ["stun"],
+          "description": "The user holds their hands upwards channels electricity into their body, the user will shine brighter and brighter for up to 2 seconds, and then when released a large surge of AOE electricity will erupt from the user, dealing damage and stunning all nearby opponents, gaining more damage and range the longer it is charged. Blockable reduced damage by 25%",
+          "cooldown": 15
+        },
+        "T": {
+          "name": "Blink",
+          "state": ["Short-Range", "damage-dealing", "Melee", "Instant", "semi-blockable"],
+          "effects": ["stun"],
+          "description": "The user dashes towards forward at lightning speed, dealing damage to anyone caught in their path. This move is semi-blockable, dealing 25% reduced damage on block.",
+          "cooldown": 10
+      },
+
+      "Passive": {
+        "effects": {
+          "electrified": {
+            "state": ["damage-aura"],
+            "description": "While Powered on, the user is wrapped in an electrified aura that shocks anyone who comes into contact with them (dealing no stun apparently) dealing minor damage over time. And all abilities affect a liquified hydrofreeze user (even when they're supposedly invincible at that moment)."
+          }
+        }
+      }
+    }
+    },
+
+    "Conjure Vines": {
+      "image": "abilities-assets/high-tier/low-high-tier/vines.png",
+      "_meta":{
+        "faq": "Conjure: Vines is obtainable from 5.0-5.9 via rolling or purchasing the ability from the shop",
+        "tags": ["Stunner", "Hybrid", "Ranged", "Crowd-Control", "Support"],
+        "description": "Conjure vines also known as the worst high tier ability is a control-focused ability that excels at area denial and crowd control. With moderate power, speed, trick, recovery, and defense stats, conjure vines users can effectively manipulate the battlefield to their advantage. Skilled players can leverage the ability's strengths to outmaneuver and outlast opponents, but they require good timing and awareness to maximize their potential.",
+        "state": ["Copyable", "Obtainable"],
+        "target-rating": {
+          "score": 2,
+          "explanation": "A conjure vines user can only target one opponent at a time with their abilities, making it difficult to deal with multiple enemies simultaneously. Their moderate stats also mean they may struggle against highly mobile or heavily armored opponents.",
+          "Weaknesses": ["Ranged Attacks", "High Burst Damage", "AOE", "Teaming", "Stunning Effects"]
+        }
+      },
+
+      "levels": {
+        "5.0": {"Pow": 3.8,"Spd": 2.8,"Trick": 6.5,"Recv": 3.8,"Def": 3.8},
+        "5.1": {"Pow": 3.9,"Spd": 2.9,"Trick": 6.7,"Recv": 3.9,"Def": 3.9},
+        "5.2": {"Pow": 3.9,"Spd": 3.0,"Trick": 6.9,"Recv": 3.9,"Def": 3.9},
+        "5.3": {"Pow": 4.0,"Spd": 3.0,"Trick": 7.1,"Recv": 4.0,"Def": 4.0},
+        "5.4": {"Pow": 4.1,"Spd": 3.1,"Trick": 7.4,"Recv": 4.1,"Def": 4.1},
+        "5.5": {"Pow": 4.2,"Spd": 3.2,"Trick": 7.5,"Recv": 4.2,"Def": 4.2},
+        "5.6": {"Pow": 4.3,"Spd": 3.2,"Trick": 7.6,"Recv": 4.3,"Def": 4.3},
+        "5.7": {"Pow": 4.4,"Spd": 3.3,"Trick": 7.8,"Recv": 4.4,"Def": 4.4},
+        "5.8": {"Pow": 4.5,"Spd": 3.3,"Trick": 8.0,"Recv": 4.5,"Def": 4.5},
+        "5.9": {"Pow": 4.6,"Spd": 3.4,"Trick": 8.2,"Recv": 4.6,"Def": 4.6},
+        "6.0": {"Pow": 4.7,"Spd": 3.5,"Trick": 8.4,"Recv": 4.7,"Def": 4.7},
+        "6.1": {"Pow": 4.8,"Spd": 3.5,"Trick": 8.6,"Recv": 4.8,"Def": 4.8},
+        "6.2": {"Pow": 4.9,"Spd": 3.6,"Trick": 8.8,"Recv": 4.9,"Def": 4.9},
+        "6.3": {"Pow": 5.0,"Spd": 3.7,"Trick": 9.0,"Recv": 5.0,"Def": 5.0},
+        "6.4": {"Pow": 5.1,"Spd": 3.7,"Trick": 9.2,"Recv": 5.1,"Def": 5.1},
+        "6.5": {"Pow": 5.2,"Spd": 3.8,"Trick": 9.4,"Recv": 5.2,"Def": 5.2},
+        "6.6": {"Pow": 5.3,"Spd": 3.9,"Trick": 9.6,"Recv": 5.3,"Def": 5.3},
+        "6.7": {"Pow": 5.4,"Spd": 3.9,"Trick": 9.8,"Recv": 5.4,"Def": 5.4},
+        "6.8": {"Pow": 5.5,"Spd": 4.0,"Trick": 10.0,"Recv": 5.5,"Def": 5.5},
+        "6.9": {"Pow": 5.6,"Spd": 4.1,"Trick": 10.0,"Recv": 5.6,"Def": 5.6},
+        "7.0": {"Pow": 5.8,"Spd": 4.2,"Trick": 10.0,"Recv": 5.8,"Def": 5.8},
+        "7.3": {"Pow": 6.3,"Spd": 4.5,"Trick": 10.0,"Recv": 6.3,"Def": 6.3},
+        "7.5": {"Pow": 6.6,"Spd": 4.7,"Trick": 10.0,"Recv": 6.6,"Def": 6.6}
+      },
+
+      "abilities": {
+        "R": {
+          "name": "Lash out",
+          "state": ["Medium-Range", "damage-dealing", "projectile", "semi-blockable"],
+          "effects": ["bleed", "Flinch", "Critical-Hit"],
+          "description": "The user whips out a long vine, in front of them, dealing moderate damage, inflicting bleed and momentarily flinching any hit targets. The vine can be blocked, reducing damage by 20% and no bleed and flinch effect. The damage is based off the user's distance from the target, the further the target is the more damage it deals. When dealing the maximum possible damage ('crit spot') an additional explosion vfx will appear",
+          "cooldown": 8
+        },
+        "F": {
+          "name": "Thorn",
+          "state": ["Long-Range", "damage-dealing", "Melee", "instant", "semi-blockable", "holdable", "cancellable", "Headshot", "Aimable"],
+          "effects": [],
+          "description": "The user outstretches their hand, conjuring a thorn from their palm,, fires towards cursor (max chargeable is 4 seconds). Headshot: 33% extra damage, Blockable: 60% reduced damage. The damage is based off the user's distance from the target, the further the target is the more damage it deals.",
+          "cooldown": 8
+        },
+        "T": {
+          "name": "Restrain",
+          "state": ["Short-Range", "crowd-control", "Melee", "instant", "target-single", "Aimable"],
+          "effects": ["Restrains"],
+          "description": "The user restrains one nearby opponent by aiming their cursor over them, and using restrain, severly limiting the players movement and making them unable to M1, Heavy, block or use abilities. The duration of the restrain is based off the opponents distance from the user, the further the opponent is the longer the duration. Cannot be blocked. If the user missed the attack then it will be 1 second cooldown before attempting again, Level difference: if the user is 1 level below the opponent, they are restrained for 3 seconds, if they are the same level then 6 seconds, and if the user is 1 level above the opponent then 12 seconds.",
+          "cooldown": 24
+        }
+      }
+    },
+
+    "Arachnid": {
+      "image": "abilities-assets/high-tier/low-high-tier/arachnid.png",
+      "_meta": {
+        "faq": "Arachnid is obtainable from 5.0-5.9 via rolling or purchasing in the shop.",
+        "tags": ["Tank", "Melee", "Stunner", "Crowd-Control", "Melee", "Passive", "Rage-Bait-Effective"],
+        "description": "An arachnid user is a durable combatant due to their high defense and power stats, allowing them to withstand significant damage while dealing substantial damage in return. Their moderate speed, trick, and recovery stats enable them to maintain a steady presence on the battlefield, making them effective at both offense and defense. Arachnid work around stun, all abilities apply stun, making them very good at crowd control. a warning to those who face them, never get into a prolonged fight with an arachnid user, as their high defense and power stats can quickly wear down even the toughest opponents, they could stun you or get you into a combo for a good 10-15 seconds if you're not careful, not to mention some apply bleeding effects as well.",
+        "state": ["Copyable", "Obtainable"],
+        "target-rating": {
+          "score": 3,
+          "explanation": "An arachnid user can effectively target multiple opponents with their abilities, making them a formidable presence on the battlefield. Their high defense and power stats allow them to withstand significant damage while dealing substantial damage in return. However, their moderate speed and trick stats may make it challenging to keep up with highly mobile opponents. If youve ever being targeted by 2 or more arachnid users at once, you literally cannot escape youll be in stun for days, so keep your range from them.",
+          "Weaknesses": ["Ranged Attacks", "High Burst Damage", "AOE", "Teaming"]
+        }
+      },
+      "levels": {
+        "5.0": {"Pow": 4.1,"Spd": 4.1,"Trick": 4.1,"Recv": 2.0,"Def": 6.2},
+        "5.1": {"Pow": 4.2,"Spd": 4.2,"Trick": 4.2,"Recv": 2.1,"Def": 6.4},
+        "5.2": {"Pow": 4.3,"Spd": 4.3,"Trick": 4.3,"Recv": 2.1,"Def": 6.6},
+        "5.3": {"Pow": 4.4,"Spd": 4.4,"Trick": 4.4,"Recv": 2.1,"Def": 6.7},
+        "5.4": {"Pow": 4.5,"Spd": 4.5,"Trick": 4.5,"Recv": 2.2,"Def": 6.9},
+        "5.5": {"Pow": 4.7,"Spd": 4.7,"Trick": 4.7,"Recv": 2.2,"Def": 7.1},
+        "5.6": {"Pow": 4.8,"Spd": 4.8,"Trick": 4.8,"Recv": 2.3,"Def": 7.3},
+        "5.7": {"Pow": 4.9,"Spd": 4.9,"Trick": 4.9,"Recv": 2.3,"Def": 7.4},
+        "5.8": {"Pow": 5.0,"Spd": 5.0,"Trick": 5.0,"Recv": 2.3,"Def": 7.6},
+        "5.9": {"Pow": 5.1,"Spd": 5.1,"Trick": 5.1,"Recv": 2.4,"Def": 7.8},
+        "6.0": {"Pow": 5.2,"Spd": 5.2,"Trick": 5.2,"Recv": 2.4,"Def": 8.0},
+        "6.1": {"Pow": 5.3,"Spd": 5.3,"Trick": 5.3,"Recv": 2.4,"Def": 8.2},
+        "6.2": {"Pow": 5.4,"Spd": 5.4,"Trick": 5.4,"Recv": 2.5,"Def": 8.4},
+        "6.3": {"Pow": 5.5,"Spd": 5.5,"Trick": 5.5,"Recv": 2.5,"Def": 8.5},
+        "6.4": {"Pow": 5.6,"Spd": 5.6,"Trick": 5.6,"Recv": 2.5,"Def": 8.7},
+        "6.5": {"Pow": 5.7,"Spd": 5.7,"Trick": 5.7,"Recv": 2.6,"Def": 8.9},
+        "6.6": {"Pow": 5.9,"Spd": 5.9,"Trick": 5.9,"Recv": 2.6,"Def": 9.1},
+        "6.7": {"Pow": 6.0,"Spd": 6.0,"Trick": 6.0,"Recv": 2.7,"Def": 9.3},
+        "6.8": {"Pow": 6.1,"Spd": 6.1,"Trick": 6.1,"Recv": 2.7,"Def": 9.5},
+        "6.9": {"Pow": 6.2,"Spd": 6.2,"Trick": 6.2,"Recv": 2.7,"Def": 9.7},
+        "7.0": {"Pow": 6.3,"Spd": 6.3,"Trick": 6.3,"Recv": 2.8,"Def": 9.9},
+        "7.1": {"Pow": 6.4,"Spd": 6.4,"Trick": 6.4,"Recv": 2.8,"Def": 10.0},
+        "7.2": {"Pow": 6.6,"Spd": 6.6,"Trick": 6.6,"Recv": 2.9,"Def": 10.0},
+        "7.3": {"Pow": 6.8,"Spd": 6.8,"Trick": 6.8,"Recv": 2.9,"Def": 10.0},
+        "7.4": {"Pow": 7.0,"Spd": 7.0,"Trick": 7.0,"Recv": 3.0,"Def": 10.0},
+        "7.5": {"Pow": 7.1,"Spd": 7.1,"Trick": 7.1,"Recv": 3.0,"Def": 10.0},
+        "7.6": {"Pow": 7.3,"Spd": 7.3,"Trick": 7.3,"Recv": 3.1,"Def": 10.0}
+      },
+
+      "abilities": {
+        "R": {
+          "name": "Barrage",
+          "state": ["Short-Range", "damage-dealing", "Melee", "holdable", "cancellable" ,"semi-blockable"],
+          "effects": ["stun", "bleed", "slow"],
+          "description": "The user rapidly strikes out with their spider legs to unleash a barrage of strikes infront of them, dealing moderate damage to all nearby opponents, inflicting stun, bleed, and slow effects on hit. This move is semi-blockable, dealing 50% reduced damage on block, no bleed and no stun. which could then lead to another combo from the arachnid user.",
+          "cooldown": 18
+        },
+        "F": {
+          "name": "Skewer",
+          "state": ["Short-Range", "damage-dealing", "Melee", "projectile", "semi-blockable", "AOE"],
+          "effects": ["stun", "grab"],
+          "description": "The user does a quick stab forward with their spider legs, skewering all oponents hit in a small line in front of them. This deals slight damage before lifting all enemies and ripping out the legs, dealing more damage and stunning them briefly on impact. This move is semi-blockable meaning no stun but wont negate any damage, if you block, it guarantees a free m1 combo on the user, however if you dont block, the arachnid user will give combo.",
+          "cooldown": 20
+        },
+        "T": {
+          "Varient A": {
+            "name": "WebHead",
+            "state": ["Medium-Range", "damage-dealing", "Melee", "instant", "projectile", "Aimable", "semi-blockable"],
+            "effects": ["pull", "stun"],
+            "description": "The user outstretch an arm and summons a long web towards the cursor, pulling any player towards them, after being pulled the user is stunned leading for another combo followed after. If missed then the arachnid user will get the full 20 seconds cooldown again. If pulled and blocked, no stun will be applied but the user will get a free m1 combo too the arachnid user.",
+            "cooldown": 20
+          },
+          "Varient B": {
+            "name": "WebHead",
+            "state": ["Medium-range", "evasive", "instant", "projectile"],
+            "effects": [],
+            "description": "The user shoots a web from his hand aiming at the terrain or the ground, quickly pulling themselves to the location hit, allowing for quick escapes or repositioning. This move cannot be blocked or interrupted."
+          }
+        }
+      },
+
+      "Passive": {
+        "effects": {
+          "Eight Limbed (M1s and Heavy Attacks)": {
+            "effect": ["bleed-on-hit", "Increased-Range"],
+            "description": "Arachnid attacks with its spider legs giving it increased range on its m1s and heavy attacks, as well as applying bleed on hit."
+          },
+
+          "Reinforced Block": {
+            "effect": ["Damage-Reduction"],
+            "description": "When blocking, Arachnid has 130HP compared to the base 100HP, effectively meaning Arachnid takes 30% less damage when blocking, regardless of what source of damage even through attacks that are normally not blockable."
+          }
+        }
+      }
+    },
+
+    "Duplication": {
+      "image": "abilities-assets/high-tier/high-high-tier/dupe.png",
+      "_meta": {
+        "faq": "Duplication is obtainable from 5.5-5.9 via rolling or purchasing in the shop.",
+        "tags": ["Bursts", "Hybrid", "Ranged", "Melee", "Brain-Dead", "Balanced", "Stunner"],
+        "state": ["Copyable", "Obtainable"],
+        "description": "A duplication user is a versatile combatant due to their balanced stats, allowing them to adapt to various combat situations. Their moderate power, speed, trick, recovery stats make them effective at a melee attacker, Duplication is infamous for its brain-dead playstyle, where users can simply spam their clone ability which creates a clone (max: 2) that attacks for them, allowing them to deal damage without much effort and risk while fighting afar."
+      },
+      "levels": {
+        "5.5": {"Pow": 4.4,"Spd": 3.3,"Trick": 7.9,"Recv": 3.3,"Def": 4.4},
+        "5.6": {"Pow": 4.5,"Spd": 3.4,"Trick": 8.1,"Recv": 3.4,"Def": 4.5},
+        "5.7": {"Pow": 4.6,"Spd": 3.4,"Trick": 8.3,"Recv": 3.4,"Def": 4.6},
+        "5.8": {"Pow": 4.7,"Spd": 3.5,"Trick": 8.5,"Recv": 3.5,"Def": 4.7},
+        "5.9": {"Pow": 4.8,"Spd": 3.6,"Trick": 8.7,"Recv": 3.6,"Def": 4.8},
+        "6.0": {"Pow": 4.9,"Spd": 3.6,"Trick": 8.9,"Recv": 3.6,"Def": 4.9},
+        "6.1": {"Pow": 5.0,"Spd": 3.7,"Trick": 9.1,"Recv": 3.7,"Def": 5.0},
+        "6.2": {"Pow": 5.1,"Spd": 3.8,"Trick": 9.3,"Recv": 3.8,"Def": 5.1},
+        "6.3": {"Pow": 5.2,"Spd": 3.8,"Trick": 9.5,"Recv": 3.8,"Def": 5.2},
+        "6.4": {"Pow": 5.3,"Spd": 3.9,"Trick": 9.7,"Recv": 3.9,"Def": 5.3},
+        "6.5": {"Pow": 5.4,"Spd": 4.0,"Trick": 9.9,"Recv": 4.0,"Def": 5.4},
+        "6.6": {"Pow": 5.6,"Spd": 4.1,"Trick": 10.0,"Recv": 4.1,"Def": 5.6},
+        "6.7": {"Pow": 5.8,"Spd": 4.2,"Trick": 10.0,"Recv": 4.2,"Def": 5.8},
+        "6.8": {"Pow": 5.9,"Spd": 4.3,"Trick": 10.0,"Recv": 4.3,"Def": 5.9},
+        "6.9": {"Pow": 6.1,"Spd": 4.4,"Trick": 10.0,"Recv": 4.4,"Def": 6.1},
+        "7.0": {"Pow": 6.3,"Spd": 4.7,"Trick": 10.0,"Recv": 4.7,"Def": 6.3},
+        "7.2": {"Pow": 6.6,"Spd": 4.7,"Trick": 10.0,"Recv": 4.7,"Def": 6.6},
+        "7.3": {"Pow": 6.8,"Spd": 4.9,"Trick": 10.0,"Recv": 4.9,"Def": 6.8},
+        "7.5": {"Pow": 7.1,"Spd": 5.1,"Trick": 10.0,"Recv": 5.1,"Def": 7.1}
+      },
+
+      "abilities": {
+        "R": {
+          "name": "Double Agent",
+          "state": ["damage-dealing", "Melee", "instant", "Summon", "target-single", "toggleable", "Aimable"],
+          "effects": [],
+          "description": "The user creates a duplicate of themselves (maximum of 2) controllable clone of themselves, which can be commanded to attack a single target with basic melee attacks. The clone lasts for infinite unless the user summons a new clone or it is destroyed or the user dies. The clone has 35% of the user's health and deals 100% of the user's damage. The clone can be targeted and attacked by opponents. This works off a marking system in which the user clicks 2 and hovers over the player they want the clone to attack and click 2 to stop the command.",
+          "cooldown": 18
+        },
+        "F": {
+          "name": "Full Nelson",
+          "state": ["Medium-Range", "damage-dealing", "Melee", "projectile", "instant"],
+          "effects": ["stun", "grab"],
+          "description": "The user sends a clone of themselves which lunges forward to grab an opponent, if the clone makes contact, it will latch onto the target, dealing low damage and stunning them briefly (2 seconds) and allowing the user to close the distance and follow up with a combo.",
+          "cooldown": 15
+        },
+        "T": {
+          "name": "Airplane", 
+          "state": ["Medium-Range", "evasive", "Melee", "instant", "holdable", "semi-cancellable", "semi-blockable"],
+          "effects": [],
+          "description": "A clone picks up the user and lunges forward, sending them flying. If connecting with a target, it will deal MASSIVE damage. The further away the target is, the less damage it deals, up to 50% reduced damage. This move is semi-blockable, dealing 50% reduced damage on block.",
+          "cooldown": 25
+        }
+      }
+    },
+
+    "Spectral Claw": {
+      "image": "abilities-assets/high-tier/high-high-tier/specclaw.png",
+      "_meta": {
+        "faq": "Spectral Claw is obtainable from 5.5-5.9 via rolling or purchasing in the shop.",
+        "tags": ["Melee", "Stunner", "Crowd-Control", "Tank", "Durable", "Balanced", "Passive", "Burst"],
+        "description": "A spectral claw user is a durable combatant due to their mid defense and high power stats, allowing them to withstand significant damage while dealing substantial damage in return. Their moderate speed, trick, and recovery stats enable them to maintain a steady presence on the battlefield, making them effective at combat in general. Spectral Claw users excel at close-quarters combat, utilizing their abilities to stun opponents effectively. Their balanced stats make them versatile fighters, capable of adapting to various combat situations. You can counter this by keeping your distance and using ranged attacks to wear them down before they can close the gap.",
+        "state": ["Copyable", "Obtainable"],
+        "target-rating": {
+          "score": 3,
+          "explanation": "A spectral claw user can effectively target multiple opponents with their abilities, making them a formidable presence on the battlefield. Their high defense and power stats allow them to withstand significant damage while dealing substantial damage in return. However, their moderate speed and trick stats may make it challenging to keep up with highly mobile opponents.",
+          "Weaknesses": ["Ranged Attacks", "High Burst Damage", "AOE", "Teaming"]
+        }
+      },
+
+      "levels": {
+        "5.5": {"Pow": 8.7,"Spd": 2.9,"Trick": 3.9,"Recv": 2.9,"Def": 4.8},
+        "5.6": {"Pow": 8.9,"Spd": 3.0,"Trick": 4.0,"Recv": 3.0,"Def": 5.0},
+        "5.7": {"Pow": 9.1,"Spd": 3.0,"Trick": 4.1,"Recv": 3.0,"Def": 5.1},
+        "5.8": {"Pow": 9.4,"Spd": 3.1,"Trick": 4.1,"Recv": 3.1,"Def": 5.2},
+        "5.9": {"Pow": 9.6,"Spd": 3.1,"Trick": 4.2,"Recv": 3.1,"Def": 5.3},
+        "6.0": {"Pow": 9.8,"Spd": 3.2,"Trick": 4.3,"Recv": 3.2,"Def": 5.4},
+        "6.1": {"Pow": 10.0,"Spd": 3.3,"Trick": 4.4,"Recv": 3.3,"Def": 5.5},
+        "6.2": {"Pow": 10.0,"Spd": 3.4,"Trick": 4.6,"Recv": 3.4,"Def": 5.7},
+        "6.3": {"Pow": 10.0,"Spd": 3.5,"Trick": 4.7,"Recv": 3.5,"Def": 5.9},
+        "6.4": {"Pow": 10.0,"Spd": 3.6,"Trick": 4.9,"Recv": 3.6,"Def": 6.2},
+        "6.5": {"Pow": 10.0,"Spd": 3.7,"Trick": 5.0,"Recv": 3.7,"Def": 6.4},
+        "6.6": {"Pow": 10.0,"Spd": 3.8,"Trick": 5.2,"Recv": 3.8,"Def": 6.6},
+        "6.7": {"Pow": 10.0,"Spd": 3.9,"Trick": 5.3,"Recv": 3.9,"Def": 6.7},
+        "6.8": {"Pow": 10.0,"Spd": 4.0,"Trick": 5.5,"Recv": 4.0,"Def": 7.0},
+        "6.9": {"Pow": 10.0,"Spd": 4.1,"Trick": 5.6,"Recv": 4.1,"Def": 7.2},
+        "7.0": {"Pow": 10.0,"Spd": 4.2,"Trick": 5.8,"Recv": 4.2,"Def": 7.4},
+        "7.1": {"Pow": 10.0,"Spd": 4.3,"Trick": 5.9,"Recv": 4.3,"Def": 7.6},
+        "7.2": {"Pow": 10.0,"Spd": 4.4,"Trick": 6.1,"Recv": 4.4,"Def": 7.8},
+        "7.3": {"Pow": 10.0,"Spd": 4.5,"Trick": 6.3,"Recv": 4.5,"Def": 8.0},
+        "7.5": {"Pow": 10.0,"Spd": 4.7,"Trick": 6.6,"Recv": 4.7,"Def": 8.4}
+      },
+
+      "abilities": {
+        "R": {
+          "name": "Pulverise",
+          "state": ["Short-Range", "damage-dealing", "Melee", "target-single"],
+          "effects": ["stun", "grab"],
+          "self-effects": ["iframes", "invincibility"],
+          "description": "The user lunges reaches forward with their spectral claw and grabs onto a single target, dealing slight damage. If the attack connects, the spectral claw user will gain invincibility frames for the duration of the grab animation but cannot move and the user who is being grabbed dont get invincibility frames, the target will be held up for 2.5 seconds before crushing their skull, dealing massive damage and stunning them briefly.",
+          "cooldown": 16
+        },
+        "F": {
+          "name": "Fast ball",
+          "state": ["Short-Range", "damage-dealing", "Melee", "target-single"],
+          "effects": ["stun", "fling", "grab"],
+          "self-effects": ["iframes", "invincibility"],
+          "description": "The user swipes forward their claw, grabbing onto a single target and If the attack connects, the spectral claw user will gain invincibility frames for the duration of the throw animation but cannot move and the user who is being thrown dont get invincibility frames, the target will be thrown, dealing additional damage and stunning them briefly on impact, since the spectral claw user throws, then he will get out of the invincibility frame (none moveable state) and can do a heavy whilst the target is being thrown, this feature makes spectral claw very deadly in 1v1 situations.",
+          "cooldown": 12
+        }
+      },
+
+      "Passive": {
+        "effects": {
+          "Mutilate": {
+            "effect": ["Bleed-on-heavy-hit", "Increased-Heavy-Range"],
+            "description": "Instead of a normal heavy, Spectral Claw slashes with its claw, dealing increased range and applying bleed on heavy hit."
+          },
+          "Spectral Claw": {
+            "effect": ["cosmetic-effect"],
+            "description": "The user gains a claw on their hand."
+          }
+        }
+      }
+    },
+
+    "Fire Claws": {
+      "image": "abilities-assets/high-tier/high-high-tier/fireclaw.png",
+      "_meta": {
+        "faq": "Fire Claws is obtainable from 5.5-5.9 via rolling or purchasing in the shop.",
+        "tags": ["Melee", "Burst", "Stunner", "Balanced", "Passive", "Speedster", "Light", "Rage-Bait-Effective", "Brain-Dead"],
+        "description": "A fire claw user has weak defence but often is called brain-dead and is known for its high speed and power stats, allowing them to quickly close the distance and deal substantial damage in a short amount of time. Fire claw users excel at close-quarters combat, utilizing their burning effect of their ability to wear down their opponent but they often get one shotted due to their low recovery and low defence. You can counter this by keeping your distance and using ranged attacks to wear them down before they can close the gap.",
+        "state": ["Copyable", "Obtainable"],
+        "target-rating": {
+          "score": 3,
+          "explanation": "A fire claw user can effectively target multiple opponents with their abilities, making them a formidable presence on the battlefield. Their power stats and burning effects allow them to deal significant damage in a short timeframe. However, due to their low defense and recovery stats, they struggle on AOE attacks and thing in a wide area, they excel in close combat but other than that they are quite vulnerable.",
+          "Weaknesses": ["Ranged Attacks", "High Burst Damage", "AOE", "Teaming", "Wide-Ranged Debuffs"]
+        }
+      },
+
+      "levels": {
+        "5.5": {"Pow": 9.0,"Spd": 6.3,"Trick": 4.6,"Recv": 1.0,"Def": 2.3},
+        "5.6": {"Pow": 9.3,"Spd": 6.5,"Trick": 4.7,"Recv": 1.0,"Def": 2.4},
+        "5.7": {"Pow": 9.5,"Spd": 6.7,"Trick": 4.8,"Recv": 1.0,"Def": 2.4},
+        "5.8": {"Pow": 9.7,"Spd": 6.8,"Trick": 4.9,"Recv": 1.0,"Def": 2.5},
+        "5.9": {"Pow": 10.0,"Spd": 7.0,"Trick": 5.0,"Recv": 1.0,"Def": 2.5},
+        "6.0": {"Pow": 10.0,"Spd": 7.2,"Trick": 5.2,"Recv": 1.0,"Def": 2.6},
+        "6.1": {"Pow": 10.0,"Spd": 7.5,"Trick": 5.3,"Recv": 1.0,"Def": 2.6},
+        "6.2": {"Pow": 10.0,"Spd": 7.8,"Trick": 5.5,"Recv": 1.0,"Def": 2.7},
+        "6.3": {"Pow": 10.0,"Spd": 8.1,"Trick": 5.7,"Recv": 1.0,"Def": 2.8},
+        "6.4": {"Pow": 10.0,"Spd": 8.4,"Trick": 5.9,"Recv": 1.0,"Def": 2.8},
+        "6.5": {"Pow": 10.0,"Spd": 8.7,"Trick": 6.1,"Recv": 1.0,"Def": 2.9},
+        "6.6": {"Pow": 10.0,"Spd": 9.0,"Trick": 6.3,"Recv": 1.0,"Def": 3.0},
+        "6.7": {"Pow": 10.0,"Spd": 9.3,"Trick": 6.5,"Recv": 1.0,"Def": 3.1},
+        "6.8": {"Pow": 10.0,"Spd": 9.6,"Trick": 6.7,"Recv": 1.0,"Def": 3.1},
+        "6.9": {"Pow": 10.0,"Spd": 9.9,"Trick": 6.9,"Recv": 1.0,"Def": 3.2},
+        "7.0": {"Pow": 10.0,"Spd": 10.0,"Trick": 7.2,"Recv": 1.0,"Def": 3.3},
+        "7.1": {"Pow": 10.0,"Spd": 10.0,"Trick": 7.6,"Recv": 1.0,"Def": 3.5},
+        "7.2": {"Pow": 10.0,"Spd": 10.0,"Trick": 8.1,"Recv": 1.0,"Def": 3.7},
+        "7.3": {"Pow": 10.0,"Spd": 10.0,"Trick": 8.5,"Recv": 1.0,"Def": 3.8},
+        "7.4": {"Pow": 10.0,"Spd": 10.0,"Trick": 8.9,"Recv": 1.0,"Def": 4.0},
+        "7.5": {"Pow": 10.0,"Spd": 10.0,"Trick": 9.3,"Recv": 1.0,"Def": 4.1}
+      },
+
+      "abilities": {
+        "R": {
+          "name": "Shred",
+          "state": ["Short-Range", "damage-dealing", "Melee", "semi-blockable", "AOE", "instant"],
+          "effects": ["burn"],
+          "description": "The user slashes forward with their fiery claw in a wide arc, dealing moderate damage to all opponents in front of them and inflicting a burn effect that deals damage over time. This move is semi-blockable, dealing 50% reduced damage on block and no burn effect.",
+          "cooldown": 15
+        },
+        "F": {
+          "name": "Deadly Dance",
+          "state": ["Short-Range", "damage-dealing", "Melee", "AOE", "semi-blockable"],
+          "effects": ["burn"],
+          "description": "The user performs a rapid spinning attack with their fiery claw, striking all nearby opponents multiple times. Each hit deals slight damage and inflicts a burn effect that deals damage over time. This move is semi-blockable, dealing 60% reduced damage on block and no burn effect.",
+          "cooldown": 15
+        },
+        "T": {
+          "name": "Assassinate",
+          "state": ["Short-Range", "damage-dealing", "Melee", "evasive", "instant", "semi-blockable"],
+          "effects": ["burn", "stun"],
+          "description": "The user quickly dashes towards a target opponent, striking them with a powerful blow from their fiery claw. This attack deals massive damage and inflicts a burn effect that deals damage over time and stuns the opponent for 1.5 second. This move is semi-blockable, dealing 75% reduced damage on block and no burn and stun effect.",
+          "cooldown": 15
+        }
+      },
+
+      "Passive": {
+        "effects": {
+          "Fire Claw": {
+            "effect": ["cosmetic-effect"],
+            "description": "The user gains a fiery claw on their hand with unique vfx, animation and sound effects."
+          },
+          "Burning Soul": {
+            "effect": ["Burn-on-hit", "freeze-immunity"],
+            "description": "Fire Claw attacks with its fiery claw, applying burn on m1 and heavies and the user is immune to freeze effects."
+          }
+        }
+      }
+    }
+  },
+
+  "God-Tier": {
+    "_meta": {
+      "faq": "God-Tier abilities are obtainable from 6.0-10.0 via rolling or purchasing in the shop.",
+      "description": "God-Tier abilities are the pinnacle of power and versatility in the game, offering unparalleled strength and unique mechanics that set them apart from other abilities. These abilities are designed for players who seek to dominate the battlefield with their exceptional capabilities.",
+      "level-range": {
+        "obtainable-from": [6.0, 10.0],
+        "upgrade-limit": 7.0
+      }
+    },
+    "Barrier": {
+      "image": "abilities-assets/god-tier/low-god-tier/barrier.png",
+
+      "_meta": {
+        "faq": "Barrier is a low-god-tier that is obtainable from 6.0 to 6.4 via rolling or purchasing the ability from the shop",
+        "tags": ["Crowd-Control", "High-Skill", "Melee", "Rage-Bait-Effective", "Passive", "Tank", "Durable", "Passive"],
+        "description": "A barrier user is a durable combatant due to their maxed defense stat and high power, allowing them to withstand significant damage while protecting themselves and their allies. This durability enables them to maintain a steady presence on the battlefield, making them effective at combat in general. Barrier users excel at close-quarters combat, utilizing their abilities to control the battlefield effectively. Their balanced stats make them versatile fighters, capable of adapting to various combat situations. You can counter this by keeping your distance and using ranged attacks to wear them down before they can close the gap. But they have low recovery and speed making them vulnerable to fast attackers. all users has 100 hp, but a barrier user has max defence effectively making it has 500hp or 5 times damage reduction so if you deal 100 damage to a normal user, you will only deal 20 damage to a barrier user.",
+        "state": ["Copyable", "Obtainable"]
+      },
+
+      "levels": {
+        "6.0": {"Pow": 7.2,"Spd": 1.0,"Trick": 5.2,"Recv": 2.6,"Def": 10.0},
+        "6.1": {"Pow": 7.5,"Spd": 1.0,"Trick": 5.3,"Recv": 2.6,"Def": 10.0},
+        "6.2": {"Pow": 7.8,"Spd": 1.0,"Trick": 5.5,"Recv": 2.7,"Def": 10.0},
+        "6.3": {"Pow": 8.1,"Spd": 1.0,"Trick": 5.7,"Recv": 2.8,"Def": 10.0},
+        "6.4": {"Pow": 8.4,"Spd": 1.0,"Trick": 5.9,"Recv": 2.8,"Def": 10.0},
+        "6.5": {"Pow": 8.7,"Spd": 1.0,"Trick": 6.1,"Recv": 2.9,"Def": 10.0},
+        "6.6": {"Pow": 9.0,"Spd": 1.0,"Trick": 6.3,"Recv": 3.0,"Def": 10.0},
+        "6.7": {"Pow": 9.3,"Spd": 1.0,"Trick": 6.5,"Recv": 3.1,"Def": 10.0},
+        "6.8": {"Pow": 9.6,"Spd": 1.0,"Trick": 6.7,"Recv": 3.1,"Def": 10.0},
+        "6.9": {"Pow": 9.9,"Spd": 1.0,"Trick": 6.9,"Recv": 3.2,"Def": 10.0},
+        "7.0": {"Pow": 10.0,"Spd": 1.0,"Trick": 7.2,"Recv": 3.3,"Def": 10.0},
+        "7.1": {"Pow": 10.0,"Spd": 1.0,"Trick": 7.6,"Recv": 3.5,"Def": 10.0},
+        "7.2": {"Pow": 10.0,"Spd": 1.0,"Trick": 8.1,"Recv": 3.7,"Def": 10.0},
+        "7.3": {"Pow": 10.0,"Spd": 1.0,"Trick": 8.5,"Recv": 3.8,"Def": 10.0},
+        "7.4": {"Pow": 10.0,"Spd": 1.0,"Trick": 8.9,"Recv": 4.0,"Def": 10.0},
+        "7.5": {"Pow": 10.0,"Spd": 1.0,"Trick": 9.3,"Recv": 4.1,"Def": 10.0},
+        "7.6": {"Pow": 10.0,"Spd": 1.0,"Trick": 9.8,"Recv": 4.3,"Def": 10.0},
+        "7.7": {"Pow": 10.0,"Spd": 1.0,"Trick": 10.0,"Recv": 4.7,"Def": 10.0},
+        "7.8": {"Pow": 10.0,"Spd": 1.0,"Trick": 10.0,"Recv": 5.3,"Def": 10.0},
+        "7.9": {"Pow": 10.0,"Spd": 1.0,"Trick": 10.0,"Recv": 5.9,"Def": 10.0},
+        "8.0": {"Pow": 10.0,"Spd": 1.0,"Trick": 10.0,"Recv": 6.5,"Def": 10.0}
+      },
+
+      "abilities": {
+        "R": {
+          "name": "Barrier",
+          "state": ["Medium-Range", "Protective", "Instant", "support", "Aimable"],
+          "effects": ["shield"],
+          "description": "The user places a spherical barrier at the location of thier cursor. You could place up to 3 barriers at a time, though every barrier place divides the health by the numbers spawned. Barrier takes double damage for opponents that are trapped inside. Enemies who hit your barrier have 1/10 of the damage reflected back at them (reduced by their defense). When a barrier gets broken the user will take 10 damage. Barrier health is calculated as if it has 1 defence. After placing a barrier, the barrier protects anyone trapped inside from the outside. There is a around ~0.1 second immunity for the barrier health utilising that would allow barrier users who effectively time their move easier to block high damage AOE attacks. An average barrier users barrier health is 720+ ",
+          "cooldown": 2
+        },
+        "F": {
+          "name": "Recall",
+          "state": ["Long-Range", "Instant", "Aimable", "target-single"],
+          "description": "The user recalls the selected barrier. If used while there is one Barrier spawned, it will recall it. If used while there are two Barrier's spawned but your cursor is not directly over one, it will Recall the first one spawned. If used while there are three Barrier's spawned but your cursor is not directly over one, it will Recall the first and the third one spawned. If you are holding the f move and your cursor is directly over a barrier, the barrier will highlight red and upon releasing the f move, it will recall that specific barrier.",
+          "cooldown": 0
+        },
+        "T": {
+          "name": "Crush",
+          "state": ["Medium-Range", "damage-dealing", "defence-piercing", "Melee", "target-single"],
+          "effects": ["Damage-Per-Tick"],
+          "description": "The user must aim their cursor over the Barrier they wish to shrink before using this move. Once used, the Barrier selected will shrink and Crush any players inside, dealing 10 damage per tick and consuming Barrier health based on opponent's defense.",
+          "cooldown": 20
+        }
+      },
+
+      "Passive": {
+        "effects": {
+          "Barrier (Block)": {
+            "effect": ["360-Degree-Block", "Bar-GUI"],
+            "description": "When the user blocks, they will hold a small Barrier around themselves to stop incoming damage. Unlike normal block, Barrier block blocks everything in a 360 degree angle. Barrier block does not have the normal properties of blocking, it simply diverts incoming damage to your Barrier health pool, acting as if you had 1 defense. Barrier block has a 0.1 second endlag, unlike normal blocking."
+          }
+        }
+      }
+    },
+
+    "Hydrofreeze": {
+      "image": "abilities-assets/god-tier/low-god-tier/hydrofreeze.png",
+      "_meta": {
+        "faq": "Hydrofreeze is a low-god-tier that is obtainable from 6.0 to 6.4 via rolling or purchasing the ability from the shop",
+        "tags": ["Burst", "Balanced", "Evasive", "Crowd-Control", "Short-Range", "Stunner", "Melee", "Passive", "Evasive"],
+        "description": "A hydrofreeze user is a balanced combatant due to their well-rounded stats, allowing them to adapt to various combat situations effectively. Their moderate power and speed stats enable them to deal substantial damage while freezing opponents on the battlefield. This versatility allows them to respond to different threats and opportunities as they arise. Hydrofreeze users excel at close-quarters combat, utilizing their abilities to control the battlefield effectively. Their balanced stats make them versatile fighters, capable of adapting to various combat situations. You can counter this by keeping your distance and using ranged attacks to wear them down before they can close the gap.",
+        "state": ["Copyable", "Obtainable"],
+        "target-rating": {
+          "score": 7,
+          "explanation": "A hydrofreeze user with its balanced stats and freeze effects strongly counters high defence opponents who rely on their durable and sustained battle to deal damage. They can freeze, stun and slow down these opponents, preventing them from effectively utilizing their defensive capabilities. This makes hydrofreeze users particularly effective against tanky characters who depend on their durability to outlast opponents in combat as if they can inflict 100 freeze stacks then the opponent will be fully frozen, making them vulnerable to follow-up attacks.",
+          "Weaknesses": ["Ranged Attacks", "High Burst Damage", "AOE", "Teaming"]
+        }
+      },
+      "levels": {
+        "6.0": {"Pow": 5.0,"Spd": 3.0,"Trick": 8.0,"Recv": 4.0,"Def": 6.0},
+        "6.1": {"Pow": 5.1,"Spd": 3.0,"Trick": 8.2,"Recv": 4.1,"Def": 6.1},
+        "6.2": {"Pow": 5.2,"Spd": 3.0,"Trick": 8.4,"Recv": 4.2,"Def": 6.3},
+        "6.3": {"Pow": 5.3,"Spd": 3.2,"Trick": 8.5,"Recv": 4.2,"Def": 6.4},
+        "6.4": {"Pow": 5.4,"Spd": 3.2,"Trick": 8.7,"Recv": 4.3,"Def": 6.5},
+        "6.5": {"Pow": 5.5,"Spd": 3.3,"Trick": 8.9,"Recv": 4.4,"Def": 6.6},
+        "6.6": {"Pow": 5.6,"Spd": 3.3,"Trick": 9.1,"Recv": 4.5,"Def": 6.8},
+        "6.7": {"Pow": 5.7,"Spd": 3.4,"Trick": 9.3,"Recv": 4.6,"Def": 6.9},
+        "6.8": {"Pow": 5.8,"Spd": 3.4,"Trick": 9.5,"Recv": 4.6,"Def": 7.1},
+        "6.9": {"Pow": 6.0,"Spd": 3.5,"Trick": 9.7,"Recv": 4.7,"Def": 7.2},
+        "7.0": {"Pow": 6.1,"Spd": 3.5,"Trick": 9.9,"Recv": 4.8,"Def": 7.3},
+        "7.1": {"Pow": 6.2,"Spd": 3.6,"Trick": 10.0,"Recv": 4.9,"Def": 7.5},
+        "7.2": {"Pow": 6.3,"Spd": 3.7,"Trick": 10.0,"Recv": 5.0,"Def": 7.7},
+        "7.3": {"Pow": 6.5,"Spd": 3.8,"Trick": 10.0,"Recv": 5.1,"Def": 7.9},
+        "7.4": {"Pow": 6.7,"Spd": 3.8,"Trick": 10.0,"Recv": 5.3,"Def": 8.1},
+        "7.5": {"Pow": 6.9,"Spd": 3.9,"Trick": 10.0,"Recv": 5.4,"Def": 8.3},
+        "7.6": {"Pow": 7.0,"Spd": 4.0,"Trick": 10.0,"Recv": 5.5,"Def": 8.5},
+        "7.7": {"Pow": 7.2,"Spd": 4.1,"Trick": 10.0,"Recv": 5.6,"Def": 8.7},
+        "7.8": {"Pow": 7.4,"Spd": 4.2,"Trick": 10.0,"Recv": 5.8,"Def": 8.9},
+        "7.9": {"Pow": 7.5,"Spd": 4.3,"Trick": 10.0,"Recv": 5.9,"Def": 9.2},
+        "8.0": {"Pow": 7.7,"Spd": 4.4,"Trick": 10.0,"Recv": 6.0,"Def": 9.4}
+      },
+
+      "abilities": {
+        "R": {
+          "name": "Ice Blade",
+          "state": ["semi-blockable", "Short-Range", "damage-dealing", "Melee"],
+          "effects": ["freeze", "bleed"],
+          "description": "The user slash forward with their arm as it envelops as a sharp ice blade, dealing large damage to all opponents in front of them and inflicting 15, and inflicting bleed upon contact with the target. This move is semi-blockable, dealing 50% reduced damage on block and no freeze or bleed effect.",
+          "cooldown": 10
+        },
+        "F": {
+          "name": "Drown",
+          "state": ["Short-Range", "damage-dealing", "Melee", "target-single", "instant", "Aimable", "blockable"],
+          "effects": ["freeze", "stun", "Damage-Per-Tick", "defence-piercing"],
+          "description": "The user Drowns 1 nearby target by aiming their cursor over them and using Drown, causing the opponent to enter a quick-time prompt which forces them to spam jump to escape the skill. When an opponent is successfully Drowned, they will take 2 damage per tick (regardless of their defense) and are unable to take any actions. Drown will cancel if used on a blocking opponent but have 1 sec cd before they can be Drowned again. The drown usually lasts till like ~8-10 damage but increases with level or trick stat. If the user do not jump then you could theoretically take 2 dmg indefinetly until you die.",
+          "cooldown": 20
+        },
+        "T": {
+          "name": "Liquefy",
+          "state": ["Evasive", "Instant", "usable-in-stun"],
+          "self-effects": ["invincibility"],
+          "description": "The user melts into a puddle of water, becoming completely invulnerable to nearly all forms of damage for up to 5 seconds and the user can move freely. After the duration ends, the user solidifies back into their normal form at their current location. If a hydrofeeze is being drowned then liquify immediately cancels it. However there are some abilities like lightning which electrocute the water causing damage to happen.",
+          "cooldown": 20
+        }
+      },
+      "Passive": {
+        "effects": {
+          "Freezing M1": {
+            "effect": ["freeze-on-m1-hit"],
+            "description": "The user applies 5 freeze stacks on M1s"
+          },
+          "Ice Spike Heavy": {
+            "effect": ["artificial-heavy", "freeze-on-heavy-hit", "Increased-Heavy-Range"],
+            "description": "The user's heavy is turned into an ice spike attack, having increased range and applying 20 freeze stacks"
+          },
+          "Frozen Block": {
+            "effect": ["freeze-on-block", "artificial-block"],
+            "description": "When the user blocks, they will encase their hands in a layer of ice, applying 5 freeze stacks when blocking m1s and 10 freeze stacks when blocking heavies."
+          },
+          "Frozen Soul": {
+            "effect": ["burn-resistance"],
+            "description": "The user is immune to all burn effects."
+          }
+        }
+      }
+    },
+
+    "Particles": {
+      "image": "abilities-assets/god-tier/low-god-tier/particles.png",
+      "_meta": {
+        "_faq": "Particles is a low-god-tier that is obtainable from 6.0 to 6.4 via rolling or purchasing the ability from the shop",
+        "tags": ["AOE", "Melee", "Burst", "Rage-Bait-Effective", "Passive", "Balanced", "Rage-Bait-Effective"],
+        "description": "A particles user is a balanced combatant due to their well-rounded stats, allowing them to adapt to various combat situations effectively. Their moderate power and speed stats enable them to deal substantial damage while manipulating particles and inflicting bleed on the battlefield. This versatility allows them to respond to different threats and opportunities as they arise. Particles users excel at all forms of combat (short, mid and long range), utilizing their abilities to control the battlefield effectively. Their balanced stats make them versatile fighters, capable of adapting to various combat situations. You can counter this by killing them as fast as possible before they can deal massive AOE damage with their abilities so speedsters (outmanuever opponents) and tanks (tank attacks) could effectively.",
+        "state": ["Copyable", "Obtainable"],
+        "target-rating": {
+          "score": 7,
+          "explanation": "A particles user with its balanced stats and bleed effects strongly counters low defence opponents as they can often one shot these opponents before they make the way onto the battlefield. Their AOE attacks and bleed effects make it difficult for low defence opponents to survive prolonged engagements, as they can quickly accumulate damage over time. This makes particles users particularly effective against squishy characters who rely on their speed and agility to avoid damage in combat.",
+          "Weaknesses": ["Ranged Attacks", "High Burst Damage", "AOE", "Wide-Ranged Debuffs"]
+        }
+      },
+      "levels": {
+        "6.0": {"Pow": 6.5,"Spd": 2.8,"Trick": 9.2,"Recv": 3.7,"Def": 3.7},
+        "6.1": {"Pow": 6.6,"Spd": 2.9,"Trick": 9.4,"Recv": 3.8,"Def": 3.8},
+        "6.2": {"Pow": 6.8,"Spd": 2.9,"Trick": 9.6,"Recv": 3.9,"Def": 3.9},
+        "6.3": {"Pow": 6.9,"Spd": 3.0,"Trick": 9.8,"Recv": 3.9,"Def": 3.9},
+        "6.4": {"Pow": 7.1,"Spd": 3.0,"Trick": 10.0,"Recv": 4.0,"Def": 4.0},
+        "6.5": {"Pow": 7.3,"Spd": 3.1,"Trick": 10.0,"Recv": 4.2,"Def": 4.2},
+        "6.6": {"Pow": 7.6,"Spd": 3.2,"Trick": 10.0,"Recv": 4.3,"Def": 4.3},
+        "6.7": {"Pow": 7.8,"Spd": 3.3,"Trick": 10.0,"Recv": 4.4,"Def": 4.4},
+        "6.8": {"Pow": 8.0,"Spd": 3.3,"Trick": 10.0,"Recv": 4.5,"Def": 4.5},
+        "6.9": {"Pow": 8.3,"Spd": 3.4,"Trick": 10.0,"Recv": 4.6,"Def": 4.6},
+        "7.0": {"Pow": 8.5,"Spd": 3.5,"Trick": 10.0,"Recv": 4.8,"Def": 4.8},
+        "7.1": {"Pow": 8.8,"Spd": 3.6,"Trick": 10.0,"Recv": 4.9,"Def": 4.9},
+        "7.2": {"Pow": 9.0,"Spd": 3.7,"Trick": 10.0,"Recv": 5.0,"Def": 5.0},
+        "7.3": {"Pow": 9.3,"Spd": 3.8,"Trick": 10.0,"Recv": 5.1,"Def": 5.1},
+        "7.4": {"Pow": 9.5,"Spd": 3.8,"Trick": 10.0,"Recv": 5.3,"Def": 5.3},
+        "7.5": {"Pow": 9.8,"Spd": 3.9,"Trick": 10.0,"Recv": 5.4,"Def": 5.4},
+        "7.6": {"Pow": 10.0,"Spd": 4.0,"Trick": 10.0,"Recv": 5.5,"Def": 5.5},
+        "7.7": {"Pow": 10.0,"Spd": 4.2,"Trick": 10.0,"Recv": 5.7,"Def": 5.7},
+        "7.8": {"Pow": 10.0,"Spd": 4.3,"Trick": 10.0,"Recv": 6.0,"Def": 6.0},
+        "7.9": {"Pow": 10.0,"Spd": 4.5,"Trick": 10.0,"Recv": 6.2,"Def": 6.2},
+        "8.0": {"Pow": 10.0,"Spd": 4.6,"Trick": 10.0,"Recv": 6.4,"Def": 6.4}
+      },
+
+      "abilities":{
+        "R": {
+          "name": "Spears",
+          "description": "The user raises one arm forward and charges up for 1 second, constructing up to 5 spears before firing them towards the cursor with each great speed. Each spear spawns in a randomized position around the player, and deals moderate damage whilst also inflicting bleed.",
+          "state":["Aimable", "Melee", "Long-Range", "semi-blockable", "holdable"],
+          "effects": ["bleed"],
+          "cooldown": 15
+        },
+        "F": {
+          "name": "Palm",
+          "description": "The user raises an arm and charges a glowing palm of particles above them for 2 seconds increasing range, size, and damage the longer its held, before slamming down and knocking back anyone that is hit, dealing heavy damage and inflicting bleed. This move is semi-blockable, dealing 50% reduced damage on block.",
+          "state": ["Medium-Range", "damage-dealing", "Melee", "AOE", "semi-blockable", "holdable", "instant"],
+          "effects": ["bleed", "knockback"],
+          "cooldown": 15
+        },
+        "T": {
+          "name": "Swarm",
+          "description": "The user raises its arm above their head and begins charging a massive swarm of particles above them for 2 seconds, increasing size, damage and number of bleed stacks the longer its held, before hurling it towards the cursor. On release, the user throws this swarm towards their cursor, which explodes on impact dealing massive damage to all opponents in the area and inflicting heavy bleed. This move is semi-blockable, dealing 50% reduced damage on block.",
+          "state": ["Long-Range", "damage-dealing", "AOE", "semi-blockable", "holdable", "Aimable", "instant"],
+          "effects": ["bleed"],
+          "cooldown": 25
+        }
+      },
+
+      "Passive": {
+        "effects": {
+          "Particle M1": {
+            "effect": ["bleed-on-m1-hit", "cosmetic-m1", "Increased-M1-Range"],
+            "description": "When M1ing, the user slashes with particle-infused strikes, inflicting bleed on hit and having increased range."
+          },
+          "Particle Heavy": {
+            "effect": ["bleed-on-heavy-hit", "Increased-Heavy-Range", "cosmetic-heavy"],
+            "description": "When heavying, the user throws a punch with their particles, having extra range and applying bleed on hit."
+          }
+        }
+      }
+    },
+
+    "Botanist": {
+      "image": "abilities-assets/god-tier/low-god-tier/botanist.png",
+      "_meta": {
+        "faq": "Botanist is a low-god-tier that is obtainable from 6.0 to 6.4 via rolling or purchasing the ability from the shop",
+        "tags": ["Balanced", "Crowd-Control", "Support", "Passive", "Stunner", "Evasive"],
+        "description": "They are a balanced combatant due to their well-rounded stats, they work around stuns to make up for their mid power stat. Their moderate power and speed stats enable them to deal substantial damage on the battlefield. This versatility allows them to respond to different threats and opportunities as they arise. Botanist users excel at all forms of combat (short, mid and long range), utilizing their abilities to control the battlefield effectively. Their balanced stats make them versatile fighters, capable of adapting to various combat situations. You can counter this by killing them as fast as possible before they can heal themselves or their allies so speedsters (outmanuever opponents) and tanks (tank attacks) could effectively.",
+        "state": ["Copyable", "Obtainable"],
+        "target-rating": {
+          "score": 4,
+          "explanation": "A botanist user with its balanced stats strongly counters prolonged engagements where opponents rely on sustained damage output to wear down their enemies. They can heal themselves and their allies, making it difficult for opponents to secure kills and maintain pressure on the battlefield. This makes botanist users particularly effective against characters who depend on outlasting their opponents in combat.",
+          "Weaknesses": ["Ranged Attacks", "High Burst Damage", "AOE", "Teaming"]
+        }
+      },
+      "levels": {
+        "6.0": {"Pow": 5.7,"Spd": 2.9,"Trick": 6.6,"Recv": 3.3,"Def": 7.5},
+        "6.1": {"Pow": 5.8,"Spd": 2.9,"Trick": 6.7,"Recv": 3.4,"Def": 7.7},
+        "6.2": {"Pow": 5.9,"Spd": 3.0,"Trick": 6.9,"Recv": 3.5,"Def": 7.9},
+        "6.3": {"Pow": 6.0,"Spd": 3.0,"Trick": 7.0,"Recv": 3.5,"Def": 8.0},
+        "6.4": {"Pow": 6.1,"Spd": 3.1,"Trick": 7.2,"Recv": 3.6,"Def": 8.2},
+        "6.5": {"Pow": 6.3,"Spd": 3.1,"Trick": 7.3,"Recv": 3.6,"Def": 8.4},
+        "6.6": {"Pow": 6.4,"Spd": 3.2,"Trick": 7.5,"Recv": 3.7,"Def": 8.6},
+        "6.7": {"Pow": 6.5,"Spd": 3.2,"Trick": 7.6,"Recv": 3.8,"Def": 8.7},
+        "6.8": {"Pow": 6.6,"Spd": 3.3,"Trick": 7.8,"Recv": 3.8,"Def": 8.9},
+        "6.9": {"Pow": 6.8,"Spd": 3.3,"Trick": 7.9,"Recv": 3.9,"Def": 9.1},
+        "7.0": {"Pow": 6.9,"Spd": 3.4,"Trick": 8.1,"Recv": 4.0,"Def": 9.3},
+        "7.1": {"Pow": 7.0,"Spd": 3.4,"Trick": 8.2,"Recv": 4.0,"Def": 9.4},
+        "7.2": {"Pow": 7.2,"Spd": 3.5,"Trick": 8.4,"Recv": 4.1,"Def": 9.6},
+        "7.3": {"Pow": 7.3,"Spd": 3.5,"Trick": 8.5,"Recv": 4.1,"Def": 9.8},
+        "7.5": {"Pow": 7.6,"Spd": 3.6,"Trick": 8.9,"Recv": 4.3,"Def": 10.0}
+      },
+
+      "abilities": {
+        "R": {
+          "name": "Trunk",
+          "state": ["Medium-Range", "support", "Aimable", "instant", "semi-blockable", "damage-dealing", "holdable", "Melee"],
+          "effects": ["stun"],
+          "description": "The user enters a stance and begins charging for up to 2.5 seconds, producing a large glowing Trunk from the ground (at their cursor) that stuns for half a second. The damage of this increases as it is charged. This move is semi-blockable, dealing 50% reduced damage on block and no stun effect.",
+          "cooldown": 12
+        },
+        "F": {
+          "name": "Root Slam",
+          "state": ["Medium-Range", "damage-dealing", "Melee", "AOE", "semi-blockable"],
+          "effects": [],
+          "description": "The user raises a large root from the ground and then slams it forward, dealing moderate damage to all opponents in the area. This move is semi-blockable, dealing 20% reduced damage on block.",
+          "cooldown": 15
+        },
+        "T": {
+          "name": "Escape",
+          "state": ["Evasive", "Instant", "usable-in-stun"],
+          "description": "The user rises upward, elevating themselves into the sky with a large tree root, before falling back down after 3.5 seconds",
+          "cooldown": 20
+        },
+        "G": {
+          "name": "Ensnare",
+          "state": ["Medium-Range", "support", "Aimable", "instant", "blockable", "Holdable", "semi-cancellable"],
+          "effects": ["shackled"],
+          "description": "The user enters a stance and begins charging for up to 2.5 seconds, after which small prickly vines will rise at the users cursor, shackling any opponents hit for 2 seconds. The duration of the shackle increases the longer the move is charged. If the vines connect to another player then it will immobilize them for 4 seconds. This stops the opponent from moving. However they can still attack, block and use skills. This move is semi-cancellable in which if the user is m1ed then the attack will be released but not cancelled. The move is blockable, 100% reduced damage and no immobilization",
+          "cooldown": 15
+        }
+      }
+    },
+
+    "Hypnosis": {
+      "image": "abilities-assets/god-tier/low-god-tier/zzzzz-1746505839hypnosis.png",
+      "levels": {
+        "6.0": {"Pow": 5.0,"Spd": 2.0,"Trick": 10.0,"Recv": 5.0,"Def": 4.0},
+        "6.1": {"Pow": 5.1,"Spd": 2.0,"Trick": 10.2,"Recv": 5.1,"Def": 4.1},
+        "6.2": {"Pow": 5.2,"Spd": 2.1,"Trick": 10.5,"Recv": 5.2,"Def": 4.2},
+        "6.3": {"Pow": 5.3,"Spd": 2.1,"Trick": 10.7,"Recv": 5.3,"Def": 4.2},
+        "6.4": {"Pow": 5.4,"Spd": 2.1,"Trick": 10.9,"Recv": 5.4,"Def": 4.3},
+        "6.5": {"Pow": 5.5,"Spd": 2.1,"Trick": 11.2,"Recv": 5.5,"Def": 4.4},
+        "6.6": {"Pow": 5.6,"Spd": 2.2,"Trick": 11.4,"Recv": 5.6,"Def": 4.5},
+        "6.7": {"Pow": 5.7,"Spd": 2.2,"Trick": 11.7,"Recv": 5.7,"Def": 4.6},
+        "6.8": {"Pow": 5.8,"Spd": 2.2,"Trick": 11.9,"Recv": 5.8,"Def": 4.6},
+        "6.9": {"Pow": 6.0,"Spd": 2.2,"Trick": 12.1,"Recv": 6.0,"Def": 4.7},
+        "7.0": {"Pow": 6.1,"Spd": 2.3,"Trick": 12.4,"Recv": 6.1,"Def": 4.8},
+        "7.3": {"Pow": 6.4,"Spd": 2.3,"Trick": 13.1,"Recv": 6.4,"Def": 5.0},
+        "7.5": {"Pow": 6.6,"Spd": 2.4,"Trick": 13.6,"Recv": 6.6,"Def": 5.2}
+      }
+    },
+
+    "Landscaping": {
+      "image": "abilities-assets/god-tier/mid-god-tier/landscaping.png",
+      "levels": {
+        "6.0": {"Pow": 7.3,"Spd": 3.2,"Trick": 5.3,"Recv": 2.0,"Def": 8.1},
+        "6.1": {"Pow": 7.5,"Spd": 3.3,"Trick": 5.4,"Recv": 2.0,"Def": 8.3},
+        "6.2": {"Pow": 7.7,"Spd": 3.3,"Trick": 5.6,"Recv": 2.0,"Def": 8.5},
+        "6.3": {"Pow": 7.8,"Spd": 3.4,"Trick": 5.7,"Recv": 2.0,"Def": 8.7},
+        "6.4": {"Pow": 8.0,"Spd": 3.4,"Trick": 5.8,"Recv": 2.1,"Def": 8.9},
+        "6.5": {"Pow": 8.2,"Spd": 3.5,"Trick": 5.9,"Recv": 2.1,"Def": 9.1},
+        "6.6": {"Pow": 8.4,"Spd": 3.6,"Trick": 6.0,"Recv": 2.1,"Def": 9.2},
+        "6.7": {"Pow": 8.5,"Spd": 3.6,"Trick": 6.1,"Recv": 2.1,"Def": 9.4},
+        "6.8": {"Pow": 8.7,"Spd": 3.7,"Trick": 6.2,"Recv": 2.2,"Def": 9.6},
+        "6.9": {"Pow": 8.9,"Spd": 3.7,"Trick": 6.4,"Recv": 2.2,"Def": 9.8},
+        "7.0": {"Pow": 9.1,"Spd": 3.8,"Trick": 6.5,"Recv": 2.2,"Def": 10.0},
+        "7.1": {"Pow": 9.3,"Spd": 3.9,"Trick": 6.7,"Recv": 2.3,"Def": 10.0},
+        "7.2": {"Pow": 9.6,"Spd": 4.0,"Trick": 6.9,"Recv": 2.3,"Def": 10.0},
+        "7.3": {"Pow": 9.8,"Spd": 4.1,"Trick": 7.0,"Recv": 2.3,"Def": 10.0},
+        "7.4": {"Pow": 10.0,"Spd": 4.2,"Trick": 7.3,"Recv": 2.4,"Def": 10.0},
+        "7.5": {"Pow": 10.0,"Spd": 4.4,"Trick": 7.6,"Recv": 2.5,"Def": 10.0},
+        "7.7": {"Pow": 10.0,"Spd": 4.7,"Trick": 8.3,"Recv": 2.6,"Def": 10.0}
+      }
+    },
+
+    "Minefield": {
+      "levels": {
+        "6.5": {"Pow": 7.9,"Spd": 4.0,"Trick": 9.9,"Recv": 3.0,"Def": 4.0},
+        "6.6": {"Pow": 8.1,"Spd": 4.1,"Trick": 10.0,"Recv": 3.0,"Def": 4.1},
+        "6.7": {"Pow": 8.4,"Spd": 4.2,"Trick": 10.0,"Recv": 3.1,"Def": 4.2},
+        "6.8": {"Pow": 8.7,"Spd": 4.3,"Trick": 10.0,"Recv": 3.2,"Def": 4.3},
+        "6.9": {"Pow": 8.9,"Spd": 4.4,"Trick": 10.0,"Recv": 3.3,"Def": 4.4},
+        "7.0": {"Pow": 9.2,"Spd": 4.5,"Trick": 10.0,"Recv": 3.3,"Def": 4.5},
+        "7.1": {"Pow": 9.5,"Spd": 4.6,"Trick": 10.0,"Recv": 3.4,"Def": 4.6},
+        "7.2": {"Pow": 9.7,"Spd": 4.7,"Trick": 10.0,"Recv": 3.5,"Def": 4.7},
+        "7.3": {"Pow": 10.0,"Spd": 4.9,"Trick": 10.0,"Recv": 3.6,"Def": 4.9},
+        "7.4": {"Pow": 10.0,"Spd": 5.1,"Trick": 10.0,"Recv": 3.7,"Def": 5.1},
+        "7.5": {"Pow": 10.0,"Spd": 5.3,"Trick": 10.0,"Recv": 3.9,"Def": 5.3},
+        "7.7": {"Pow": 10.0,"Spd": 5.7,"Trick": 10.0,"Recv": 4.2,"Def": 5.7},
+        "8.0": {"Pow": 10.0,"Spd": 6.4,"Trick": 10.0,"Recv": 4.6,"Def": 6.4}
+      }
+    },
+
+    "Telekinesis": {
+      "levels": {
+        "6.5": {"Pow": 10.0,"Spd": 1.0,"Trick": 7.7,"Recv": 3.7,"Def": 6.4},
+        "6.6": {"Pow": 10.0,"Spd": 1.0,"Trick": 7.9,"Recv": 3.8,"Def": 6.6},
+        "6.7": {"Pow": 10.0,"Spd": 1.0,"Trick": 8.2,"Recv": 3.9,"Def": 6.8},
+        "6.8": {"Pow": 10.0,"Spd": 1.0,"Trick": 8.5,"Recv": 4.0,"Def": 7.0},
+        "6.9": {"Pow": 10.0,"Spd": 1.0,"Trick": 8.7,"Recv": 4.1,"Def": 7.2},
+        "7.0": {"Pow": 10.0,"Spd": 1.0,"Trick": 9.0,"Recv": 4.2,"Def": 7.4},
+        "7.1": {"Pow": 10.0,"Spd": 1.0,"Trick": 9.2,"Recv": 4.3,"Def": 7.6},
+        "7.2": {"Pow": 10.0,"Spd": 1.0,"Trick": 9.5,"Recv": 4.4,"Def": 7.8},
+        "7.3": {"Pow": 10.0,"Spd": 1.0,"Trick": 9.8,"Recv": 4.5,"Def": 8.0},
+        "7.4": {"Pow": 10.0,"Spd": 1.0,"Trick": 10.0,"Recv": 4.6,"Def": 8.3},
+        "7.5": {"Pow": 10.0,"Spd": 1.0,"Trick": 10.0,"Recv": 4.8,"Def": 8.7},
+        "7.6": {"Pow": 10.0,"Spd": 1.0,"Trick": 10.0,"Recv": 5.0,"Def": 9.0},
+        "7.7": {"Pow": 10.0,"Spd": 1.0,"Trick": 10.0,"Recv": 5.2,"Def": 9.4},
+        "7.8": {"Pow": 10.0,"Spd": 1.0,"Trick": 10.0,"Recv": 5.4,"Def": 9.8},
+        "7.9": {"Pow": 10.0,"Spd": 1.0,"Trick": 10.0,"Recv": 5.9,"Def": 10.0},
+        "8.0": {"Pow": 10.0,"Spd": 1.0,"Trick": 10.0,"Recv": 6.5,"Def": 10.0},
+        "8.1": {"Pow": 10.0,"Spd": 1.0,"Trick": 10.0,"Recv": 7.1,"Def": 10.0},
+        "8.2": {"Pow": 10.0,"Spd": 1.0,"Trick": 10.0,"Recv": 7.7,"Def": 10.0},
+        "8.3": {"Pow": 10.0,"Spd": 1.0,"Trick": 10.0,"Recv": 8.3,"Def": 10.0},
+        "8.4": {"Pow": 10.0,"Spd": 1.0,"Trick": 10.0,"Recv": 8.9,"Def": 10.0},
+        "8.5": {"Pow": 10.0,"Spd": 1.0,"Trick": 10.0,"Recv": 9.5,"Def": 10.0}
+      }
+    },
+
+    "Varrier": {
+      "levels": {
+        "6.5": {"Pow": 7.4,"Spd": 1.9,"Trick": 6.5,"Recv": 3.7,"Def": 9.2},
+        "6.7": {"Pow": 7.7,"Spd": 2.0,"Trick": 6.7,"Recv": 3.9,"Def": 9.6},
+        "7.0": {"Pow": 8.2,"Spd": 2.0,"Trick": 7.2,"Recv": 4.1,"Def": 10.0},
+        "7.1": {"Pow": 8.5,"Spd": 2.1,"Trick": 7.4,"Recv": 4.2,"Def": 10.0},
+        "7.2": {"Pow": 8.7,"Spd": 2.1,"Trick": 7.6,"Recv": 4.3,"Def": 10.0},
+        "7.3": {"Pow": 8.9,"Spd": 2.1,"Trick": 7.8,"Recv": 4.4,"Def": 10.0},
+        "7.4": {"Pow": 9.2,"Spd": 2.2,"Trick": 8.0,"Recv": 4.5,"Def": 10.0},
+        "7.5": {"Pow": 9.4,"Spd": 2.2,"Trick": 8.2,"Recv": 4.6,"Def": 10.0},
+        "7.6": {"Pow": 9.7,"Spd": 2.2,"Trick": 8.4,"Recv": 4.7,"Def": 10.0},
+        "7.7": {"Pow": 9.9,"Spd": 2.3,"Trick": 8.6,"Recv": 4.8,"Def": 10.0},
+        "7.8": {"Pow": 10.0,"Spd": 2.3,"Trick": 9.0,"Recv": 5.0,"Def": 10.0},
+        "7.9": {"Pow": 10.0,"Spd": 2.4,"Trick": 9.3,"Recv": 5.2,"Def": 10.0},
+        "8.0": {"Pow": 10.0,"Spd": 2.4,"Trick": 9.7,"Recv": 5.3,"Def": 10.0},
+        "8.1": {"Pow": 10.0,"Spd": 2.5,"Trick": 10.0,"Recv": 5.5,"Def": 10.0},
+        "8.2": {"Pow": 10.0,"Spd": 2.7,"Trick": 10.0,"Recv": 6.0,"Def": 10.0},
+        "8.3": {"Pow": 10.0,"Spd": 2.8,"Trick": 10.0,"Recv": 6.5,"Def": 10.0},
+        "8.4": {"Pow": 10.0,"Spd": 3.0,"Trick": 10.0,"Recv": 6.9,"Def": 10.0},
+        "8.5": {"Pow": 10.0,"Spd": 3.1,"Trick": 10.0,"Recv": 7.4,"Def": 10.0},
+        "8.6": {"Pow": 10.0,"Spd": 3.3,"Trick": 10.0,"Recv": 7.8,"Def": 10.0},
+        "8.7": {"Pow": 10.0,"Spd": 3.4,"Trick": 10.0,"Recv": 8.3,"Def": 10.0},
+        "8.8": {"Pow": 10.0,"Spd": 3.6,"Trick": 10.0,"Recv": 8.8,"Def": 10.0},
+        "8.9": {"Pow": 10.0,"Spd": 3.7,"Trick": 10.0,"Recv": 9.2,"Def": 10.0},
+        "9.0": {"Pow": 10.0,"Spd": 3.9,"Trick": 10.0,"Recv": 9.7,"Def": 10.0}
+      }
+    },
+
+    "Sensory Control": {
+      "levels": {
+        "7.0": {"Pow": 4.3,"Spd": 3.2,"Trick": 16.5,"Recv": 3.3,"Def": 4.3},
+        "7.1": {"Pow": 4.4,"Spd": 3.3,"Trick": 16.8,"Recv": 3.3,"Def": 4.4},
+        "7.2": {"Pow": 4.4,"Spd": 3.3,"Trick": 17.2,"Recv": 3.3,"Def": 4.5},
+        "7.3": {"Pow": 4.5,"Spd": 3.4,"Trick": 17.5,"Recv": 3.4,"Def": 4.5},
+        "7.4": {"Pow": 4.6,"Spd": 3.4,"Trick": 17.9,"Recv": 3.4,"Def": 4.6},
+        "7.5": {"Pow": 4.7,"Spd": 3.5,"Trick": 18.2,"Recv": 3.5,"Def": 4.7},
+        "7.6": {"Pow": 4.8,"Spd": 3.5,"Trick": 18.5,"Recv": 3.5,"Def": 4.8},
+        "7.7": {"Pow": 4.8,"Spd": 3.6,"Trick": 18.9,"Recv": 3.6,"Def": 4.8},
+        "7.8": {"Pow": 4.8,"Spd": 3.6,"Trick": 19.2,"Recv": 3.6,"Def": 4.9},
+        "7.9": {"Pow": 5.0,"Spd": 3.7,"Trick": 19.6,"Recv": 3.7,"Def": 5.0},
+        "8.0": {"Pow": 5.1,"Spd": 3.7,"Trick": 19.9,"Recv": 3.7,"Def": 5.1},
+        "8.2": {"Pow": 5.2,"Spd": 3.8,"Trick": 20.6,"Recv": 3.8,"Def": 5.1},
+        "8.5": {"Pow": 5.4,"Spd": 4.0,"Trick": 21.7,"Recv": 4.0,"Def": 5.4}
+      }
+    },
+
+    "Time Manipulation": {
+
+      "levels": {
+        "6.5": {"Pow": 7.7,"Spd": 9.5,"Trick": 6.6,"Recv": 3.8,"Def": 1.2},
+        "6.6": {"Pow": 7.7,"Spd": 9.7,"Trick": 6.8,"Recv": 3.9,"Def": 1.2},
+        "6.7": {"Pow": 7.9,"Spd": 9.9,"Trick": 6.9,"Recv": 4.0,"Def": 1.2},
+        "6.8": {"Pow": 8.1,"Spd": 10.0,"Trick": 7.1,"Recv": 4.0,"Def": 1.3},
+        "6.9": {"Pow": 8.3,"Spd": 10.0,"Trick": 7.3,"Recv": 4.1,"Def": 1.3},
+        "7.0": {"Pow": 8.6,"Spd": 10.0,"Trick": 7.5,"Recv": 4.2,"Def": 1.3},
+        "7.1": {"Pow": 8.8,"Spd": 10.0,"Trick": 7.7,"Recv": 4.3,"Def": 1.3},
+        "7.2": {"Pow": 9.1,"Spd": 10.0,"Trick": 7.9,"Recv": 4.5,"Def": 1.3},
+        "7.3": {"Pow": 9.3,"Spd": 10.0,"Trick": 8.1,"Recv": 4.6,"Def": 1.3},
+        "7.4": {"Pow": 9.6,"Spd": 10.0,"Trick": 8.3,"Recv": 4.7,"Def": 1.3},
+        "7.5": {"Pow": 9.8,"Spd": 10.0,"Trick": 8.6,"Recv": 4.8,"Def": 1.3},
+        "7.6": {"Pow": 10.0,"Spd": 10.0,"Trick": 8.8,"Recv": 4.9,"Def": 1.3},
+        "7.7": {"Pow": 10.0,"Spd": 10.0,"Trick": 9.2,"Recv": 5.1,"Def": 1.3},
+        "7.8": {"Pow": 10.0,"Spd": 10.0,"Trick": 9.6,"Recv": 5.3,"Def": 1.4},
+        "7.9": {"Pow": 10.0,"Spd": 10.0,"Trick": 10.0,"Recv": 5.5,"Def": 1.4},
+        "8.0": {"Pow": 10.0,"Spd": 10.0,"Trick": 10.0,"Recv": 6.0,"Def": 1.4},
+        "8.1": {"Pow": 10.0,"Spd": 10.0,"Trick": 10.0,"Recv": 6.6,"Def": 1.5},
+        "8.2": {"Pow": 10.0,"Spd": 10.0,"Trick": 10.0,"Recv": 7.2,"Def": 1.6},
+        "8.3": {"Pow": 10.0,"Spd": 10.0,"Trick": 10.0,"Recv": 7.7,"Def": 1.6},
+        "8.4": {"Pow": 10.0,"Spd": 10.0,"Trick": 10.0,"Recv": 8.3,"Def": 1.7},
+        "8.5": {"Pow": 10.0,"Spd": 10.0,"Trick": 10.0,"Recv": 8.8,"Def": 1.7},
+        "8.6": {"Pow": 10.0,"Spd": 10.0,"Trick": 10.0,"Recv": 9.4,"Def": 1.7},
+        "8.7": {"Pow": 10.0,"Spd": 10.0,"Trick": 10.0,"Recv": 10.0,"Def": 1.7},
+        "8.8": {"Pow": 10.0,"Spd": 10.0,"Trick": 10.0,"Recv": 10.0,"Def": 2.4},
+        "8.9": {"Pow": 10.0,"Spd": 10.0,"Trick": 10.0,"Recv": 10.0,"Def": 3.0},
+        "9.0": {"Pow": 10.0,"Spd": 10.0,"Trick": 10.0,"Recv": 10.0,"Def": 3.6},
+        "9.1": {"Pow": 10.0,"Spd": 10.0,"Trick": 10.0,"Recv": 10.0,"Def": 4.2},
+        "9.2": {"Pow": 10.0,"Spd": 10.0,"Trick": 10.0,"Recv": 10.0,"Def": 4.9},
+        "9.3": {"Pow": 10.0,"Spd": 10.0,"Trick": 10.0,"Recv": 10.0,"Def": 5.5},
+        "9.4": {"Pow": 10.0,"Spd": 10.0,"Trick": 10.0,"Recv": 10.0,"Def": 6.1},
+        "9.5": {"Pow": 10.0,"Spd": 10.0,"Trick": 10.0,"Recv": 10.0,"Def": 6.8},
+        "9.6": {"Pow": 10.0,"Spd": 10.0,"Trick": 10.0,"Recv": 10.0,"Def": 7.4},
+        "9.7": {"Pow": 10.0,"Spd": 10.0,"Trick": 10.0,"Recv": 10.0,"Def": 8.1},
+        "9.8": {"Pow": 10.0,"Spd": 10.0,"Trick": 10.0,"Recv": 10.0,"Def": 8.7},
+        "9.9": {"Pow": 10.0,"Spd": 10.0,"Trick": 10.0,"Recv": 10.0,"Def": 9.4},
+        "10.0": {"Pow": 10.0,"Spd": 10.0,"Trick": 10.0,"Recv": 10.0,"Def": 10.0}
+      }
+    },
+
+    "Command": {
+
+      "levels": {
+        "7.0": {"Pow": 6.0,"Spd": 1.0,"Trick": 15.9,"Recv": 2.7,"Def": 6.0},
+        "7.1": {"Pow": 6.1,"Spd": 1.0,"Trick": 16.3,"Recv": 2.7,"Def": 6.1},
+        "7.2": {"Pow": 6.2,"Spd": 1.0,"Trick": 16.6,"Recv": 2.7,"Def": 6.2},
+        "7.3": {"Pow": 6.3,"Spd": 1.0,"Trick": 16.9,"Recv": 2.8,"Def": 6.3},
+        "7.4": {"Pow": 6.4,"Spd": 1.0,"Trick": 17.3,"Recv": 2.8,"Def": 6.4},
+        "7.5": {"Pow": 6.5,"Spd": 1.0,"Trick": 17.6,"Recv": 2.8,"Def": 6.5},
+        "7.6": {"Pow": 6.6,"Spd": 1.0,"Trick": 17.9,"Recv": 2.9,"Def": 6.6},
+        "7.7": {"Pow": 6.7,"Spd": 1.0,"Trick": 18.2,"Recv": 2.9,"Def": 6.7},
+        "7.8": {"Pow": 6.9,"Spd": 1.0,"Trick": 18.6,"Recv": 3.0,"Def": 6.9},
+        "7.9": {"Pow": 7.0,"Spd": 1.0,"Trick": 18.9,"Recv": 3.0,"Def": 7.0},
+        "8.0": {"Pow": 7.1,"Spd": 1.0,"Trick": 19.3,"Recv": 3.0,"Def": 7.1},
+        "8.1": {"Pow": 7.2,"Spd": 1.0,"Trick": 19.6,"Recv": 3.1,"Def": 7.2},
+        "8.2": {"Pow": 7.3,"Spd": 1.0,"Trick": 19.9,"Recv": 3.1,"Def": 7.3},
+        "8.3": {"Pow": 7.4,"Spd": 1.0,"Trick": 20.3,"Recv": 3.1,"Def": 7.4},
+        "8.4": {"Pow": 7.5,"Spd": 1.0,"Trick": 20.6,"Recv": 3.2,"Def": 7.5},
+        "8.5": {"Pow": 7.7,"Spd": 1.0,"Trick": 21.0,"Recv": 3.2,"Def": 7.7},
+        "8.6": {"Pow": 7.8,"Spd": 1.0,"Trick": 21.3,"Recv": 3.3,"Def": 7.8},
+        "8.7": {"Pow": 7.9,"Spd": 1.0,"Trick": 21.7,"Recv": 3.3,"Def": 7.9},
+        "8.8": {"Pow": 8.0,"Spd": 1.0,"Trick": 22.0,"Recv": 3.3,"Def": 8.0},
+        "8.9": {"Pow": 8.1,"Spd": 1.0,"Trick": 22.4,"Recv": 3.4,"Def": 8.1},
+        "9.0": {"Pow": 8.2,"Spd": 1.0,"Trick": 22.7,"Recv": 3.4,"Def": 8.2},
+        "9.1": {"Pow": 8.4,"Spd": 1.0,"Trick": 23.1,"Recv": 3.5,"Def": 8.4},
+        "9.2": {"Pow": 8.5,"Spd": 1.0,"Trick": 23.4,"Recv": 3.5,"Def": 8.5},
+        "9.3": {"Pow": 8.6,"Spd": 1.0,"Trick": 23.8,"Recv": 3.5,"Def": 8.6},
+        "9.4": {"Pow": 8.7,"Spd": 1.0,"Trick": 24.1,"Recv": 3.6,"Def": 8.7},
+        "9.5": {"Pow": 8.8,"Spd": 1.0,"Trick": 24.5,"Recv": 3.6,"Def": 8.8},
+        "9.6": {"Pow": 9.0,"Spd": 1.0,"Trick": 24.9,"Recv": 3.7,"Def": 9.0},
+        "9.7": {"Pow": 9.1,"Spd": 1.0,"Trick": 25.2,"Recv": 3.7,"Def": 9.1},
+        "9.8": {"Pow": 9.2,"Spd": 1.0,"Trick": 25.6,"Recv": 3.7,"Def": 9.2},
+        "9.9": {"Pow": 9.3,"Spd": 1.0,"Trick": 25.9,"Recv": 3.8,"Def": 9.3},
+        "10.0": {"Pow": 9.4,"Spd": 1.0,"Trick": 26.3,"Recv": 3.8,"Def": 9.4}
+      }
+    }
+  },
+
+  "Event/Special": {
+    "Festive": {
+      "levels": {
+        "5.9": {"Pow": 8.1,"Spd": 4.6,"Trick": 4.6,"Recv": 4.6,"Def": 3.7},
+        "6.0": {"Pow": 8.3,"Spd": 4.6,"Trick": 4.6,"Recv": 4.6,"Def": 3.7},
+        "6.1": {"Pow": 8.5,"Spd": 4.7,"Trick": 4.7,"Recv": 4.7,"Def": 3.8},
+        "6.2": {"Pow": 8.7,"Spd": 4.8,"Trick": 4.8,"Recv": 4.8,"Def": 3.9},
+        "6.3": {"Pow": 8.9,"Spd": 4.9,"Trick": 4.9,"Recv": 4.9,"Def": 3.9},
+        "6.4": {"Pow": 9.1,"Spd": 5.0,"Trick": 5.0,"Recv": 5.0,"Def": 4.0},
+        "6.5": {"Pow": 9.3,"Spd": 5.1,"Trick": 5.1,"Recv": 5.1,"Def": 4.1},
+        "6.6": {"Pow": 9.4,"Spd": 5.2,"Trick": 5.2,"Recv": 5.2,"Def": 4.2},
+        "6.7": {"Pow": 9.6,"Spd": 5.3,"Trick": 5.3,"Recv": 5.3,"Def": 4.2},
+        "6.8": {"Pow": 9.8,"Spd": 5.4,"Trick": 5.4,"Recv": 5.4,"Def": 4.3},
+        "6.9": {"Pow": 10.0,"Spd": 5.5,"Trick": 5.5,"Recv": 5.5,"Def": 4.4},
+        "7.0": {"Pow": 10.0,"Spd": 5.7,"Trick": 5.7,"Recv": 5.7,"Def": 4.5}
+      }
+    },
+
+    "Pumpkins": {
+      "levels": {
+        "6.0": {"Pow": 6.5,"Spd": 1.0,"Trick": 8.3,"Recv": 4.4,"Def": 5.6},
+        "6.2": {"Pow": 6.8,"Spd": 1.0,"Trick": 8.7,"Recv": 4.6,"Def": 5.8},
+        "6.3": {"Pow": 6.9,"Spd": 1.0,"Trick": 8.8,"Recv": 4.7,"Def": 5.9},
+        "6.4": {"Pow": 7.1,"Spd": 1.0,"Trick": 9.0,"Recv": 4.8,"Def": 6.1},
+        "6.5": {"Pow": 7.3,"Spd": 1.0,"Trick": 9.2,"Recv": 4.9,"Def": 6.3},
+        "6.7": {"Pow": 7.7,"Spd": 1.0,"Trick": 9.8,"Recv": 5.1,"Def": 6.7},
+        "6.8": {"Pow": 8.0,"Spd": 1.0,"Trick": 9.8,"Recv": 5.2,"Def": 6.9},  
+        "7.0": {"Pow": 8.1,"Spd": 1.0,"Trick": 10.0,"Recv": 5.4,"Def": 7.0},
+        "7.2": {"Pow": 8.6,"Spd": 1.0,"Trick": 10.0,"Recv": 5.7,"Def": 7.4},
+        "7.3": {"Pow": 8.8,"Spd": 1.0,"Trick": 10.0,"Recv": 5.8,"Def": 7.6}, 
+        "8.0": {"Pow": 10.0,"Spd": 1.0,"Trick": 10.0,"Recv": 6.5,"Def": 10.0},
+        "8.1": {"Pow": 10.0,"Spd": 1.0,"Trick": 10.0,"Recv": 7.1,"Def": 10.0},
+        "8.2": {"Pow": 10.0,"Spd": 1.0,"Trick": 10.0,"Recv": 7.7,"Def": 10.0},
+        "8.3": {"Pow": 10.0,"Spd": 1.0,"Trick": 10.0,"Recv": 8.3,"Def": 10.0},
+        "8.4": {"Pow": 10.0,"Spd": 1.0,"Trick": 10.0,"Recv": 8.9,"Def": 10.0},
+        "8.5": {"Pow": 10.0,"Spd": 1.0,"Trick": 10.0,"Recv": 9.5,"Def": 10.0}
+      }
+    },
+
+    "Candycleave": {
+      "levels": {
+        "6.7": {"Pow": 9.6,"Spd": 1.0,"Trick": 5.8,"Recv": 4.8,"Def": 8.6},
+        "6.8": {"Pow": 9.8,"Spd": 1.0,"Trick": 5.9,"Recv": 4.9,"Def": 8.8},
+        "6.9": {"Pow": 10.0,"Spd": 1.0,"Trick": 6.0,"Recv": 5.0,"Def": 9.0},
+        "7.2": {"Pow": 10.0,"Spd": 1.0,"Trick": 6.5,"Recv": 5.4,"Def": 9.8},
+        "7.3": {"Pow": 10.0,"Spd": 1.0,"Trick": 6.7,"Recv": 5.6,"Def": 10.0},
+        "8.0": {"Pow": 10.0,"Spd": 1.0,"Trick": 9.0,"Recv": 7.4,"Def": 10.0},
+        "8.2": {"Pow": 10.0,"Spd": 1.0,"Trick": 9.7,"Recv": 8.0,"Def": 10.0},
+        "8.5": {"Pow": 10.0,"Spd": 1.0,"Trick": 10.0,"Recv": 9.5,"Def": 10.0}
+      }
+    },
+
+    "Vampire": {
+
+      "levels": {
+        "6.0": {"Pow": 7.4,"Spd": 3.7,"Trick": 5.6,"Recv": 4.6,"Def": 4.6},
+        "6.1": {"Pow": 7.5,"Spd": 3.8,"Trick": 5.7,"Recv": 4.7,"Def": 4.7},
+        "6.2": {"Pow": 7.7,"Spd": 3.8,"Trick": 5.8,"Recv": 4.8,"Def": 4.8},
+        "6.3": {"Pow": 7.9,"Spd": 3.9,"Trick": 5.9,"Recv": 4.9,"Def": 4.9},
+        "6.4": {"Pow": 8.0,"Spd": 4.0,"Trick": 6.0,"Recv": 5.0,"Def": 5.0},
+        "6.5": {"Pow": 8.2,"Spd": 4.1,"Trick": 6.2,"Recv": 5.2,"Def": 5.2},
+        "6.6": {"Pow": 8.4,"Spd": 4.2,"Trick": 6.3,"Recv": 5.2,"Def": 5.2},
+        "6.7": {"Pow": 8.6,"Spd": 4.2,"Trick": 6.4,"Recv": 5.3,"Def": 5.3},
+        "6.8": {"Pow": 8.7,"Spd": 4.3,"Trick": 6.5,"Recv": 5.4,"Def": 5.4},
+        "6.9": {"Pow": 8.9,"Spd": 4.4,"Trick": 6.7,"Recv": 5.5,"Def": 5.5},
+        "7.0": {"Pow": 9.1,"Spd": 4.5,"Trick": 6.8,"Recv": 5.6,"Def": 5.6},
+        "7.1": {"Pow": 9.3,"Spd": 4.5,"Trick": 6.9,"Recv": 5.7,"Def": 5.7},
+        "7.2": {"Pow": 9.4,"Spd": 4.6,"Trick": 7.0,"Recv": 5.8,"Def": 5.8},
+        "7.3": {"Pow": 9.6,"Spd": 4.7,"Trick": 7.2,"Recv": 5.9,"Def": 5.9},
+        "7.4": {"Pow": 9.8,"Spd": 4.7,"Trick": 7.3,"Recv": 6.0,"Def": 6.0},
+        "7.5": {"Pow": 10.0,"Spd": 4.8,"Trick": 7.4,"Recv": 6.1,"Def": 6.1}
+      }
+    }
+  }
+}

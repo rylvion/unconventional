@@ -1,0 +1,339 @@
+:root {
+  --bg-color: linear-gradient(145deg, #e0eafc, #cfdef3);
+  --text-color: #333;
+  --font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+body.dark-mode {
+  --bg-color: linear-gradient(145deg, #1a1a1a, #2a2a2a);
+  --text-color: #f0f0f0;
+}
+
+body.dark-mode .wrap {
+  background: transparent;
+}
+
+body.dark-mode .card {
+  background: #1e1e1e;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+  color: #f0f0f0;
+}
+
+body.dark-mode select {
+  background: #2c2c2c;
+  color: #f0f0f0;
+  border: 1px solid #555;
+}
+
+body.dark-mode select:hover {
+  border-color: #888;
+  box-shadow: 0 2px 6px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .btn,
+body.dark-mode #compareToggle {
+  background: linear-gradient(135deg, #ff6b6b, #f06595);
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode #compareToggle:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-mode .stats-card {
+  background: #2a2a2a !important;
+  border: 1px solid #555 !important;
+  color: #f0f0f0;
+}
+
+body.dark-mode .stats-card h3 {
+  color: #90caf9;
+}
+
+body.dark-mode .stats-card-blue {
+  background: linear-gradient(145deg, #1e2a38, #263a4f);
+  border: 2px solid #90caf9;
+}
+
+body.dark-mode .stats-card-blue h3,
+body.dark-mode .stats-card-blue span {
+  color: #90caf9;
+}
+
+body.dark-mode .stats-card-red {
+  background: linear-gradient(145deg, #3a1e2a, #4f263a);
+  border: 2px solid #ff6b81;
+}
+
+body.dark-mode .stats-card-red h3,
+body.dark-mode .stats-card-red span {
+  color: #ff6b81;
+}
+
+body.dark-mode .comparison-summary {
+  background: #1e1e1e;
+  color: #f0f0f0;
+  border-color: #444;
+}
+
+body.dark-mode .comparison-summary th {
+  background: #2c2c2c;
+}
+
+body.dark-mode .comparison-summary tbody tr:nth-child(even) {
+  background: #262626;
+}
+
+body.dark-mode .hidden-toggle {
+  background: #444;
+  color: #fff;
+}
+
+html, body {
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-family);
+}
+
+.wrap {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.card {
+  width: 100%;
+  max-width: 800px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  padding: 30px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.18);
+}
+
+canvas {
+  width: 600px;
+  height: 400px;
+  max-width: 100%;
+  display: block;
+  margin-top: 20px;
+}
+
+.controls {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+select {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  background: #fff;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+select:hover {
+  border-color: #0366d6;
+  box-shadow: 0 2px 6px rgba(3,102,214,0.2);
+}
+
+.btn, #compareToggle {
+  padding: 10px 20px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+#compareToggle {
+  background: linear-gradient(135deg, #ff6b6b, #f06595);
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+#compareToggle:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+#compareToggle:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.stats-display {
+  margin-top: 15px;
+  font-size: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px 40px;
+  justify-content: center;
+}
+
+.stats-cards-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.stats-card {
+  background: #f7f9fc;
+  border-radius: 12px;
+  padding: 15px 20px;
+  min-width: 140px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stats-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+.stats-card h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 16px;
+  text-align: center;
+  color: #0366d6;
+}
+
+.stats-card div {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.stats-card-blue {
+  background: linear-gradient(145deg, #e6f0ff, #d0e2ff);
+  border: 2px solid #0366d6;
+}
+
+.stats-card-blue h3 {
+  color: #0366d6;
+}
+
+.stats-card-blue span {
+  color: #0366d6;
+  font-weight: bold;
+}
+
+.stats-card-red {
+  background: linear-gradient(145deg, #ffe6eb, #ffd0da);
+  border: 2px solid #ff4c6d;
+}
+
+.stats-card-red h3 {
+  color: #ff4c6d;
+}
+
+.stats-card-red span {
+  color: #ff4c6d;
+  font-weight: bold;
+}
+
+.stats-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+.comparison-summary {
+  margin-top: 25px;
+  padding: 1em;
+  border-radius: 12px;
+  border-top: 1px solid #ccc;
+  font-family: monospace;
+  background: #f9f9f9;
+  width: 100%;
+  max-width: 760px;
+}
+
+.comparison-summary table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.comparison-summary th,
+.comparison-summary td {
+  text-align: center;
+  padding: 6px;
+  border-bottom: 1px solid #ddd;
+}
+
+.comparison-summary th {
+  background: #e3e7f0;
+  font-weight: 600;
+}
+
+.comparison-summary tbody tr:nth-child(even) {
+  background: #f4f6fb;
+}
+
+.hidden {
+  display: none !important;
+}
+
+@media (max-width: 700px) {
+  .card {
+    padding: 20px 15px;
+  }
+  canvas {
+    width: 100%;
+    height: 300px;
+  }
+  .stats-display {
+    flex-direction: column;
+    gap: 12px 0;
+  }
+  .controls {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.hidden-toggle {
+  position: fixed;
+  bottom: 8px;
+  right: 8px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: none;
+  background: #333;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  z-index: 1000;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+
+.hidden-toggle:hover {
+  opacity: 1;
+}
+
+.hidden-toggle:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(3,102,214,0.5);
+}

@@ -1,0 +1,297 @@
+{
+    "ability-state": {
+        "Copyable": "Can be copied or absorbed by Aura Manipulation.",
+        "Obtainable": "Can be obtained through normal means (not event-exclusive or dev-spec).",
+        "Event-Exclusive": "Only obtainable during special events or other limited-time opportunities.",
+        "Dev-Spec": "Only obtainable by developers or special testers."
+    },
+
+    "general-tags": {
+        "Mental": {
+            "Description": "Uncopyable by Aura Manipulation. Represents characters or powers that are psychic, telepathic, or mind-based.",
+            "Gameplay": "Immune to aura copying or absorption. Often interacts with mental resistance or confusion mechanics.",
+            "Strengths": "Counters aura-based abilities and can influence enemy focus or decision-making.",
+            "Weaknesses": "Usually has low physical durability or power."
+        },
+
+        "Support": {
+            "Description": "Provides team utility such as healing, buffs, or debuffs.",
+            "Gameplay": "Focuses on aiding allies rather than dealing damage.",
+            "Strengths": "Essential in team fights, improves team survivability.",
+            "Weaknesses": "Usually lacks strong solo combat ability.",
+            "Synergy": "Pairs well with Tanks or bursts"
+        },
+
+        "Bursts": {
+            "Description": "Deals high damage in a short time frame.",
+            "Gameplay": "Focuses on quick, powerful attacks or combos.",
+            "Strengths": "Can eliminate targets rapidly.",
+            "Weaknesses": "Often has long cooldowns or low sustain.",
+            "Synergy": "Combines well with Crowd-Control or Speedster tags."
+        },
+
+        "Healing": {
+            "Description": "Has abilities that restore health.",
+            "Gameplay": "Restores HP for self or allies, often with cooldowns.",
+            "Strengths": "Sustain-heavy and can outlast burst-based opponents.",
+            "Weaknesses": "Usually weak damage output or low mobility."
+        },
+
+        "Crowd-Control": {
+            "Description": "Has abilities that hinder opponent movement and is useful for team fights.",
+            "Gameplay": "Includes slows, roots, fears, stuns, or knockbacks.",
+            "Strengths": "Can disrupt enemy combos and protect teammates.",
+            "Weaknesses": "Low damage; often reliant on timing.",
+            "Synergy": "Pairs with Bursts or Speedsters."
+        },
+
+        "No Escape 💀": {
+            "Description": "An extremely dangerous opponent — your only chance is to run.",
+            "Gameplay": "Represents endgame bosses or overpowered characters.",
+            "Strengths": "Dominates most matchups.",
+            "Weaknesses": "Usually rare or event-exclusive."
+        },
+
+        "Melee": {
+            "Description": "Uses close-range attacks.",
+            "Gameplay": "Excels in direct combat; relies on proximity.",
+            "Strengths": "High burst potential up close.",
+            "Weaknesses": "Weak against kiting or ranged enemies.",
+            "Synergy": "Combines well with Tanks or Bleeding effects."
+        },
+
+        "Ranged": {
+            "Description": "Uses long-range attacks.",
+            "Gameplay": "Excels at keeping distance; often has projectiles.",
+            "Strengths": "Can kite and control space.",
+            "Weaknesses": "Vulnerable up close.",
+            "Synergy": "Pairs well with Crowd-Control or Speedster tags."
+        },
+
+        "Tank": {
+            "Description": "High health and defense, can take a lot of damage.",
+            "Gameplay": "Designed to absorb damage and protect allies.",
+            "Strengths": "High survivability and crowd-control potential.",
+            "Weaknesses": "Often has low damage output and mobility.",
+            "Synergy": "Essential for team-based compositions."
+        },
+
+        "Speedster": {
+            "Description": "High speed and agility but often low defense.",
+            "Gameplay": "Relies on hit-and-run tactics or dodging.",
+            "Strengths": "Can dodge attacks and chase down enemies.",
+            "Weaknesses": "Fragile when caught.",
+            "Synergy": "Pairs with Light or Rage-Bait-Effective tags."
+        },
+
+        "Feeble": {
+            "Description": "Easily defeated, not very strong.",
+            "Gameplay": "Low stats, weak defense, poor survivability.",
+            "Strengths": "Usually balanced by unique gimmicks or speed.",
+            "Weaknesses": "Dies quickly; requires skill or backup.",
+            "Synergy": "Works as a decoy or glass-cannon archetype."
+        },
+
+        "Passive": {
+            "Description": "Has abilities that are always active.",
+            "Gameplay": "Does not require activation or cooldowns.",
+            "Strengths": "Consistent buffs or resistances.",
+            "Weaknesses": "Often less impactful than active abilities.",
+            "Synergy": "Enhances overall utility or survivability."
+        },
+
+        "Heavy": {
+            "Description": "High power but low speed, making it a strong but slow attacker.",
+            "Gameplay": "Focuses on devastating blows rather than mobility.",
+            "Strengths": "Deals huge single hits.",
+            "Weaknesses": "Easily interrupted or dodged.",
+            "Synergy": "Works well with Tank or Stunner roles."
+        },
+
+        "Light": {
+            "Description": "High speed but low power, making it a fast but weak attacker.",
+            "Gameplay": "Focuses on rapid attacks and evasion.",
+            "Strengths": "Hard to hit and good for combos.",
+            "Weaknesses": "Low durability and single-hit damage.",
+            "Synergy": "Combines with Speedster or Rage-Bait-Effective tags."
+        },
+
+        "Hybrid": {
+            "Description": "A mix of two or more types.",
+            "Gameplay": "Combines strengths (and weaknesses) of multiple categories.",
+            "Strengths": "Versatile in combat.",
+            "Weaknesses": "Can be complex to balance.",
+            "Synergy": "Depends on which traits are combined."
+        },
+
+        "Stat-Based": {
+            "Description": "This ability is purely stat-based and has no powers within it.",
+            "Gameplay": "No abilities, just raw stats (attack, defense, etc.).",
+            "Strengths": "Simple and reliable.",
+            "Weaknesses": "Predictable and lacks special effects.",
+            "Synergy": "Good for new players or balanced duels."
+        },
+
+        "Brain-Dead": {
+            "Description": "Requires little to no skill to use effectively.",
+            "Gameplay": "Simple mechanics, often spammy or overpowered.",
+            "Strengths": "Easy to learn; effective at low skill levels.",
+            "Weaknesses": "Predictable; easily countered by experienced players.",
+            "Synergy": "Often tied to Tank or Heavy types."
+        },
+
+        "Rage-Bait-Effective": {
+            "Description": "Excellent at provoking enemies into attacking it.",
+            "Gameplay": "Designed to taunt or frustrate enemies; good at drawing aggro.",
+            "Strengths": "Distracts enemies and protects allies.",
+            "Weaknesses": "Can become the main focus of enemy attacks.",
+            "Synergy": "Pairs with Tank or Speedster roles."
+        },
+
+        "Stunner": {
+            "Description": "These abilities work around their stun capabilities to make up for their power output. By getting into a combo, the stunner essentially locks their opponent down.",
+            "Gameplay": "Focuses on disabling opponents temporarily.",
+            "Strengths": "Can control the flow of battle.",
+            "Weaknesses": "Often has low damage output.",
+            "Synergy": "Works well with Bursts or Crowd-Control tags."
+        },
+
+        "High-Skill": {
+            "Description": "Requires moderate to significant skill and practice to use effectively.",
+            "Gameplay": "Complex mechanics that reward mastery.",
+            "Strengths": "Can outperform simpler abilities in skilled hands.",
+            "Weaknesses": "Steep learning curve; less effective for beginners.",
+            "Synergy": "Often tied to Light or Speedster types."
+        },
+
+        "Artificial Strain": {
+            "Description": "Aura manipulation will put have a higher strain than other abilities for balancing purposes",
+            "Gameplay": "Causes increased aura strain when copied or absorbed.",
+            "Strengths": "Balances powerful abilities by limiting their use."
+        },
+
+        "Durable": {
+            "Description": "Has enhanced survivability through increased health, defense, or resistances.",
+            "Gameplay": "Designed to withstand prolonged combat.",
+            "Strengths": "Can endure heavy damage and outlast opponents.",
+            "Weaknesses": "Often has lower damage output or mobility.",
+            "Synergy": "Works well with Tank or Support roles."
+        }
+    },
+
+    "ability-tags": {
+        "effects": {
+            "stun": "Has a chance to stun the target.",
+            "bleed": "Causes bleeding damage over time, reducing recovery effects.",
+            "burn": "Causes burning damage over time regardless of your recovery effects.",
+            "freeze": "Has a chance to freeze the target. Frozen targets cannot move or act.",
+            "miss-debuff": "Causes the target to miss attacks.",
+            "interrupt-enemies-attack": "Interrupts enemy attacks when hit.",
+            "life-steal": "Heals you for a portion of the damage dealt.",
+            "defence-piercing": "Ignores defence when dealing damage.",
+            "debuff": "Applies a negative effect to the target, reducing their stats or abilities.",
+            "buff": "Applies a positive effect to the user or allies, enhancing their stats or abilities.",
+            "heal": "Restores health to the user or allies.",
+            "fling": "Launches the target somewhere else on the map.",
+            "pull": "Pulls the target towards the user.",
+            "knockback": "Pushes the target away from the user.",
+            "support": "Provides utility to allies, such as healing or buffs.",
+            "cancel-block": "Can cancel enemy block when hit.",
+            "counterattack": "Deals damage back to the attacker when hit.",
+            "tracking": "The ability homes in on the target.",
+            "wide-range-debuff": "Applies debuffs to multiple targets in a wide area.",
+            "damage-over-time": "Deals damage over a period of time rather than all at once.",
+            "silence": "Prevents the target from using abilities for a duration.",
+            "slow": "Reduces the target's movement speed for a duration.",
+            "flinch": "Causes the target to flinch momentarily unable to block, M1, heavy, or use skills but do not interrupt movement, if the user has an ability that could be used whilst in stun, they can still use it.",
+            "critical-hit": "Has a chance to deal increased damage on hit.",
+            "grab": "The user grabs the target, preventing them from moving or acting for a duration.",
+            "damage-per-tick": "Deals damage in intervals over a duration.",
+            "shackled": "The target is shackled, preventing movement but allowing actions (such as m1, heavies and abilities and etc.) for a duration."
+        },
+
+        "state": {
+            "cancellable": "Can be cancelled mid-action.",
+            "blockable": "Can be blocked by enemies.",
+            "holdable": "Can be held down for continuous effect.",
+            "instant": "Activates immediately without wind-up.",
+            "evasive": "Evasive abilities help you run away from danger or avoid attacks.",
+            "projectile": "Fires a projectile at targets.",
+            "damage-dealing": "Deals damage to targets.",
+            "medium-range": "Effective at medium range.",
+            "long-range": "Effective at long range.",
+            "short-range": "Effective at short range.",
+            "aoe": "Affects an area around the target.",
+            "tagged-single": "Can select 1 target using marking system",
+            "tagged-multi": "Can select multiple targets using marking system.",
+            "target-single": "Can target 1 person",
+            "target-multi": "Can target multiple targets",
+            "stun-usable": "Usable whilst you are stunned.",
+            "self-buff": "Applies a buff to the user.",
+            "toggleable": "Can be toggled on or off.",
+            "semi-blockable": "Partially blockable, reducing damage taken but not negating it entirely.",
+            "semi-cancellable": "Partially cancellable, stops the user from charging their ability but will still execute the ability at reduced effectiveness.",
+            "headshot": "Deals extra damage when hitting the target's head.",
+            "aimable": "Could be controlled using the cursor to aim.",
+            "summon": "The user summons an ally to fight for them.",
+            "restrains": "The ability restrains the target, allowing limited movement in a limited space and restraining actions fully for a duration.",
+            "protective": "Provides a shield or barrier to absorb damage for the user or allies.",
+            "support": "Provides utility to allies, such as healing or buffs.",
+            "shield": "Creates a shield that absorbs damage until it breaks or expires.",
+            "defense-piercing": "The attack ignores defense when dealing damage."
+        },
+
+        "self-effects": {
+            "hyperarmor": "Makes you temporarily immune to knockback whilst the ability is active.",
+            "invincibility": "Makes you temporarily immune to all damage whilst the ability is active.",
+            "iframes": "Grants temporary invincibility frames during ability activation, allowing you to avoid damage.",
+            "damage-boost": "Whilst this ability is active, you have an increased damage output.",
+            "damage-negation": "Whilst this ability is active, you take reduced damage/ nullify all damage from all sources.",
+            "mode-switch": "Allows the user to switch between different modes, each with its own set of stats or effects."
+        },
+
+        "Weaknesses": {
+            "High Burst Damage": "Vulnerable to abilities that deal a lot of damage in a short time.",
+            "Bleeding Effects": "Healing and regeneration effects are less effective against bleeding targets.",
+            "Crowd-Control": "Susceptible to stuns, slows, and other disabling effects.",
+            "High Mobility": "Struggles against fast-moving opponents who can easily dodge attacks and use hit-and-run tactics.",
+            "Ranged Attacks": "Has difficulty dealing with long-range attackers who can strike from a distance.",
+            "Stunning Effects": "Vulnerable to abilities that can stun or incapacitate, preventing action for a duration.",
+            "AOE": "Struggles against abilities that affect multiple targets in an area/wide-range, making it hard to avoid damage.",
+            "Wide-Ranged Debuffs": "Has difficulty dealing with abilities that apply negative effects over a large area, affecting multiple targets.",
+            "Damage Over Time": "Have trouble dealing with general damage over time effects like burning/bleeding",
+            "Teaming": "Has difficulty when opponents team up against them, making it hard to focus on a single target."
+        },
+
+        "Passive-Effects": {   
+            "Health-Regeneration": "Gradually restores health over time.",
+            "Increased-Damage": "Boosts Heavy Damage Output.",
+            "Revive": "Restores the user upon defeat, bringing them back to battle, often with reduced health/stats with/or a cooldown period.",
+            "Skin-Change": "The user has different skin based on the ability",
+            "Increased-Range": "Extends the effective range of attacks or abilities.",
+            "Increased-Heavy-Range": "Extends the effective range of heavy attacks.",
+            "Increased-M1-Range": "Extends the effective range of M1 attacks.",
+            "Bleed-on-heavy-hit": "Applies a bleeding effect to targets on heavy hit, causing damage over time.",
+            "Bleed-On-Hit": "Applies a bleeding effect to targets on hit, causing damage over time.",
+            "Damage-Reduction": "Reduces incoming damage from all sources.",
+            "Damage-Aura": "Deals damage when enemies are in close proximity to the user or to their aura.",
+            "cosmetic-effect": "Grants a visual or aesthetic effect without gameplay impact.",
+            "Block-Effects": "Grants special effects or bonuses when blocking attacks.",
+            "rebound": "Reflects a portion of damage back to the attacker when hit.",
+            "Burn-on-Hit": "Applies a burning effect to targets on hit, causing damage over time.",
+            "Freeze-on-Hit": "Has a chance to freeze targets on hit, immobilizing them for a duration.",
+            "Freeze-on-Block": "Applies freeze when the user m1 or heavies the block",
+            "burn-immunity": "The user is immune to burning effects.",
+            "freeze-immunity": "The user is immune to freezing effects.",
+            "360-Degrees-Block": "The user blocks in a 360 degrees block",
+            "Artificial Block": "These blocks have custom properties unlike regular blocks",
+            "Bar-GUI": "This ability has a form of bar gui at the bottom of the screen representing how much value of the { usage } like health or energy consumption is left.",
+            "freeze-on-m1-hit": "Applies freeze when the user m1 hits an enemy.",
+            "freeze-on-heavy-hit": "Applies freeze when the user heavy hits an enemy.",
+            "burn-resistance": "The user takes reduced or nullifies all damage from burning effects.",
+            "artificial-heavy": "These heavies have custom properties unlike regular heavies.",
+            "cosmetic-m1": "These m1s have custom visual properties unlike regular m1s.",
+            "cosmetic-heavy": "These heavies have custom visual properties unlike regular heavies."
+        }
+    }
+}
