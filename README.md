@@ -48,10 +48,10 @@
 - **Target Rating System** - Numerical scores with detailed explanations and weakness breakdowns
 - **Ability States** - Track Copyable/Obtainable/Uncopyable status
 - **GIF Galleries** - Organized ability animation galleries by move type:
-  - F moves (Forward abilities)
-  - R moves (Reverse abilities)
-  - T moves (Transformation abilities)
-  - G moves (General abilities)
+  - F moves 
+  - R moves 
+  - T moves 
+  - G moves
   - Passive forms
 - **GIF Modal Viewer** - Click any GIF to view enlarged in fullscreen modal
 - **State Preservation** - Details sections remember open/closed state when switching levels
