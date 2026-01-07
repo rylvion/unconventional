@@ -339,9 +339,14 @@ Promise.all([
     populateAbilities(abilitySelect2);
     populateAbilities(multiCompareAbilitySelect);
     
-    // Load from URL first, then localStorage, then update
-    loadStateFromURL() || restoreFromPreferences(prefs);
-    updateChart();
+    // Load from URL first, then localStorage
+    // Both functions now call updateChart() with setTimeout
+    const stateLoaded = loadStateFromURL() || restoreFromPreferences(prefs);
+    
+    // If nothing was loaded from URL or prefs, call updateChart() now
+    if (!stateLoaded) {
+      updateChart();
+    }
     
     // Update chart colors to match current theme
     updateChartColors();
@@ -1460,12 +1465,23 @@ function loadStateFromURL() {
   
   if (ability) {
     abilitySelect.value = ability;
-    populateLevels(abilitySelect);
+    console.log('URL: Set ability to', ability);
     
-    if (level) {
-      levelSelect.value = level;
-    }
-    if (amp) ampModeSelect.value = amp;
+    // Wait a tick to ensure populateLevels completes before setting level
+    setTimeout(() => {
+      populateLevels(abilitySelect);
+      
+      if (level) {
+        levelSelect.value = level;
+        console.log('URL: Set level to', level);
+      }
+      if (amp) {
+        ampModeSelect.value = amp;
+        console.log('URL: Set amp to', amp);
+      }
+      
+      updateChart();
+    }, 0);
   } else {
     return false;
   }
@@ -1496,14 +1512,25 @@ function loadStateFromURL() {
 function restoreFromPreferences(prefs) {
   const { savedAbility1, savedLevel1, savedAmp1 } = prefs;
   
-  if (savedAbility1 && abilitySelect.querySelector(`option[value="${savedAbility1}"]`)) {
+  if (savedAbility1) {
     abilitySelect.value = savedAbility1;
-    populateLevels(abilitySelect);
+    console.log('Prefs: Restored ability to', savedAbility1);
     
-    if (savedLevel1 && levelSelect.querySelector(`option[value="${savedLevel1}"]`)) {
-      levelSelect.value = savedLevel1;
-    }
-    if (savedAmp1) ampModeSelect.value = savedAmp1;
+    // Wait a tick to ensure populateLevels completes before setting level
+    setTimeout(() => {
+      populateLevels(abilitySelect);
+      
+      if (savedLevel1) {
+        levelSelect.value = savedLevel1;
+        console.log('Prefs: Restored level to', savedLevel1);
+      }
+      if (savedAmp1) {
+        ampModeSelect.value = savedAmp1;
+        console.log('Prefs: Restored amp to', savedAmp1);
+      }
+      
+      updateChart();
+    }, 0);
   }
 }
 
