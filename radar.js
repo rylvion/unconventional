@@ -315,8 +315,6 @@ darkModeToggle.addEventListener('click', () => {
   savePreferences();
 });
 
-console.log('Loading abilities.json and tags.json...');
-
 // Load both JSON files
 Promise.all([
   fetch('abilities.json').then(res => res.ok ? res.json() : Promise.reject('abilities.json not found')),
@@ -325,8 +323,6 @@ Promise.all([
   .then(([abilitiesData, tagsData]) => {
     AbilitiesData = abilitiesData;
     TagsData = tagsData;
-    console.log('Abilities data loaded:', AbilitiesData);
-    console.log('Tags data loaded:', TagsData);
 
     // Load favorites from LocalStorage
     loadFavorites();
@@ -340,12 +336,15 @@ Promise.all([
     populateAbilities(multiCompareAbilitySelect);
     
     // Load from URL first, then localStorage
-    // Both functions now call updateChart() with setTimeout
-    const stateLoaded = loadStateFromURL() || restoreFromPreferences(prefs);
+    const urlLoaded = loadStateFromURL();
     
-    // If nothing was loaded from URL or prefs, call updateChart() now
-    if (!stateLoaded) {
-      updateChart();
+    if (!urlLoaded) {
+      const prefsLoaded = restoreFromPreferences(prefs);
+      
+      // If nothing was loaded from URL or prefs, call updateChart() now
+      if (!prefsLoaded) {
+        updateChart();
+      }
     }
     
     // Update chart colors to match current theme
@@ -358,7 +357,9 @@ Promise.all([
     updateDistributionTierSelect();
     updateStatDistributionChart();
   })
-  .catch(err => console.error('Error loading data:', err));function populateAbilities(selectEl = abilitySelect) {
+  .catch(err => console.error('Error loading data:', err));
+
+  function populateAbilities(selectEl = abilitySelect) {
   if (!AbilitiesData || Object.keys(AbilitiesData).length === 0) {
     console.warn('AbilitiesData is empty!');
     return;
@@ -385,12 +386,12 @@ Promise.all([
   });
 
   selectEl.selectedIndex = 0;
-  console.log('Populated ability select:', selectEl.id);
-  populateLevels(selectEl);
+  // Don't update charts here; caller handles initial state
+  populateLevels(selectEl, null, false);
 }
 
 
-function populateLevels(selectEl = abilitySelect, targetLevelSelect = null) {
+function populateLevels(selectEl = abilitySelect, targetLevelSelect = null, triggerUpdate = true) {
   const [tier, ability] = selectEl.value?.split('::') || [];
   
   // Determine which level select to populate
@@ -450,8 +451,9 @@ function populateLevels(selectEl = abilitySelect, targetLevelSelect = null) {
   }
 
   levelSelectEl.selectedIndex = 0;
-  console.log(`Populated levels for ${ability}:`, levelSelectEl);
-  updateChart();
+  if (triggerUpdate) {
+    updateChart();
+  }
 }
 
 
@@ -483,14 +485,11 @@ function getStats(tier, ability, level, mode) {
   if (mode === 'amped') Object.keys(stats).forEach(k => stats[k] = parseFloat(stats[k] * 1.5).toFixed(1));
   if (mode === 'deamped') Object.keys(stats).forEach(k => stats[k] = parseFloat(stats[k] / 2).toFixed(1));
 
-  console.log(`Stats for ${ability} (${mode}):`, stats);
   return stats;
 }
 
 
 function updateChart() {
-  console.log('Updating chart...');
-
   const isDark = document.body.classList.contains('dark-mode');
 
   const [tier, ability] = abilitySelect.value.split('::');
@@ -1273,7 +1272,6 @@ compareToggle.addEventListener('click', () => {
   compareControls.classList.toggle('hidden', !compareMode);
   document.getElementById('multiCompareControls')?.classList.add('hidden');
   compareToggle.textContent = compareMode ? 'Disable Compare Mode' : 'Enable Compare Mode';
-  console.log('Compare mode toggled:', compareMode);
   updateChart();
 });
 
@@ -1465,23 +1463,30 @@ function loadStateFromURL() {
   
   if (ability) {
     abilitySelect.value = ability;
-    console.log('URL: Set ability to', ability);
+    const abilityOption = abilitySelect.querySelector(`option[value="${ability}"]`);
+    if (!abilityOption) {
+      console.warn('URL: Option not found for ability', ability, 'falling back');
+      return false;
+    }
     
-    // Wait a tick to ensure populateLevels completes before setting level
-    setTimeout(() => {
-      populateLevels(abilitySelect);
-      
-      if (level) {
-        levelSelect.value = level;
-        console.log('URL: Set level to', level);
+    // Immediately populate levels for this ability
+    populateLevels(abilitySelect, null, false);
+    
+    // Now set level - this will trigger the change event which calls updateChart
+    if (level) {
+      levelSelect.value = level;
+      const levelOption = levelSelect.querySelector(`option[value="${level}"]`);
+      if (!levelOption) {
+        console.warn('URL: Option not found for level', level, 'falling back to default');
       }
-      if (amp) {
-        ampModeSelect.value = amp;
-        console.log('URL: Set amp to', amp);
-      }
-      
-      updateChart();
-    }, 0);
+    }
+    
+    if (amp) {
+      ampModeSelect.value = amp;
+    }
+    
+    // Trigger update in case level/amp changes didn't fire events
+    updateChart();
   } else {
     return false;
   }
@@ -1497,7 +1502,7 @@ function loadStateFromURL() {
     
     if (ability2) {
       abilitySelect2.value = ability2;
-      populateLevels(abilitySelect2);
+      populateLevels(abilitySelect2, null, false);
       
       if (level2) {
         levelSelect2.value = level2;
@@ -1514,24 +1519,35 @@ function restoreFromPreferences(prefs) {
   
   if (savedAbility1) {
     abilitySelect.value = savedAbility1;
-    console.log('Prefs: Restored ability to', savedAbility1);
+    const abilityOption = abilitySelect.querySelector(`option[value="${savedAbility1}"]`);
+    if (!abilityOption) {
+      console.warn('Prefs: Option not found for ability', savedAbility1, 'falling back');
+      return false;
+    }
     
-    // Wait a tick to ensure populateLevels completes before setting level
-    setTimeout(() => {
-      populateLevels(abilitySelect);
-      
-      if (savedLevel1) {
-        levelSelect.value = savedLevel1;
-        console.log('Prefs: Restored level to', savedLevel1);
+    // Immediately populate levels for this ability
+    populateLevels(abilitySelect, null, false);
+    
+    // Now set level - this will trigger the change event which calls updateChart
+    if (savedLevel1) {
+      levelSelect.value = savedLevel1;
+      const levelOption = levelSelect.querySelector(`option[value="${savedLevel1}"]`);
+      if (!levelOption) {
+        console.warn('Prefs: Option not found for level', savedLevel1, 'falling back to default');
       }
-      if (savedAmp1) {
-        ampModeSelect.value = savedAmp1;
-        console.log('Prefs: Restored amp to', savedAmp1);
-      }
-      
-      updateChart();
-    }, 0);
+    }
+    
+    if (savedAmp1) {
+      ampModeSelect.value = savedAmp1;
+    }
+    
+    // Trigger update in case level/amp changes didn't fire events
+    updateChart();
+    
+    return true;
   }
+  
+  return false;
 }
 
 // Get tag definition from tags.json
@@ -2762,7 +2778,6 @@ function loadFavorites() {
   const stored = localStorage.getItem('uncon-radar-favorites');
   favorites = stored ? JSON.parse(stored) : [];
   updateFavoriteCount();
-  console.log('Favorites loaded:', favorites);
 }
 
 function isFavorite(abilityKey) {
@@ -2940,7 +2955,6 @@ function loadRecent() {
   const stored = localStorage.getItem('uncon-radar-recent');
   recent = stored ? JSON.parse(stored) : [];
   updateRecentCount();
-  console.log('Recent abilities loaded:', recent);
 }
 
 function addToRecent(abilityKey) {
