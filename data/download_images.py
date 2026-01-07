@@ -1,7 +1,6 @@
 import os
 import requests
 
-# ✅ Your list of URLs (paste them all here, even if they have duplicates)
 urls = [
     "https://tiermaker.com/images/media/template_images/2024/17763548/unconventional-tierlist-17763548/arachnid.png",
     "https://tiermaker.com/images/media/template_images/2024/17763548/unconventional-tierlist-17763548/aura.png",

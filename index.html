@@ -1,72 +1,486 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <!-- Primary Meta Tags -->
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Unconventional Ability Radar Chart</title>
-        <link rel="stylesheet" href="styles.css" />
+<html lang="en">
+<head>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VWPHW3M0T5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-VWPHW3M0T5');
+    </script>
 
-        <!-- Favicon Links -->
-        <link rel="icon" type="image/png" href="./public/favicon-16x16.png" />
-        <link rel="icon" type="image/png" href="./public/favicon-32x32.png" />
-        <link rel="shortcut icon" href="./public/favicon.ico">
-        <link rel="apple-touch-icon" sizes="180x180" href="./public/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="192x192" href="./public/android-chrome-192x192.png">
-        <link rel="icon" type="image/png" sizes="512x512" href="./public/android-chrome-512x512.png">
-        <link rel="manifest" href="./public/site.webmanifest">
+    <!-- Primary Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+    
+    <!-- SEO Meta Tags -->
+    <title>Unconventional Abilities Analyser - Interactive Stats Visualizer</title>
+    <meta name="description" content="Comprehensive Roblox Unconventional abilities analyzer featuring interactive radar charts, stat comparisons, progression tracking, and advanced filtering. Compare multiple abilities, view detailed stats across all tiers, and explore ability metadata with our powerful visualization tool." />
+    <meta name="keywords" content="Roblox Unconventional, UnOrdinary abilities, ability stats analyzer, radar chart visualizer, ability comparison tool, Roblox stats tracker, interactive ability chart, Chart.js visualization, ability tier list, power stats calculator, Roblox ability guide" />
+    <meta name="author" content="rylvion" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#2196F3" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://rylvion.github.io/uncon-radar/" />
+    
+    <!-- Open Graph / Facebook Meta Tags -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://rylvion.github.io/uncon-radar/" />
+    <meta property="og:site_name" content="Unconventional Abilities Analyzer" />
+    <meta property="og:title" content="Unconventional Abilities Analyzer - Interactive Stats Visualizer" />
+    <meta property="og:description" content="Explore and compare Roblox Unconventional abilities with interactive radar charts, detailed stat breakdowns, and advanced filtering. Perfect for analyzing ability strengths across all tiers." />
+    <meta property="og:image" content="https://rylvion.github.io/uncon-radar/public/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Unconventional Abilities Radar Chart Preview" />
+    <meta property="og:locale" content="en_US" />
+    
+    <!-- Twitter / X Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://rylvion.github.io/uncon-radar/" />
+    <meta name="twitter:title" content="Unconventional Abilities Analyzer - Interactive Stats Visualizer" />
+    <meta name="twitter:description" content="Explore and compare Roblox Unconventional abilities with interactive radar charts, detailed stat breakdowns, and advanced filtering." />
+    <meta name="twitter:image" content="https://rylvion.github.io/uncon-radar/public/og-image.png" />
+    <meta name="twitter:image:alt" content="Unconventional Abilities Radar Chart Preview" />
+    <meta name="twitter:creator" content="@rylvion" />
+    
+    <!-- Favicon and App Icons -->
+    <link rel="icon" type="image/x-icon" href="./public/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./public/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./public/favicon-32x32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./public/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="./public/android-chrome-192x192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="./public/android-chrome-512x512.png" />
+    
+    <!-- Web Manifest -->
+    <link rel="manifest" href="./public/site.webmanifest" />
+    
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+    
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+</head>
+<body>
+    <button id="darkModeToggle" class="hidden-toggle" title="Toggle dark mode">🌙</button>
 
-        <!-- SEO Meta Tags -->
-        <meta name="description" content="Visualize and compare unconventional abilities with an interactive radar chart. Select abilities and levels to see detailed stats." />
-        <meta name="keywords" content="Unconventional Abilities, Radar Chart, Interactive Visualization, Ability Stats, Chart.js" />
-        <meta name="author" content="rylvion" />
-    </head>
-    <body>
-        <button id="darkModeToggle" class="hidden-toggle">🌙</button>
-        <div class="wrap">
-            <div class="card">
-                <h2>Unconventional Ability Radar Chart</h2>
-                <p>Select an ability and level to view or compare stats.</p>
+    <div class="wrap">
+        <main class="card">
+            <h2>Unconventional Ability Radar Chart</h2>
+            <p>Select an ability and level to view or compare stats.</p>
+            
+            <!-- Search Section -->
+            <div class="search-container">
+                <input 
+                    type="text" 
+                    id="abilitySearch" 
+                    placeholder="🔍 Search abilities... (Alt+S)"
+                    class="search-input"
+                    autocomplete="off"
+                    aria-label="Search for abilities"
+                />
+                <div id="searchDropdown" class="search-dropdown hidden" role="listbox">
+                    <div id="searchResults" class="search-results"></div>
+                </div>
+            </div>
 
-                <div class="controls">
-                    <select id="abilitySelect"></select>
-                    <select id="levelSelect"></select>
-                    <select id="ampModeSelect">
+            <!-- Recent Abilities Section -->
+            <div class="recent-abilities-container">
+                <button 
+                    id="recentToggle" 
+                    class="recent-toggle" 
+                    title="View recently viewed abilities (Alt+R)"
+                    aria-label="Toggle recent abilities dropdown"
+                >
+                    ⏱️ Recent (<span id="recentCount">0</span>)
+                </button>
+                <div id="recentDropdown" class="recent-dropdown" role="menu">
+                    <div id="recentList" class="recent-list"></div>
+                    <div class="recent-actions">
+                        <button id="clearRecentBtn" class="recent-btn clear">Clear History</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Advanced Filters Section -->
+            <div class="filter-toggle-container">
+                <button id="filterToggle" class="filter-toggle" aria-label="Toggle advanced filters">
+                    🔧 Advanced Filters
+                </button>
+            </div>
+
+            <div id="advancedFilters" class="advanced-filters hidden">
+                <!-- Stat Filters -->
+                <div class="filter-section">
+                    <h3>Stat Filters</h3>
+                    <div class="filter-row">
+                        <label for="powerSlider">Min Power:</label>
+                        <div class="filter-slider-container">
+                            <input 
+                                type="range" 
+                                id="powerSlider" 
+                                min="0" 
+                                max="10" 
+                                value="0" 
+                                step="1" 
+                                class="filter-slider"
+                                aria-label="Power filter"
+                            />
+                            <span class="filter-value-display" id="powerDisplay">0</span>
+                        </div>
+                    </div>
+                    <div class="filter-row">
+                        <label for="speedSlider">Min Speed:</label>
+                        <div class="filter-slider-container">
+                            <input 
+                                type="range" 
+                                id="speedSlider" 
+                                min="0" 
+                                max="10" 
+                                value="0" 
+                                step="1" 
+                                class="filter-slider"
+                                aria-label="Speed filter"
+                            />
+                            <span class="filter-value-display" id="speedDisplay">0</span>
+                        </div>
+                    </div>
+                    <div class="filter-row">
+                        <label for="trickSlider">Min Trick:</label>
+                        <div class="filter-slider-container">
+                            <input 
+                                type="range" 
+                                id="trickSlider" 
+                                min="0" 
+                                max="10" 
+                                value="0" 
+                                step="1" 
+                                class="filter-slider"
+                                aria-label="Trick filter"
+                            />
+                            <span class="filter-value-display" id="trickDisplay">0</span>
+                        </div>
+                    </div>
+                    <div class="filter-row">
+                        <label for="recoverySlider">Min Recovery:</label>
+                        <div class="filter-slider-container">
+                            <input 
+                                type="range" 
+                                id="recoverySlider" 
+                                min="0" 
+                                max="10" 
+                                value="0" 
+                                step="1" 
+                                class="filter-slider"
+                                aria-label="Recovery filter"
+                            />
+                            <span class="filter-value-display" id="recoveryDisplay">0</span>
+                        </div>
+                    </div>
+                    <div class="filter-row">
+                        <label for="defenseSlider">Min Defense:</label>
+                        <div class="filter-slider-container">
+                            <input 
+                                type="range" 
+                                id="defenseSlider" 
+                                min="0" 
+                                max="10" 
+                                value="0" 
+                                step="1" 
+                                class="filter-slider"
+                                aria-label="Defense filter"
+                            />
+                            <span class="filter-value-display" id="defenseDisplay">0</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tier Filter -->
+                <div class="filter-section" data-filter="tiers">
+                    <h3>Tier Filter</h3>
+                    <div class="filter-checkboxes"></div>
+                </div>
+
+                <!-- Ability State Filter -->
+                <div class="filter-section" data-filter="states">
+                    <h3>Ability State</h3>
+                    <div class="filter-checkboxes">
+                        <label class="filter-checkbox-label">
+                            <input type="checkbox" class="state-filter" value="Copyable" />
+                            Copyable
+                        </label>
+                        <label class="filter-checkbox-label">
+                            <input type="checkbox" class="state-filter" value="Obtainable" />
+                            Obtainable
+                        </label>
+                        <label class="filter-checkbox-label">
+                            <input type="checkbox" class="state-filter" value="Uncopyable" />
+                            Uncopyable
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Tags Filter -->
+                <div class="filter-section" data-filter="tags">
+                    <h3>Tags</h3>
+                    <div class="filter-checkboxes"></div>
+                </div>
+
+                <!-- Filter Mode Toggle -->
+                <div class="filter-section">
+                    <h3>Filter Mode</h3>
+                    <div class="filter-mode-toggle">
+                        <label class="filter-mode-label">
+                            <input type="radio" name="filterMode" value="and" class="filter-mode-radio" checked />
+                            <span class="filter-mode-name">Strict (AND)</span>
+                            <span class="filter-mode-desc">All conditions must match</span>
+                        </label>
+                        <label class="filter-mode-label">
+                            <input type="radio" name="filterMode" value="or" class="filter-mode-radio" />
+                            <span class="filter-mode-name">Flexible (OR)</span>
+                            <span class="filter-mode-desc">Any condition matches</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Filter Actions -->
+                <div class="filter-actions">
+                    <button class="filter-btn apply" aria-label="Apply filters">✓ Apply Filters</button>
+                    <button class="filter-btn clear" aria-label="Clear all filters">✕ Clear All</button>
+                </div>
+            </div>
+
+            <!-- Primary Controls -->
+            <div class="controls">
+                <select id="abilitySelect" aria-label="Select ability">
+                    <option value="">-- Select an Ability --</option>
+                </select>
+                <select id="levelSelect" aria-label="Select level">
+                    <option value="">-- Select Level --</option>
+                </select>
+                <select id="ampModeSelect" aria-label="Select amp mode">
+                    <option value="deamped">De-Amped</option>
+                    <option value="normal" selected>Normal</option>
+                    <option value="amped">Amped</option>
+                </select>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="controls">
+                <button id="compareToggle" aria-label="Toggle compare mode">Enable Compare Mode</button>
+                <button id="multiCompareToggle" aria-label="Toggle multi-compare mode">🔀 Multi-Compare</button>
+                <button 
+                    id="favoritesBtn" 
+                    title="View favorites (Alt+F)"
+                    aria-label="View favorites"
+                >
+                    ⭐ Favorites (<span id="favoriteCount">0</span>)
+                </button>
+                <div class="export-dropdown">
+                    <button 
+                        id="exportBtn" 
+                        title="Export chart (Alt+E)"
+                        aria-label="Export chart"
+                        aria-haspopup="menu"
+                        aria-expanded="false"
+                    >
+                        💾 Export
+                    </button>
+                    <div id="exportMenu" class="export-menu" role="menu">
+                        <div class="export-menu-section">
+                            <div class="export-menu-label">Format</div>
+                            <button onclick="exportChart('png', 'both')" role="menuitem">📊 PNG Image</button>
+                            <button onclick="exportChart('svg', 'both')" role="menuitem">🎨 SVG Vector</button>
+                            <button onclick="exportAsJSON()" role="menuitem">📄 JSON Data</button>
+                            <button onclick="exportAsCSV()" role="menuitem">📑 CSV Spreadsheet</button>
+                        </div>
+                        <div class="export-menu-divider"></div>
+                        <div class="export-menu-section">
+                            <div class="export-menu-label">Separate Exports</div>
+                            <button onclick="exportChart('png', 'radar')" role="menuitem">📈 Radar Only</button>
+                            <button onclick="exportChart('png', 'progression')" role="menuitem">📊 Progression Only</button>
+                            <button onclick="exportChart('svg', 'radar')" role="menuitem">📐 Radar SVG</button>
+                            <button onclick="exportChart('svg', 'progression')" role="menuitem">📈 Progression SVG</button>
+                        </div>
+                        <div class="export-menu-divider"></div>
+                        <div class="export-menu-section">
+                            <div class="export-menu-label">Distribution Chart</div>
+                            <button onclick="exportDistributionChart('png')" role="menuitem">📊 Distribution PNG</button>
+                            <button onclick="exportDistributionDataAsJSON()" role="menuitem">📄 Distribution JSON</button>
+                            <button onclick="exportDistributionDataAsCSV()" role="menuitem">📑 Distribution CSV</button>
+                        </div>
+                    </div>
+                </div>
+                <button id="shareBtn" title="Copy share link" aria-label="Share chart">🔗 Share</button>
+            </div>
+
+            <!-- Comparison Controls (Single Compare) -->
+            <div class="controls compare hidden">
+                <select id="abilitySelect2" aria-label="Select second ability to compare">
+                    <option value="">-- Select an Ability --</option>
+                </select>
+                <select id="levelSelect2" aria-label="Select second level to compare">
+                    <option value="">-- Select Level --</option>
+                </select>
+                <select id="ampModeSelect2" aria-label="Select second amp mode">
+                    <option value="deamped">De-Amped</option>
+                    <option value="normal" selected>Normal</option>
+                    <option value="amped">Amped</option>
+                </select>
+            </div>
+
+            <!-- Multi-Compare Controls -->
+            <div class="controls multi-compare hidden" id="multiCompareControls">
+                <div class="multi-compare-add">
+                    <select id="multiCompareAbilitySelect" aria-label="Select ability to add for multi-comparison">
+                        <option value="">-- Add Ability --</option>
+                    </select>
+                    <select id="multiCompareLevelSelect" aria-label="Select level to add for multi-comparison">
+                        <option value="">-- Select Level --</option>
+                    </select>
+                    <select id="multiCompareAmpModeSelect" aria-label="Select amp mode for multi-comparison">
                         <option value="deamped">De-Amped</option>
                         <option value="normal" selected>Normal</option>
                         <option value="amped">Amped</option>
                     </select>
+                    <button id="addToMultiCompare" class="add-btn">➕ Add</button>
                 </div>
+                <div id="multiCompareList" class="multi-compare-list"></div>
+            </div>
 
-                <div class="controls">
-                    <button id="compareToggle">Enable Compare Mode</button>
+            <!-- Stats Display -->
+            <div class="stats-display" id="statsDisplay" role="region" aria-label="Ability statistics"></div>
+
+            <!-- Main Radar Chart -->
+            <canvas
+                id="radarChart"
+                aria-label="Radar chart showing five metrics: Power, Speed, Trick, Recovery, and Defense"
+                role="img"
+            ></canvas>
+
+            <!-- Level Progression Chart -->
+            <div class="progression-chart-container" role="region" aria-label="Level progression chart">
+                <h3>Level Progression</h3>
+                <div class="progression-controls">
+                    <div class="progression-row">
+                        <label for="progMinLevel">Min Level:</label>
+                        <input type="number" id="progMinLevel" class="dist-number-input" min="0" max="10" step="0.1" placeholder="0" aria-label="Minimum level for progression" />
+                    </div>
+                    <div class="progression-row">
+                        <label for="progMaxLevel">Max Level:</label>
+                        <input type="number" id="progMaxLevel" class="dist-number-input" min="0" max="10" step="0.1" placeholder="10" aria-label="Maximum level for progression" />
+                    </div>
                 </div>
-
-                <div class="controls compare hidden">
-                    <select id="abilitySelect2"></select>
-                    <select id="levelSelect2"></select>
-                    <select id="ampModeSelect2">
-                        <option value="deamped">De-Amped</option>
-                        <option value="normal" selected>Normal</option>
-                        <option value="amped">Amped</option>
-                        </select>
-                </div>
-
-                <div class="stats-display" id="statsDisplay"></div>
-
                 <canvas
-                    id="radarChart"
-                    width="600"
-                    height="400"
-                    aria-label="Radar chart showing five metrics"
-                    role="img">
-                </canvas>
+                    id="progressionChart"
+                    aria-label="Bar chart showing stat progression across all levels"
+                    role="img"
+                ></canvas>
+            </div>
 
-                <div id="comparisonSummary" class="comparison-summary hidden"></div>
+            <!-- Stats Distribution Chart -->
+            <div class="distribution-chart-container" role="region" aria-label="Stats distribution chart">
+                <h3>Stats Distribution (Filtered)</h3>
+                <div class="distribution-controls">
+                    <div class="distribution-row">
+                        <label for="distTierSelect">Focus Tier:</label>
+                        <select id="distTierSelect" class="dist-select" aria-label="Select tier for distribution">
+                            <option value="">All Filtered</option>
+                        </select>
+                    </div>
+                    <div class="distribution-row">
+                        <label for="distAbilitySelect">Focus Ability:</label>
+                        <select id="distAbilitySelect" class="dist-select" aria-label="Select ability for distribution">
+                            <option value="">All in Tier</option>
+                        </select>
+                    </div>
+                    <div class="distribution-row">
+                        <label>
+                            <input type="checkbox" id="distStackToggle" aria-label="Toggle stacked bars" />
+                            Stacked Bars
+                        </label>
+                    </div>
+                    <div class="distribution-row">
+                        <label>
+                            <input type="checkbox" id="distOverlayToggle" aria-label="Toggle selected overlay" checked />
+                            Show Selected Overlay
+                        </label>
+                    </div>
+                    <div class="distribution-row">
+                        <label for="distMinLevel">Min Level:</label>
+                        <input type="number" id="distMinLevel" class="dist-number-input" min="0" max="10" step="0.1" placeholder="0" aria-label="Minimum level filter" />
+                    </div>
+                    <div class="distribution-row">
+                        <label for="distMaxLevel">Max Level:</label>
+                        <input type="number" id="distMaxLevel" class="dist-number-input" min="0" max="10" step="0.1" placeholder="10" aria-label="Maximum level filter" />
+                    </div>
+                </div>
+                <div class="distribution-stat-filters">
+                    <label>Visible Stats:</label>
+                    <div class="stat-filter-checks">
+                        <label class="stat-check"><input type="checkbox" class="dist-stat-filter" value="Pow" checked /> Power</label>
+                        <label class="stat-check"><input type="checkbox" class="dist-stat-filter" value="Spd" checked /> Speed</label>
+                        <label class="stat-check"><input type="checkbox" class="dist-stat-filter" value="Trick" checked /> Trick</label>
+                        <label class="stat-check"><input type="checkbox" class="dist-stat-filter" value="Recv" checked /> Recovery</label>
+                        <label class="stat-check"><input type="checkbox" class="dist-stat-filter" value="Def" checked /> Defense</label>
+                    </div>
+                </div>
+                <canvas
+                    id="distributionChart"
+                    aria-label="Chart of stat values across filtered abilities"
+                    role="img"
+                ></canvas>
+                <p class="chart-note">This chart shows how many ability levels fall into each range for Power, Speed, Trick, Recovery, and Defense. Taller bars = more levels in that range</p>
+            </div>
+
+            <!-- Chart Controls & Shortcuts Info -->
+            <div class="chart-controls">
+                <p class="keyboard-hints">
+                    💡 <strong>Keyboard shortcuts:</strong> 
+                    <br />Alt+C (Compare) • Alt+D (Dark Mode) • Alt+E (Export Menu) • Alt+S (Search) • Alt+F (Favorites) • Alt+R (Recent) • Esc (Close)
+                </p>
+            </div>
+
+            <!-- Comparison Summary Table -->
+            <div id="comparisonSummary" class="comparison-summary hidden" role="region" aria-label="Comparison summary"></div>
+        </main>
+    </div>
+
+    <!-- Favorites Modal -->
+    <div id="favoritesModal" class="favorites-modal hidden" role="dialog" aria-modal="true" aria-labelledby="favoritesModalTitle">
+        <div class="favorites-modal-content">
+            <div class="favorites-modal-header">
+                <h2 id="favoritesModalTitle">⭐ Favorites</h2>
+                <button 
+                    class="modal-close" 
+                    id="favoritesModalClose" 
+                    aria-label="Close favorites modal"
+                >
+                    &times;
+                </button>
+            </div>
+            <div id="favoritesList" class="favorites-list" role="region" aria-label="Favorites list"></div>
+            <div class="favorites-modal-footer">
+                <button id="clearFavoritesBtn" class="filter-btn clear" aria-label="Clear all favorites">
+                    Clear All Favorites
+                </button>
             </div>
         </div>
+    </div>
 
-        <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
-        <script src="radar.js"></script>
-    </body>
+    <!-- GIF Modal -->
+    <div id="gifModal" class="gif-modal hidden" role="dialog" aria-modal="true">
+        <span class="modal-close" aria-label="Close image modal">&times;</span>
+        <img class="gif-modal-content" id="gifModalImage" alt="Expanded ability image" />
+        <div id="gifModalCaption" class="gif-modal-caption"></div>
+    </div>
+
+    <!-- Chart.js Library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <!-- Application Script -->
+    <script src="radar.js"></script>
+</body>
 </html>

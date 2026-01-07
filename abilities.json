@@ -1,8 +1,8 @@
 {
   "Low-Tier": {
     "_meta": {
-      "faq": "Low-Tier abilities are generally considered weak and not very viable in competitive play. They are often used for fun or novelty rather than serious combat.",
-      "description": "Low-Tier abilities are those that are generally outclassed by other abilities in terms of power, utility, or versatility. They may have niche uses and often used for comedic effect & trolling but are not typically favored in competitive scenarios.",
+      "faq": "Low-Tier abilities are weak, okay? Not viable, not meta, just… there. They’re mostly for fun, novelty, or personal humiliation. Competitive players usually avoid them unless they’re feeling spicy.",
+      "description": "Even Low-Tier’s big-name abilities, like Needles or Illumination, are basically meme-tier. Owning them is a statement: “I like pain… or maybe I just enjoy chaos.”",
       "level-range": {
         "obtainable-from": [1.0, 1.9],
         "upgrade-limit": 3.4
@@ -14,14 +14,13 @@
         "r": ["/abilities-assets/low-tier/Illumination/r/1.gif"]
       },
       "_meta": {
-        "faq": "Illumination is obtainable from 1.0-1.9 in the shop NOT possible to roll due to the way current rarity works",
-        "description": "Illumination is an ability that lacks viability due to its meagre stats, and is commonly used as a joking point between players, similarly to how Needles is.",
-        "tags": ["Rage-Bait-Effective", "Debuff", "Short-Ranged", "Feeble", "Skill-Less", "Support", "Melee"],
+        "faq": "Illumination can be purchased in the shop between 1.0–1.9. It cannot be rolled, not because it’s special, but because the current rarity system mercifully prevents that from happening.",
+        "description": "Illumination is an ability with impressively underwhelming stats and virtually no competitive viability. Its primary purpose is not combat, but psychological warfare — often used as a running joke among players, much like Needles. Equipping Illumination is a statement: you’re either trolling, testing patience, or you’ve made some questionable life choices.",
+        "tags": ["Rage-Bait-Effective", "Debuff", "Melee", "Feeble", "Skill-Less", "Support"],
         "ability-state": ["Copyable", "Obtainable"],
         "target-rating": {
-          "score": 4,
-          "explanation": "I'm giving it a 4 as it rage-baits enemies into attacking you by blinding you for a few seconds, really annoying, but its not a threat on its own.",
-          "Weaknesses": ["High Mobility", "Ranged Attacks", "Stunning Effects", "Wide-Ranged Debuffs", "AOE", "High Burst Damage", "Damage Over Time"]
+          "score": 10,
+          "explanation": "Illumination has an unparalleled ability to provoke everyone within visual range. Allies question your sanity, neutrals reconsider their life choices, and enemies feel morally obligated to eliminate you on sight. Simply existing with this ability equipped is enough to draw aggro. Annoying? Absolutely. Effective? Unfortunately, yes."
         }
       },
 
@@ -63,7 +62,7 @@
           "name": "Flash",
           "state": ["Instant"],
           "effects": ["miss-debuff"],
-          "description": "When Used, A flash of light emits from the user's palm, blinding anyone nearby for a few seconds (duration based on trick stat), whilst this ability is active it debuffs a player into missing any attack they do.",
+          "description": "Upon activation, the user unleashes a flash of blinding white light directly from their palm. Anyone unfortunate enough to be nearby will be temporarily flashbanged into regret, staring into pure brightness for a few seconds (duration scales with the Trick stat). While affected, targets suffer a miss debuff, causing their attacks to whiff spectacularly. Dark mode users are strongly advised to lower their brightness unless they enjoy being flashbanged in real life too. ☠️",
           "cooldown": 12
         } 
       }
@@ -71,17 +70,18 @@
     
     "Needles": {
       "assets": {
-        "icon": "/abilities-assets/low-tier/Needles/icon/image.png",
+        "icon": "/abilities-assets/low-tier/Needles/icon/needles.png",
         "r": ["/abilities-assets/low-tier/Needles/r/1.gif"]
       },
 
       "_meta": {
-        "faq": "Needles is obtainable from 1.0-1.9 in the shop NOT possible to roll due to the way current rarity work",
-        "tags": ["Feeble", "Short-Ranged", "Bursts", "Melee"],
+        "description": "Needles is a low-tier ability that is notoriously easy to counter and even more notorious for being the Needles ability. If every needle somehow lands, it can deal over 100 base damage when fully maxed — which sounds impressive until you remember how rarely that actually happens.",
+        "faq": "Needles can be purchased in the shop from 1.0–1.9. It cannot be rolled, largely because the current rarity system refuses to inflict that fate upon players.",
+        "tags": ["Feeble", "Ranged", "Bursts", "Melee"],
         "state": ["Copyable", "Obtainable"],
         "target-rating": {
           "score": 1,
-          "explanation": "A needles user can never even hope to scale to your power unless they are really good at powerless, since its cancellable, it doesn't leave enough time to deal significant damage, so you can attack them and get them into a combo before they can do anything.",
+          "explanation": "A Needles user has little to no chance of scaling to your power unless they are unusually cracked at powerless combat. The move is cancellable, slow, and leaves barely enough time to deal meaningful damage. In most situations, you can simply hit them first, start a combo, and end the fight before the needles ever become a problem.",
           "Weaknesses": ["High Mobility", "Ranged Attacks", "Stunning Effects", "Wide-Ranged Debuffs", "AOE", "High Burst Damage", "Damage Over Time"]
         }
       },
@@ -124,7 +124,7 @@
           "name": "Needles",
           "state": ["cancellable", "blockable", "holdable", "damage-dealing", "projectile", "Aimable"],
           "effects": ["interrupt-enemies-attack"],
-          "description": "The user points a hand forwards and shoots a barrage of large damaging needles towards a target, dealing strong damage, although this move is canceled if the user is stunned for any amount of time.",
+          "description": "The user extends their hand and fires a barrage of oversized needles toward the target, dealing burst damage on hit. While threatening on paper, this move is instantly cancelled if the user is stunned for even a moment, making timing everything and mistakes very unforgiving.",
           "cooldown": 10
         }
       }
@@ -133,8 +133,8 @@
 
   "Mid-Tier": {
     "_meta": {
-      "faq": "Mid-Tier abilities are more viable than Low-Tier but still have significant drawbacks or limitations that prevent them from being top-tier choices. They can be effective in certain situations but may struggle against more versatile or powerful abilities.",
-      "description": "Mid-Tier abilities strike a balance between power and utility, offering decent performance in various scenarios. They may have some situational uses and can be effective when used strategically, but they often lack the overall impact of higher-tier abilities.",
+      "faq": "Mid-Tier abilities are more useful than Low-Tier but come with quirks, flaws, and glaring limitations. They can be effective in some fights, but the higher-tier kids will still stomp on you if you’re not careful.",
+      "description": "Mid-Tier abilities are the “middle children” of the ability world: not as tragic as Low-Tier, but not flashy enough to be top-tier. They strike a balance between power and utility, shining in certain situations but easily outclassed by stronger, more versatile abilities. Think of them as “situationally useful, occasionally annoying,” with just enough potential to make an opponent sweat… sometimes.",
       "level-range": {
         "obtainable-from": [2.0, 3.4],
         "upgrade-limit": 4.9
@@ -146,12 +146,12 @@
         "r": ["/abilities-assets/mid-tier/Strong-Punch/r/Clobber.gif"]
       },
       "_meta": {
-        "faq": "Strong Punch is obtainable from 2.0-2.9 in the shop and is rollable in the ability reroller",
-        "tags": ["Melee", "Short-Range", "Heavy", "Feeble"],
+        "faq": "Strong Punch can be purchased in the shop from 2.0–2.9 and is rollable in the ability reroller.",
+        "tags": ["Melee", "Heavy", "Feeble"],
         "state": ["Copyable", "Obtainable"],
         "target-rating": {
           "score": 4,
-          "explanation": "A strong punch user can be a threat if they manage to get close to you, but if you keep your distance and use ranged attacks, you can easily avoid their attacks and take them down. They could easily kill you with when you have low defence.",
+          "explanation": "If a Strong Punch user gets close, they’re a serious threat. Keep your distance, use ranged attacks, and you can laugh while dodging their fists. Just don’t underestimate them when your defence is low—you’ll feel that fist personally.",
           "Weaknesses": ["High Mobility", "Ranged Attacks", "Stunning Effects", "Wide-Ranged Debuffs", "AOE", "High Burst Damage", "Damage Over Time"]
         }
       },
@@ -203,7 +203,7 @@
           "name": "Clobber",
           "state": ["cancellable", "damage-dealing"],
           "effects": ["interrupt-enemies-attack"],
-          "description": "The user winds up their fist slowly and delivers a powerful punch to a nearby target, dealing heavy damage, creating an explosion on impact no aoe ",
+          "description": "The user takes their sweet time winding up a fist, then delivers a devastating punch to a nearby target. Impact causes a satisfying explosion (don’t worry, no actual AOE), dealing heavy damage. Timing is everything—miss the wind-up and you’re just standing there looking strong.",
           "cooldown": 12
         }
       }
@@ -214,12 +214,13 @@
         "icon": "/abilities-assets/mid-tier/Speed/icon/speed.png"
       },
       "_meta": {
+        "description": "Speed abilities let users zip around the battlefield, landing attacks faster than most opponents can react. They pack moderate power, enough to make their hits meaningful, but remain fragile due to low Defence, Recovery, and Trick stats. Excellent for hit-and-run strategies, not so great for head-on fights.",
         "faq": "Speed is obtainable from 2.0-3.4 in the shop and is rollable in the ability reroller",
         "tags": ["Speedster", "Melee", "Feeble", "Stat-Based"],
         "state": ["Copyable", "Obtainable"],
         "target-rating": {
           "score": 3,
-          "explanation": "A speed user can be quite a nuisance to deal with due to their high speed, making it difficult to land hits on them. However, they lack power and defence, so if you can catch them off guard, you can take them down quickly.",
+          "explanation": "Speed users can be a serious nuisance thanks to their mobility and moderate damage. However, if you catch them off guard, their low Defence, Recovery, and Trick stats make them surprisingly easy to deal with.",
           "Weaknesses": ["AOE", "Ranged Attacks", "Stunning Effects", "Wide-Ranged Debuffs"]
         }
       },
@@ -338,24 +339,25 @@
             "description": "Unlike every other ability, which heals in ticks, Regeneration has passively increased recovery, and constant recovery. (a different ability with the same amount of recovery stat would heal slower than Regeneration)",
             "effects": ["Health-Regeneration"]
           }
+        }
       }
     },
 
     "Strong Kick": {
       "assets": {
         "icon": "/abilities-assets/mid-tier/Strong-Kick/icon/strong-kick.png",
-        "r": ["/abilities-assets/mid-tier/Strong-Kick/r/Kick-Off.gif"],
-        "f": ["/abilities-assets/mid-tier/Strong-Kick/f/StrengthVarientA.gif",
-              "/abilities-assets/mid-tier/Strong-Kick/f/StrengthVarientB.gif"],
+        "r": ["/abilities-assets/mid-tier/Strong-Kick/r/Kick_Off.gif"],
+        "f": ["/abilities-assets/mid-tier/Strong-Kick/f/StrengthVariant_A.gif",
+          "/abilities-assets/mid-tier/Strong-Kick/f/strength-varient_b.gif"],
         "passive": ["/abilities-assets/mid-tier/Strong-Kick/passive/Strong_kick_-_Heavy.gif"]
       },
       "_meta": {
         "faq": "Strong Kick is obtainable from 2.0-3.4 in the shop and is rollable in the ability reroller",
-        "tags": ["Melee", "Short-Range", "Heavy", "Feeble", "Passive"],
+        "tags": ["Melee", "Heavy", "Feeble", "Passive"],
         "state": ["Copyable", "Obtainable"],
         "target-rating": {
           "score": 4,
-          "explanation": "A strong kick user can be a threat if they manage to get close to you, but if you keep your distance and use ranged attacks, you can easily avoid their attacks and take them down. They have low defence so easy to kill. Among all the low-tiers, strong kick in my opinion is the most balanced on most stats so if you have skill, you could defeat a high tier or even god."
+          "explanation": "Strong Kick users are dangerous if they get close, but low Defence makes them easy pickings if you keep your distance and use ranged attacks. Among all Mid-Tiers, Strong Kick is surprisingly balanced across most stats, meaning a skilled player could even take on higher-tier or god-tier opponents. Approach carefully… or get launched."
         }
       },
 
@@ -379,7 +381,7 @@
           "name": "Kick Off",
           "state": ["holdable", "evasive"],
           "effects": ["Push"],
-          "description": "The user Leaps Forward into the air, launching themselves away from danger, and doing a little knockback (very little) no damage",
+          "description": "The user leaps into the air to escape danger while doing a tiny knockback (barely enough to notice). No damage, just style points. Tip: It’s more about survival than offense.",
           "cooldown": 10
         },
 
@@ -388,14 +390,14 @@
             "name": "Strength",
             "state": ["cancellable", "damage-dealing", "Short-Range", "AOE"],
             "effects": ["Fling", "interrupt-enemies-attack", "damage-dealing"],
-            "description": "The user kicks with their right leg with immense force, dealing little damage in a small area and launching anyone hit up in the air.",
+            "description": "A short-range AOE kick with the right leg, hitting anyone nearby and flinging them into the air. Deals little damage but disrupts enemies nicely.",
             "cooldown": 10
           },
           "Varient B": {
             "name": "Strength",
             "state": ["damage-dealing", "Medium-Range", "AOE"],
             "effects": ["interrupt-enemies-attack", "damage-dealing"],
-            "description": "After attempting to do R ability, The user press F move to that whilst in the air the user slams downwards dealing moderate damage in a medium area upon landing.",
+            "description": "While in the air from Kick Off, pressing F slams the user downwards, dealing moderate damage in a medium area. Perfect for landing a stylish midair combo.",
             "cooldown": 10
           }
         }
@@ -405,7 +407,7 @@
         "effects": {
           "1": {
           "name": "Enhanced Kicks (Heavy)",
-          "description": "Instead of a normal heavy punch like other abilities have, Strong Kick.. kicks(you never would've guessed it), creating an explosion (no aoe) on impact deals extra damage.",
+          "description": "Instead of throwing a boring normal heavy punch, Strong Kick actually kicks. Each kick lands with a satisfying explosion (no AOE) and deals extra damage. Basically, it’s just better than a standard punch—and way cooler.",
           "effects": ["Increased-Damage"]
           }
         }
@@ -482,7 +484,6 @@
         }
       }
     }
-  }
   },
 
   "Elite-Tier": {
@@ -496,16 +497,16 @@
     },
 
     "Healing": {
-      "_assets": {
+      "assets": {
         "icon": "/abilities-assets/elite-tier/Healing/icon/healing.png",
-        "r": ["/abiltiies-assets/elite-tier/Healing/r/Healing_-_Heal.gif"]
+        "r": ["/abilities-assets/elite-tier/Healing/r/Healing_-_Heal.gif"]
       },
       "_meta": {
         "faq": "Healing is obtainable from 3.5-4.9 in the shop and is rollable in the ability reroller",
         "tags": ["Support", "Passive", "Stat-Based"],
         "state": ["Copyable", "Obtainable"],
         "target-rating": {
-          "score": [-2, 5],
+          "score": -2,
           "explanation": "Its been given a target range between (-2) attack them then you will get targetted, and 5, attacking a healer who is biased and heal one-sidedly in which the target range would go exponentionally up.A healing user can be quite difficult to take down due to their healing abilities, allowing them to recover from damage quickly. They excel in long fights and team battles. However, they lack offensive capabilities, so if you can outlast their healing, you can eventually wear them down.",
           "Weaknesses": ["High Burst Damage", "Stunning Effects", "Teaming", "AOE", "Crowd-Control"]
         }
@@ -563,12 +564,12 @@
     "Teleportation": {
       "assets": {
         "icon":  "/abilities-assets/elite-tier/Teleportation/icon/teleportation.png",
-        "r": ["/abilities-assets/elite-tier/Teleportation/r/Teleportation_Warp.gif"],
+        "r": ["/abilities-assets/elite-tier/Teleportation/r/Teleport_Warp.gif"],
         "f": ["/abilities-assets/elite-tier/Teleportation/f/Teleportation_Teleport.gif"]
       },
       "_meta": {
         "faq": "Teleportation is obtainable from 3.5-4.9 in the shop and is rollable in the ability reroller",
-        "tags": ["Mobility", "Stat-Based", "High-Skill", "Feeble", "Evasive", "Short-Range"],
+        "tags": ["Mobility", "Stat-Based", "High-Skill", "Feeble", "Evasive"],
         "state": ["Copyable", "Obtainable"],
         "target-rating": {
           "score": 4,
@@ -638,11 +639,11 @@
     
     "Energy Discharge": {
       "assets": {
-        "icon": "/abilities-assets/elite-tier/Energy_Discharge/icon/energy-discharge.png",
-        "r": ["/abilities-assets/elite-tier/Energy_Discharge/r/Energy_Discharge_-_Energy_Beam_Blocked.gif",
-        "/abilities-assets/elite-tier/Energy_Discharge/r/Energy_Discharge_-_Energy_Beam_Headshot.gif"],
-        "f": ["/abilities-assets/elite-tier/Energy_Discharge/f/Energy_Discharge_-_Laser_Dash.gif"],
-        "t": ["/abilities-assets/elite-tier/Energy_Discharge/t/Energy_Discharge_-_Shockwave.gif"]
+        "icon": "/abilities-assets/elite-tier/Energy-Discharge/icon/energy-discharge.png",
+        "r": ["/abilities-assets/elite-tier/Energy-Discharge/r/Energy_Discharge_-_Energy_Beam_Blocked.gif",
+        "/abilities-assets/elite-tier/Energy-Discharge/r/Energy_Discharge_-_Energy_Beam_Headshot.gif"],
+        "f": ["/abilities-assets/elite-tier/Energy-Discharge/f/Energy_Discharge_-_Laser_Dash.gif"],
+        "t": ["/abilities-assets/elite-tier/Energy-Discharge/t/Energy_Discharge_-_Shockwave.gif"]
       },
       "_meta":{
         "faq": "Energy Discharge is obtainable from 3.5-4.9 in the shop and is rollable in the ability reroller",
@@ -816,11 +817,11 @@
     "Phase Shift": {
       "assets": {
         "icon": "/abilities-assets/elite-tier/Phase-Shift/icon/phase-shift.png",
-        "r": ["Phase_Shift_-_Shift_Phase.gif"]
+        "r": ["/abilities-assets/elite-tier/Phase-Shift/r/Phase_Shift_-_Shift_Phase.gif"]
       },
       "_meta":{
         "faq": "Phase Shift is obtainable from 3.5-4.9 in the shop and is rollable in the ability reroller",
-        "tags": ["High Damage", "Melee", "Stat-Based", "Evasive", "Short-Range", "Tank", "Feeble", "Light", "Speedster", "High-Skill"],
+        "tags": ["High-Damage", "Melee", "Stat-Based", "Evasive", "Tank", "Feeble", "Light", "Speedster", "High-Skill"],
         "state": ["Copyable", "Obtainable"],
         "target-rating": {
           "score": 4,
@@ -928,14 +929,14 @@
 
     "Nightmare": {
       "assets": {
-        "icon": "/abilities-assets/elite-tier/Nightmare/icon/nightmare.png",
-        "r": ["/abilities-assets/elite-tier/Nightmare/r/Nightmare_-Scare.gif"],
-        "f": ["/abilities-assets/elite-tier/Nightmare/f/Nightmare_Eerie_Enemy_POV.gif",
-              "/abilities-assets/elite-tier/Nightmare/f/Nightmare_Eerie_Resonance_Nightmare_POV.gif"],
-        "t": ["/abilities-assets/elite-tier/Nightmare/t/Nightmare_Heart_Attack.gif"]
+        "icon": "/abilities-assets/elite-tier/nightmare/icon/nightmare.png",
+        "r": ["/abilities-assets/elite-tier/nightmare/r/Nightmare_-Scare.gif"],
+        "f": ["/abilities-assets/elite-tier/nightmare/f/Nightmare_Eerie_Enemy_POV.gif",
+              "/abilities-assets/elite-tier/nightmare/f/Nightmare_Eerie_Resonance_Nightmare_POV.gif"],
+        "t": ["/abilities-assets/elite-tier/nightmare/t/Nightmare_Heart_Attack.gif"]
       },
       "_meta":{
-        "_faq": "Nightmare is obtainable from 3.5-5.9 in the shop and is rollable in the ability reroller. It is a mental ability therefore Uncopyable by aura manipulation. During Halloween event, this ability was a high tier ability in which their level cap and rollable increased to an average high tier.",
+        "faq": "Nightmare is obtainable from 3.5-5.9 in the shop and is rollable in the ability reroller. It is a mental ability therefore Uncopyable by aura manipulation. During Halloween event, this ability was a high tier ability in which their level cap and rollable increased to an average high tier.",
         "tags": ["Crowd-Control", "Mental", "Bursts", "Melee", "Rage-Bait-Effective", "Passive"],
         "state": ["Uncopyable", "Obtainable"],
         "target-rating": {
@@ -1025,7 +1026,7 @@
       },
       "_meta": {
         "faq": "Explosion is obtainable from 3.5-4.9 via rolling or purschasing in the shop.",
-        "tags": ["High Damage", "Melee", "Short-Range", "Brain-Dead", "Fragile"],
+        "tags": ["High-Damage", "Melee", "Brain-Dead", "Feeble"],
         "description": "A explosion user is a powerful combatant due to their high power and trick stats, allowing them to deal significant damage and evade attacks effectively. However, they lack speed and defensive capabilities, making them vulnerable to fast-moving or heavily armored opponents. Skilled players can leverage the explosion's abilities to outmaneuver and outlast their opponents, it deals way more damage than the reflective powerstats, it is known as the highest damage output from m1 and heavies attack in the game",
         "state": ["Copyable", "Obtainable"],
         "target-rating": {
@@ -1094,7 +1095,7 @@
     },
     "Energy Blades": {
       "assets": {
-        "icon": "/abilities-assets/high-tier/low-high-tier/EnergyBlades/icon/energy_blades.png",
+        "icon": "/abilities-assets/high-tier/low-high-tier/EnergyBlades/icon/blade-master.png",
         "r": ["/abilities-assets/high-tier/low-high-tier/EnergyBlades/r/EB-BladeMaster_-_Swordstorm_Unblocked.gif"]
       },
 
@@ -1176,11 +1177,9 @@
     },
 
     "Lightning": {
-      "lightning": {
-        "icon": "/abilities-assets/high-tier/low-high-tier/lightning/icon/lightning.png",
-        "r": ["/abilities-assets/high-tier/low-high-tier/lightning/r/Lightning_-_Thunder_Strike.gif"]
+      "assets": {
+        "icon": "/abilities-assets/high-tier/low-high-tier/lightning/icon/lightning.png"
       },
-      "image": "abilities-assets/high-tier/low-high-tier/lightning.png",
       "_meta": {
         "faq": "Lightning is obtainable from 5.0-5.9 in the shop and is rollable in the ability reroller. ",
         "tags": ["Balanced", "Ranged", "Bursts", "Passive"],
@@ -1252,7 +1251,9 @@
     },
 
     "Conjure Vines": {
-      "image": "abilities-assets/high-tier/low-high-tier/vines.png",
+      "assets": {
+        "icon": "/abilities-assets/high-tier/low-high-tier/ConjureVines/icon/vines.png"
+      },
       "_meta":{
         "faq": "Conjure: Vines is obtainable from 5.0-5.9 via rolling or purchasing the ability from the shop",
         "tags": ["Stunner", "Hybrid", "Ranged", "Crowd-Control", "Support"],
@@ -1317,10 +1318,12 @@
     },
 
     "Arachnid": {
-      "image": "abilities-assets/high-tier/low-high-tier/arachnid.png",
+      "assets": {
+        "icon": "/abilities-assets/high-tier/low-high-tier/arachnid/icon/arachnid.png"
+      },
       "_meta": {
         "faq": "Arachnid is obtainable from 5.0-5.9 via rolling or purchasing in the shop.",
-        "tags": ["Tank", "Melee", "Stunner", "Crowd-Control", "Melee", "Passive", "Rage-Bait-Effective"],
+        "tags": ["Tank", "Melee", "Stunner", "Crowd-Control", "Passive", "Rage-Bait-Effective"],
         "description": "An arachnid user is a durable combatant due to their high defense and power stats, allowing them to withstand significant damage while dealing substantial damage in return. Their moderate speed, trick, and recovery stats enable them to maintain a steady presence on the battlefield, making them effective at both offense and defense. Arachnid work around stun, all abilities apply stun, making them very good at crowd control. a warning to those who face them, never get into a prolonged fight with an arachnid user, as their high defense and power stats can quickly wear down even the toughest opponents, they could stun you or get you into a combo for a good 10-15 seconds if you're not careful, not to mention some apply bleeding effects as well.",
         "state": ["Copyable", "Obtainable"],
         "target-rating": {
@@ -1362,7 +1365,7 @@
       "abilities": {
         "R": {
           "name": "Barrage",
-          "state": ["Short-Range", "damage-dealing", "Melee", "holdable", "cancellable" ,"semi-blockable"],
+          "state": ["Short-Range", "damage-dealing", "Melee", "holdable", "cancellable", "semi-blockable"],
           "effects": ["stun", "bleed", "slow"],
           "description": "The user rapidly strikes out with their spider legs to unleash a barrage of strikes infront of them, dealing moderate damage to all nearby opponents, inflicting stun, bleed, and slow effects on hit. This move is semi-blockable, dealing 50% reduced damage on block, no bleed and no stun. which could then lead to another combo from the arachnid user.",
           "cooldown": 18
@@ -1407,7 +1410,9 @@
     },
 
     "Duplication": {
-      "image": "abilities-assets/high-tier/high-high-tier/dupe.png",
+      "assets": {
+        "icon": "/abilities-assets/high-tier/high-high-tier/Duplication/icon/dupe.png"
+      },
       "_meta": {
         "faq": "Duplication is obtainable from 5.5-5.9 via rolling or purchasing in the shop.",
         "tags": ["Bursts", "Hybrid", "Ranged", "Melee", "Brain-Dead", "Balanced", "Stunner"],
@@ -1462,10 +1467,12 @@
     },
 
     "Spectral Claw": {
-      "image": "abilities-assets/high-tier/high-high-tier/specclaw.png",
+      "assets": {
+        "icon": "/abilities-assets/high-tier/high-high-tier/Spectral-Claw/icon/specclaw.png"
+      },
       "_meta": {
         "faq": "Spectral Claw is obtainable from 5.5-5.9 via rolling or purchasing in the shop.",
-        "tags": ["Melee", "Stunner", "Crowd-Control", "Tank", "Durable", "Balanced", "Passive", "Burst"],
+        "tags": ["Melee", "Stunner", "Crowd-Control", "Tank", "Durable", "Balanced", "Passive", "Bursts"],
         "description": "A spectral claw user is a durable combatant due to their mid defense and high power stats, allowing them to withstand significant damage while dealing substantial damage in return. Their moderate speed, trick, and recovery stats enable them to maintain a steady presence on the battlefield, making them effective at combat in general. Spectral Claw users excel at close-quarters combat, utilizing their abilities to stun opponents effectively. Their balanced stats make them versatile fighters, capable of adapting to various combat situations. You can counter this by keeping your distance and using ranged attacks to wear them down before they can close the gap.",
         "state": ["Copyable", "Obtainable"],
         "target-rating": {
@@ -1532,10 +1539,12 @@
     },
 
     "Fire Claws": {
-      "image": "abilities-assets/high-tier/high-high-tier/fireclaw.png",
+      "assets": {
+        "icon": "/abilities-assets/high-tier/high-high-tier/Fireclaws/icon/fireclaw.png"
+      },
       "_meta": {
         "faq": "Fire Claws is obtainable from 5.5-5.9 via rolling or purchasing in the shop.",
-        "tags": ["Melee", "Burst", "Stunner", "Balanced", "Passive", "Speedster", "Light", "Rage-Bait-Effective", "Brain-Dead"],
+        "tags": ["Melee", "Bursts", "Stunner", "Balanced", "Passive", "Speedster", "Light", "Rage-Bait-Effective", "Brain-Dead"],
         "description": "A fire claw user has weak defence but often is called brain-dead and is known for its high speed and power stats, allowing them to quickly close the distance and deal substantial damage in a short amount of time. Fire claw users excel at close-quarters combat, utilizing their burning effect of their ability to wear down their opponent but they often get one shotted due to their low recovery and low defence. You can counter this by keeping your distance and using ranged attacks to wear them down before they can close the gap.",
         "state": ["Copyable", "Obtainable"],
         "target-rating": {
@@ -1618,11 +1627,13 @@
       }
     },
     "Barrier": {
-      "image": "abilities-assets/god-tier/low-god-tier/barrier.png",
+      "assets": {
+        "icon": "/abilities-assets/god-tier/low-god-tier/barrier/icon/barrier-new.png"
+      },
 
       "_meta": {
         "faq": "Barrier is a low-god-tier that is obtainable from 6.0 to 6.4 via rolling or purchasing the ability from the shop",
-        "tags": ["Crowd-Control", "High-Skill", "Melee", "Rage-Bait-Effective", "Passive", "Tank", "Durable", "Passive"],
+        "tags": ["Crowd-Control", "High-Skill", "Melee", "Passive", "Tank", "Durable"],
         "description": "A barrier user is a durable combatant due to their maxed defense stat and high power, allowing them to withstand significant damage while protecting themselves and their allies. This durability enables them to maintain a steady presence on the battlefield, making them effective at combat in general. Barrier users excel at close-quarters combat, utilizing their abilities to control the battlefield effectively. Their balanced stats make them versatile fighters, capable of adapting to various combat situations. You can counter this by keeping your distance and using ranged attacks to wear them down before they can close the gap. But they have low recovery and speed making them vulnerable to fast attackers. all users has 100 hp, but a barrier user has max defence effectively making it has 500hp or 5 times damage reduction so if you deal 100 damage to a normal user, you will only deal 20 damage to a barrier user.",
         "state": ["Copyable", "Obtainable"]
       },
@@ -1685,10 +1696,12 @@
     },
 
     "Hydrofreeze": {
-      "image": "abilities-assets/god-tier/low-god-tier/hydrofreeze.png",
+      "assets": {
+        "icon": "/abilities-assets/god-tier/low-god-tier/hydro/icon/hydrofreeze.png"
+      },
       "_meta": {
         "faq": "Hydrofreeze is a low-god-tier that is obtainable from 6.0 to 6.4 via rolling or purchasing the ability from the shop",
-        "tags": ["Burst", "Balanced", "Evasive", "Crowd-Control", "Short-Range", "Stunner", "Melee", "Passive", "Evasive"],
+        "tags": ["Bursts", "Balanced", "Evasive", "Crowd-Control", "Stunner", "Melee", "Passive"],
         "description": "A hydrofreeze user is a balanced combatant due to their well-rounded stats, allowing them to adapt to various combat situations effectively. Their moderate power and speed stats enable them to deal substantial damage while freezing opponents on the battlefield. This versatility allows them to respond to different threats and opportunities as they arise. Hydrofreeze users excel at close-quarters combat, utilizing their abilities to control the battlefield effectively. Their balanced stats make them versatile fighters, capable of adapting to various combat situations. You can counter this by keeping your distance and using ranged attacks to wear them down before they can close the gap.",
         "state": ["Copyable", "Obtainable"],
         "target-rating": {
@@ -1767,10 +1780,12 @@
     },
 
     "Particles": {
-      "image": "abilities-assets/god-tier/low-god-tier/particles.png",
+      "assets": {
+        "icon": "/abilities-assets/god-tier/low-god-tier/particles/icon/particles.png"
+      },
       "_meta": {
         "_faq": "Particles is a low-god-tier that is obtainable from 6.0 to 6.4 via rolling or purchasing the ability from the shop",
-        "tags": ["AOE", "Melee", "Burst", "Rage-Bait-Effective", "Passive", "Balanced", "Rage-Bait-Effective"],
+        "tags": ["AOE", "Melee", "Bursts", "Rage-Bait-Effective", "Passive", "Balanced"],
         "description": "A particles user is a balanced combatant due to their well-rounded stats, allowing them to adapt to various combat situations effectively. Their moderate power and speed stats enable them to deal substantial damage while manipulating particles and inflicting bleed on the battlefield. This versatility allows them to respond to different threats and opportunities as they arise. Particles users excel at all forms of combat (short, mid and long range), utilizing their abilities to control the battlefield effectively. Their balanced stats make them versatile fighters, capable of adapting to various combat situations. You can counter this by killing them as fast as possible before they can deal massive AOE damage with their abilities so speedsters (outmanuever opponents) and tanks (tank attacks) could effectively.",
         "state": ["Copyable", "Obtainable"],
         "target-rating": {
@@ -1842,7 +1857,9 @@
     },
 
     "Botanist": {
-      "image": "abilities-assets/god-tier/low-god-tier/botanist.png",
+      "assets": {
+        "icon": "/abilities-assets/god-tier/low-god-tier/botanist/icon/botanist.png"
+      },
       "_meta": {
         "faq": "Botanist is a low-god-tier that is obtainable from 6.0 to 6.4 via rolling or purchasing the ability from the shop",
         "tags": ["Balanced", "Crowd-Control", "Support", "Passive", "Stunner", "Evasive"],
@@ -1904,7 +1921,9 @@
     },
 
     "Hypnosis": {
-      "image": "abilities-assets/god-tier/low-god-tier/zzzzz-1746505839hypnosis.png",
+      "assets": {
+        "icon": "/abilities-assets/god-tier/low-god-tier/hypnosis/icon/zzzzz-1746505839hypnosis.png"
+      },
       "levels": {
         "6.0": {"Pow": 5.0,"Spd": 2.0,"Trick": 10.0,"Recv": 5.0,"Def": 4.0},
         "6.1": {"Pow": 5.1,"Spd": 2.0,"Trick": 10.2,"Recv": 5.1,"Def": 4.1},
@@ -1923,7 +1942,9 @@
     },
 
     "Landscaping": {
-      "image": "abilities-assets/god-tier/mid-god-tier/landscaping.png",
+      "assets": {
+        "icon": "/abilities-assets/god-tier/mid-god-tier/landscaping/icon/landscaping.png"
+      },
       "levels": {
         "6.0": {"Pow": 7.3,"Spd": 3.2,"Trick": 5.3,"Recv": 2.0,"Def": 8.1},
         "6.1": {"Pow": 7.5,"Spd": 3.3,"Trick": 5.4,"Recv": 2.0,"Def": 8.3},
@@ -1946,6 +1967,9 @@
     },
 
     "Minefield": {
+      "assets": {
+        "icon": "/abilities-assets/god-tier/mid-god-tier/minefield/icon/minefield.png"
+      },
       "levels": {
         "6.5": {"Pow": 7.9,"Spd": 4.0,"Trick": 9.9,"Recv": 3.0,"Def": 4.0},
         "6.6": {"Pow": 8.1,"Spd": 4.1,"Trick": 10.0,"Recv": 3.0,"Def": 4.1},
@@ -1990,6 +2014,9 @@
     },
 
     "Varrier": {
+      "assets": {
+        "icon": "/abilities-assets/god-tier/high-god-tier/varrier/icon/varrier.png"
+      },
       "levels": {
         "6.5": {"Pow": 7.4,"Spd": 1.9,"Trick": 6.5,"Recv": 3.7,"Def": 9.2},
         "6.7": {"Pow": 7.7,"Spd": 2.0,"Trick": 6.7,"Recv": 3.9,"Def": 9.6},
@@ -2018,6 +2045,9 @@
     },
 
     "Sensory Control": {
+      "assets": {
+        "icon": "/abilities-assets/god-tier/high-god-tier/sensory/icon/sensory.png"
+      },
       "levels": {
         "7.0": {"Pow": 4.3,"Spd": 3.2,"Trick": 16.5,"Recv": 3.3,"Def": 4.3},
         "7.1": {"Pow": 4.4,"Spd": 3.3,"Trick": 16.8,"Recv": 3.3,"Def": 4.4},
@@ -2036,6 +2066,9 @@
     },
 
     "Time Manipulation": {
+      "assets": {
+        "icon": "/abilities-assets/god-tier/mid-god-tier/time/icon/time.png"
+      },
 
       "levels": {
         "6.5": {"Pow": 7.7,"Spd": 9.5,"Trick": 6.6,"Recv": 3.8,"Def": 1.2},
@@ -2078,6 +2111,9 @@
     },
 
     "Command": {
+      "assets": {
+        "icon": "/abilities-assets/god-tier/high-god-tier/command/icon/command.png"
+      },
 
       "levels": {
         "7.0": {"Pow": 6.0,"Spd": 1.0,"Trick": 15.9,"Recv": 2.7,"Def": 6.0},
@@ -2117,6 +2153,9 @@
 
   "Event/Special": {
     "Festive": {
+      "assets": {
+        "icon": "/abilities-assets/high-tier/low-high-tier/Festive/icon/festive.png"
+      },
       "levels": {
         "5.9": {"Pow": 8.1,"Spd": 4.6,"Trick": 4.6,"Recv": 4.6,"Def": 3.7},
         "6.0": {"Pow": 8.3,"Spd": 4.6,"Trick": 4.6,"Recv": 4.6,"Def": 3.7},
@@ -2134,6 +2173,9 @@
     },
 
     "Pumpkins": {
+      "assets": {
+        "icon": "/abilities-assets/god-tier/low-god-tier/pumpkins/icon/pumpkins.png"
+      },
       "levels": {
         "6.0": {"Pow": 6.5,"Spd": 1.0,"Trick": 8.3,"Recv": 4.4,"Def": 5.6},
         "6.2": {"Pow": 6.8,"Spd": 1.0,"Trick": 8.7,"Recv": 4.6,"Def": 5.8},
@@ -2155,6 +2197,9 @@
     },
 
     "Candycleave": {
+      "assets": {
+        "icon": "/abilities-assets/god-tier/mid-god-tier/candycleave/icon/candycleave.png"
+      },
       "levels": {
         "6.7": {"Pow": 9.6,"Spd": 1.0,"Trick": 5.8,"Recv": 4.8,"Def": 8.6},
         "6.8": {"Pow": 9.8,"Spd": 1.0,"Trick": 5.9,"Recv": 4.9,"Def": 8.8},

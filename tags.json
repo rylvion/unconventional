@@ -176,6 +176,70 @@
             "Strengths": "Can endure heavy damage and outlast opponents.",
             "Weaknesses": "Often has lower damage output or mobility.",
             "Synergy": "Works well with Tank or Support roles."
+        },
+
+        "Balanced": {
+            "Description": "Well-rounded ability with no significant strengths or weaknesses.",
+            "Gameplay": "Versatile and adaptable to different situations.",
+            "Strengths": "Can handle most matchups reasonably well.",
+            "Weaknesses": "Lacks specialization; may be outperformed by specialized abilities.",
+            "Synergy": "Works with most team compositions."
+        },
+
+        "Evasive": {
+            "Description": "Focused on avoiding damage through mobility and dodging.",
+            "Gameplay": "Relies on hit-and-run tactics and positioning.",
+            "Strengths": "Difficult to hit; excels at escaping danger.",
+            "Weaknesses": "Often has lower durability when caught.",
+            "Synergy": "Pairs with Speedster or Light tags."
+        },
+
+        "Mobility": {
+            "Description": "High movement capabilities, can reposition quickly.",
+            "Gameplay": "Uses movement to gain tactical advantages.",
+            "Strengths": "Can engage and disengage at will.",
+            "Weaknesses": "May sacrifice power for speed.",
+            "Synergy": "Works well with Evasive or Speedster roles."
+        },
+
+        "Debuff": {
+            "Description": "Specializes in applying negative effects to enemies.",
+            "Gameplay": "Reduces enemy effectiveness through status effects.",
+            "Strengths": "Weakens opponents and supports team fights.",
+            "Weaknesses": "Often has low direct damage output.",
+            "Synergy": "Combines with Support or Crowd-Control tags."
+        },
+
+        "Skill-Less": {
+            "Description": "Extremely simple to use with minimal mechanics.",
+            "Gameplay": "No complex abilities or combos required.",
+            "Strengths": "Accessible to all players.",
+            "Weaknesses": "Predictable and easily countered.",
+            "Synergy": "Similar to Brain-Dead tag."
+        },
+
+        "High-Damage": {
+            "Description": "Excels at dealing high amounts of damage.",
+            "Gameplay": "Focused on maximizing damage output.",
+            "Strengths": "Can eliminate targets quickly.",
+            "Weaknesses": "Often has lower defense or utility.",
+            "Synergy": "Works with Bursts or Heavy tags."
+        },
+
+        "Fragile": {
+            "Description": "Low durability and easily defeated.",
+            "Gameplay": "Must avoid taking hits to survive.",
+            "Strengths": "Often compensated with high damage or mobility.",
+            "Weaknesses": "Dies quickly under pressure.",
+            "Synergy": "Pairs with Evasive or Speedster roles."
+        },
+
+        "AOE": {
+            "Description": "Area of Effect attacks that hit multiple targets.",
+            "Gameplay": "Excels in group fights and controlling areas.",
+            "Strengths": "Can damage multiple enemies simultaneously.",
+            "Weaknesses": "May have lower single-target damage.",
+            "Synergy": "Works well with Crowd-Control or Tank roles."
         }
     },
 
