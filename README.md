@@ -2,7 +2,7 @@
 
 **Unconventional Abilities Analyzer** is a comprehensive web-based interactive tool for visualizing and analyzing abilities from the **Roblox game *Unconventional***, inspired by *UnOrdinary*. This powerful analyzer features interactive Chart.js radar charts, multi-ability comparisons, progression tracking, advanced filtering systems, statistical distribution analysis, and extensive metadata displays.
 
-🔗 **Live Demo**: [https://rylvion.github.io/uncon-radar/](https://rylvion.github.io/uncon-radar/)
+🔗 **Live Demo**: [https://rylvion.github.io/unconventional/](https://rylvion.github.io/unconventional/)
 
 ---
 
