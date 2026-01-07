@@ -1458,14 +1458,16 @@ function loadStateFromURL() {
   const level = params.get('level');
   const amp = params.get('amp');
   
-  if (ability && abilitySelect.querySelector(`option[value="${ability}"]`)) {
+  if (ability) {
     abilitySelect.value = ability;
     populateLevels(abilitySelect);
     
-    if (level && levelSelect.querySelector(`option[value="${level}"]`)) {
+    if (level) {
       levelSelect.value = level;
     }
     if (amp) ampModeSelect.value = amp;
+  } else {
+    return false;
   }
   
   if (params.get('compare') === 'true') {
@@ -1477,11 +1479,11 @@ function loadStateFromURL() {
     const level2 = params.get('level2');
     const amp2 = params.get('amp2');
     
-    if (ability2 && abilitySelect2.querySelector(`option[value="${ability2}"]`)) {
+    if (ability2) {
       abilitySelect2.value = ability2;
       populateLevels(abilitySelect2);
       
-      if (level2 && levelSelect2.querySelector(`option[value="${level2}"]`)) {
+      if (level2) {
         levelSelect2.value = level2;
       }
       if (amp2) ampModeSelect2.value = amp2;
