@@ -10,8 +10,8 @@
     },
     "Illumination": {
       "assets": {
-        "icon": "/abilities-assets/low-tier/Illumination/icon/image.png",
-        "r": ["/abilities-assets/low-tier/Illumination/r/1.gif"]
+        "icon": "abilities-assets/low-tier/Illumination/icon/image.png",
+        "r": ["abilities-assets/low-tier/Illumination/r/1.gif"]
       },
       "_meta": {
         "faq": "Illumination can be purchased in the shop between 1.0–1.9. It cannot be rolled, not because it’s special, but because the current rarity system mercifully prevents that from happening.",
@@ -70,8 +70,8 @@
     
     "Needles": {
       "assets": {
-        "icon": "/abilities-assets/low-tier/Needles/icon/needles.png",
-        "r": ["/abilities-assets/low-tier/Needles/r/1.gif"]
+        "icon": "abilities-assets/low-tier/Needles/icon/needles.png",
+        "r": ["abilities-assets/low-tier/Needles/r/1.gif"]
       },
 
       "_meta": {
@@ -142,8 +142,8 @@
     },
     "Strong Punch": {
       "assets": {
-        "icon": "/abilities-assets/mid-tier/Strong-Punch/icon/strong-punch.png",
-        "r": ["/abilities-assets/mid-tier/Strong-Punch/r/Clobber.gif"]
+        "icon": "abilities-assets/mid-tier/Strong-Punch/icon/strong-punch.png",
+        "r": ["abilities-assets/mid-tier/Strong-Punch/r/Clobber.gif"]
       },
       "_meta": {
         "faq": "Strong Punch can be purchased in the shop from 2.0–2.9 and is rollable in the ability reroller.",
@@ -211,7 +211,7 @@
 
     "Speed": {
       "assets": {
-        "icon": "/abilities-assets/mid-tier/Speed/icon/speed.png"
+        "icon": "abilities-assets/mid-tier/Speed/icon/speed.png"
       },
       "_meta": {
         "description": "Speed abilities let users zip around the battlefield, landing attacks faster than most opponents can react. They pack moderate power, enough to make their hits meaningful, but remain fragile due to low Defence, Recovery, and Trick stats. Excellent for hit-and-run strategies, not so great for head-on fights.",
@@ -273,8 +273,8 @@
 
     "Regeneration": {
       "assets": {
-        "icon": "/abilities-assets/mid-tier/Regeneration/icon/regeneration.png",
-        "passive": ["/abilities-assets/mid-tier/Regeneration/passive/Regeneration_Passive.gif"]
+        "icon": "abilities-assets/mid-tier/Regeneration/icon/regeneration.png",
+        "passive": ["abilities-assets/mid-tier/Regeneration/passive/Regeneration_Passive.gif"]
       },
       "_meta": {
         "faq": "Regeneration is obtainable from 2.0-3.4 in the shop and is rollable in the ability reroller",
@@ -345,11 +345,11 @@
 
     "Strong Kick": {
       "assets": {
-        "icon": "/abilities-assets/mid-tier/Strong-Kick/icon/strong-kick.png",
-        "r": ["/abilities-assets/mid-tier/Strong-Kick/r/Kick_Off.gif"],
-        "f": ["/abilities-assets/mid-tier/Strong-Kick/f/StrengthVariant_A.gif",
-          "/abilities-assets/mid-tier/Strong-Kick/f/strength-varient_b.gif"],
-        "passive": ["/abilities-assets/mid-tier/Strong-Kick/passive/Strong_kick_-_Heavy.gif"]
+        "icon": "abilities-assets/mid-tier/Strong-Kick/icon/strong-kick.png",
+        "r": ["abilities-assets/mid-tier/Strong-Kick/r/Kick_Off.gif"],
+        "f": ["abilities-assets/mid-tier/Strong-Kick/f/StrengthVariant_A.gif",
+          "abilities-assets/mid-tier/Strong-Kick/f/strength-varient_b.gif"],
+        "passive": ["abilities-assets/mid-tier/Strong-Kick/passive/Strong_kick_-_Heavy.gif"]
       },
       "_meta": {
         "faq": "Strong Kick is obtainable from 2.0-3.4 in the shop and is rollable in the ability reroller",
@@ -416,8 +416,8 @@
 
     "Stone-Skin": {
       "assets": {
-        "icon": "/abilities-assets/mid-tier/StoneSkin/icon/stone-skin.png",
-        "passive": ["/abilities-assets/mid-tier/StoneSkin/passive/Stone-Skin.gif"]
+        "icon": "abilities-assets/mid-tier/StoneSkin/icon/stone-skin.png",
+        "passive": ["abilities-assets/mid-tier/StoneSkin/passive/Stone-Skin.gif"]
       },
       "_meta": {
         "faq": "Stone-Skin is obtainable from 2.0-3.4 in the shop and is rollable in the ability reroller",
@@ -498,8 +498,8 @@
 
     "Healing": {
       "assets": {
-        "icon": "/abilities-assets/elite-tier/Healing/icon/healing.png",
-        "r": ["/abilities-assets/elite-tier/Healing/r/Healing_-_Heal.gif"]
+        "icon": "abilities-assets/elite-tier/Healing/icon/healing.png",
+        "r": ["abilities-assets/elite-tier/Healing/r/Healing_-_Heal.gif"]
       },
       "_meta": {
         "faq": "Healing is obtainable from 3.5-4.9 in the shop and is rollable in the ability reroller",
@@ -563,9 +563,9 @@
 
     "Teleportation": {
       "assets": {
-        "icon":  "/abilities-assets/elite-tier/Teleportation/icon/teleportation.png",
-        "r": ["/abilities-assets/elite-tier/Teleportation/r/Teleport_Warp.gif"],
-        "f": ["/abilities-assets/elite-tier/Teleportation/f/Teleportation_Teleport.gif"]
+        "icon":  "abilities-assets/elite-tier/Teleportation/icon/teleportation.png",
+        "r": ["abilities-assets/elite-tier/Teleportation/r/Teleport_Warp.gif"],
+        "f": ["abilities-assets/elite-tier/Teleportation/f/Teleportation_Teleport.gif"]
       },
       "_meta": {
         "faq": "Teleportation is obtainable from 3.5-4.9 in the shop and is rollable in the ability reroller",
@@ -639,11 +639,11 @@
     
     "Energy Discharge": {
       "assets": {
-        "icon": "/abilities-assets/elite-tier/Energy-Discharge/icon/energy-discharge.png",
-        "r": ["/abilities-assets/elite-tier/Energy-Discharge/r/Energy_Discharge_-_Energy_Beam_Blocked.gif",
-        "/abilities-assets/elite-tier/Energy-Discharge/r/Energy_Discharge_-_Energy_Beam_Headshot.gif"],
-        "f": ["/abilities-assets/elite-tier/Energy-Discharge/f/Energy_Discharge_-_Laser_Dash.gif"],
-        "t": ["/abilities-assets/elite-tier/Energy-Discharge/t/Energy_Discharge_-_Shockwave.gif"]
+        "icon": "abilities-assets/elite-tier/Energy-Discharge/icon/energy-discharge.png",
+        "r": ["abilities-assets/elite-tier/Energy-Discharge/r/Energy_Discharge_-_Energy_Beam_Blocked.gif",
+        "abilities-assets/elite-tier/Energy-Discharge/r/Energy_Discharge_-_Energy_Beam_Headshot.gif"],
+        "f": ["abilities-assets/elite-tier/Energy-Discharge/f/Energy_Discharge_-_Laser_Dash.gif"],
+        "t": ["abilities-assets/elite-tier/Energy-Discharge/t/Energy_Discharge_-_Shockwave.gif"]
       },
       "_meta":{
         "faq": "Energy Discharge is obtainable from 3.5-4.9 in the shop and is rollable in the ability reroller",
@@ -723,11 +723,11 @@
 
     "Hunter": {
       "assets": {
-        "icon": "/abilities-assets/elite-tier/Hunter/icon/hunter.png",
-        "r": ["/abilities-assets/elite-tier/Hunter/r/Hunter_-_Precision_Strike.gif"],
-        "f": ["/abilities-assets/elite-tier/Hunter/f/Hunter_-_Pinpoint.gif"],
-        "t": ["/abilities-assets/elite-tier/Hunter/t/Hunter_-_Solarplexus_Strike.gif"],
-        "passive": ["/abilities-assets/elite-tier/Hunter/passive/Hunter_-_Passive_using.gif"]
+        "icon": "abilities-assets/elite-tier/Hunter/icon/hunter.png",
+        "r": ["abilities-assets/elite-tier/Hunter/r/Hunter_-_Precision_Strike.gif"],
+        "f": ["abilities-assets/elite-tier/Hunter/f/Hunter_-_Pinpoint.gif"],
+        "t": ["abilities-assets/elite-tier/Hunter/t/Hunter_-_Solarplexus_Strike.gif"],
+        "passive": ["abilities-assets/elite-tier/Hunter/passive/Hunter_-_Passive_using.gif"]
       },
       "_meta":{
         "faq": "Hunter is obtainable from 3.5-4.9 in the shop and is rollable in the ability reroller",
@@ -816,8 +816,8 @@
 
     "Phase Shift": {
       "assets": {
-        "icon": "/abilities-assets/elite-tier/Phase-Shift/icon/phase-shift.png",
-        "r": ["/abilities-assets/elite-tier/Phase-Shift/r/Phase_Shift_-_Shift_Phase.gif"]
+        "icon": "abilities-assets/elite-tier/Phase-Shift/icon/phase-shift.png",
+        "r": ["abilities-assets/elite-tier/Phase-Shift/r/Phase_Shift_-_Shift_Phase.gif"]
       },
       "_meta":{
         "faq": "Phase Shift is obtainable from 3.5-4.9 in the shop and is rollable in the ability reroller",
@@ -929,11 +929,11 @@
 
     "Nightmare": {
       "assets": {
-        "icon": "/abilities-assets/elite-tier/nightmare/icon/nightmare.png",
-        "r": ["/abilities-assets/elite-tier/nightmare/r/Nightmare_-Scare.gif"],
-        "f": ["/abilities-assets/elite-tier/nightmare/f/Nightmare_Eerie_Enemy_POV.gif",
-              "/abilities-assets/elite-tier/nightmare/f/Nightmare_Eerie_Resonance_Nightmare_POV.gif"],
-        "t": ["/abilities-assets/elite-tier/nightmare/t/Nightmare_Heart_Attack.gif"]
+        "icon": "abilities-assets/elite-tier/nightmare/icon/nightmare.png",
+        "r": ["abilities-assets/elite-tier/nightmare/r/Nightmare_-Scare.gif"],
+        "f": ["abilities-assets/elite-tier/nightmare/f/Nightmare_Eerie_Enemy_POV.gif",
+              "abilities-assets/elite-tier/nightmare/f/Nightmare_Eerie_Resonance_Nightmare_POV.gif"],
+        "t": ["abilities-assets/elite-tier/nightmare/t/Nightmare_Heart_Attack.gif"]
       },
       "_meta":{
         "faq": "Nightmare is obtainable from 3.5-5.9 in the shop and is rollable in the ability reroller. It is a mental ability therefore Uncopyable by aura manipulation. During Halloween event, this ability was a high tier ability in which their level cap and rollable increased to an average high tier.",
@@ -1020,9 +1020,9 @@
 
     "Explosion": {
       "assets": {
-        "icon": "/abilities-assets/elite-tier/Explosion/icon/explosion.png",
-        "r": ["/abilities-assets/elite-tier/Explosion/r/Explosion_-_Destructive_blast.gif"],
-        "passive": ["/abilities-assets/elite-tier/Explosion/passive/Explosion_-_M1s_and_Heavy.gif"]
+        "icon": "abilities-assets/elite-tier/Explosion/icon/explosion.png",
+        "r": ["abilities-assets/elite-tier/Explosion/r/Explosion_-_Destructive_blast.gif"],
+        "passive": ["abilities-assets/elite-tier/Explosion/passive/Explosion_-_M1s_and_Heavy.gif"]
       },
       "_meta": {
         "faq": "Explosion is obtainable from 3.5-4.9 via rolling or purschasing in the shop.",
@@ -1095,8 +1095,8 @@
     },
     "Energy Blades": {
       "assets": {
-        "icon": "/abilities-assets/high-tier/low-high-tier/EnergyBlades/icon/blade-master.png",
-        "r": ["/abilities-assets/high-tier/low-high-tier/EnergyBlades/r/EB-BladeMaster_-_Swordstorm_Unblocked.gif"]
+        "icon": "abilities-assets/high-tier/low-high-tier/EnergyBlades/icon/blade-master.png",
+        "r": ["abilities-assets/high-tier/low-high-tier/EnergyBlades/r/EB-BladeMaster_-_Swordstorm_Unblocked.gif"]
       },
 
       "_meta": {
@@ -1178,7 +1178,7 @@
 
     "Lightning": {
       "assets": {
-        "icon": "/abilities-assets/high-tier/low-high-tier/lightning/icon/lightning.png"
+        "icon": "abilities-assets/high-tier/low-high-tier/lightning/icon/lightning.png"
       },
       "_meta": {
         "faq": "Lightning is obtainable from 5.0-5.9 in the shop and is rollable in the ability reroller. ",
@@ -1252,7 +1252,7 @@
 
     "Conjure Vines": {
       "assets": {
-        "icon": "/abilities-assets/high-tier/low-high-tier/ConjureVines/icon/vines.png"
+        "icon": "abilities-assets/high-tier/low-high-tier/ConjureVines/icon/vines.png"
       },
       "_meta":{
         "faq": "Conjure: Vines is obtainable from 5.0-5.9 via rolling or purchasing the ability from the shop",
@@ -1319,7 +1319,7 @@
 
     "Arachnid": {
       "assets": {
-        "icon": "/abilities-assets/high-tier/low-high-tier/arachnid/icon/arachnid.png"
+        "icon": "abilities-assets/high-tier/low-high-tier/arachnid/icon/arachnid.png"
       },
       "_meta": {
         "faq": "Arachnid is obtainable from 5.0-5.9 via rolling or purchasing in the shop.",
@@ -1411,7 +1411,7 @@
 
     "Duplication": {
       "assets": {
-        "icon": "/abilities-assets/high-tier/high-high-tier/Duplication/icon/dupe.png"
+        "icon": "abilities-assets/high-tier/high-high-tier/Duplication/icon/dupe.png"
       },
       "_meta": {
         "faq": "Duplication is obtainable from 5.5-5.9 via rolling or purchasing in the shop.",
@@ -1468,7 +1468,7 @@
 
     "Spectral Claw": {
       "assets": {
-        "icon": "/abilities-assets/high-tier/high-high-tier/Spectral-Claw/icon/specclaw.png"
+        "icon": "abilities-assets/high-tier/high-high-tier/Spectral-Claw/icon/specclaw.png"
       },
       "_meta": {
         "faq": "Spectral Claw is obtainable from 5.5-5.9 via rolling or purchasing in the shop.",
@@ -1540,7 +1540,7 @@
 
     "Fire Claws": {
       "assets": {
-        "icon": "/abilities-assets/high-tier/high-high-tier/Fireclaws/icon/fireclaw.png"
+        "icon": "abilities-assets/high-tier/high-high-tier/Fireclaws/icon/fireclaw.png"
       },
       "_meta": {
         "faq": "Fire Claws is obtainable from 5.5-5.9 via rolling or purchasing in the shop.",
@@ -1628,7 +1628,7 @@
     },
     "Barrier": {
       "assets": {
-        "icon": "/abilities-assets/god-tier/low-god-tier/barrier/icon/barrier-new.png"
+        "icon": "abilities-assets/god-tier/low-god-tier/barrier/icon/barrier-new.png"
       },
 
       "_meta": {
@@ -1697,7 +1697,7 @@
 
     "Hydrofreeze": {
       "assets": {
-        "icon": "/abilities-assets/god-tier/low-god-tier/hydro/icon/hydrofreeze.png"
+        "icon": "abilities-assets/god-tier/low-god-tier/hydro/icon/hydrofreeze.png"
       },
       "_meta": {
         "faq": "Hydrofreeze is a low-god-tier that is obtainable from 6.0 to 6.4 via rolling or purchasing the ability from the shop",
@@ -1781,7 +1781,7 @@
 
     "Particles": {
       "assets": {
-        "icon": "/abilities-assets/god-tier/low-god-tier/particles/icon/particles.png"
+        "icon": "abilities-assets/god-tier/low-god-tier/particles/icon/particles.png"
       },
       "_meta": {
         "_faq": "Particles is a low-god-tier that is obtainable from 6.0 to 6.4 via rolling or purchasing the ability from the shop",
@@ -1858,7 +1858,7 @@
 
     "Botanist": {
       "assets": {
-        "icon": "/abilities-assets/god-tier/low-god-tier/botanist/icon/botanist.png"
+        "icon": "abilities-assets/god-tier/low-god-tier/botanist/icon/botanist.png"
       },
       "_meta": {
         "faq": "Botanist is a low-god-tier that is obtainable from 6.0 to 6.4 via rolling or purchasing the ability from the shop",
@@ -1922,7 +1922,7 @@
 
     "Hypnosis": {
       "assets": {
-        "icon": "/abilities-assets/god-tier/low-god-tier/hypnosis/icon/zzzzz-1746505839hypnosis.png"
+        "icon": "abilities-assets/god-tier/low-god-tier/hypnosis/icon/zzzzz-1746505839hypnosis.png"
       },
       "levels": {
         "6.0": {"Pow": 5.0,"Spd": 2.0,"Trick": 10.0,"Recv": 5.0,"Def": 4.0},
@@ -1943,7 +1943,7 @@
 
     "Landscaping": {
       "assets": {
-        "icon": "/abilities-assets/god-tier/mid-god-tier/landscaping/icon/landscaping.png"
+        "icon": "abilities-assets/god-tier/mid-god-tier/landscaping/icon/landscaping.png"
       },
       "levels": {
         "6.0": {"Pow": 7.3,"Spd": 3.2,"Trick": 5.3,"Recv": 2.0,"Def": 8.1},
@@ -1968,7 +1968,7 @@
 
     "Minefield": {
       "assets": {
-        "icon": "/abilities-assets/god-tier/mid-god-tier/minefield/icon/minefield.png"
+        "icon": "abilities-assets/god-tier/mid-god-tier/minefield/icon/minefield.png"
       },
       "levels": {
         "6.5": {"Pow": 7.9,"Spd": 4.0,"Trick": 9.9,"Recv": 3.0,"Def": 4.0},
@@ -2015,7 +2015,7 @@
 
     "Varrier": {
       "assets": {
-        "icon": "/abilities-assets/god-tier/high-god-tier/varrier/icon/varrier.png"
+        "icon": "abilities-assets/god-tier/high-god-tier/varrier/icon/varrier.png"
       },
       "levels": {
         "6.5": {"Pow": 7.4,"Spd": 1.9,"Trick": 6.5,"Recv": 3.7,"Def": 9.2},
@@ -2046,7 +2046,7 @@
 
     "Sensory Control": {
       "assets": {
-        "icon": "/abilities-assets/god-tier/high-god-tier/sensory/icon/sensory.png"
+        "icon": "abilities-assets/god-tier/high-god-tier/sensory/icon/sensory.png"
       },
       "levels": {
         "7.0": {"Pow": 4.3,"Spd": 3.2,"Trick": 16.5,"Recv": 3.3,"Def": 4.3},
@@ -2067,7 +2067,7 @@
 
     "Time Manipulation": {
       "assets": {
-        "icon": "/abilities-assets/god-tier/mid-god-tier/time/icon/time.png"
+        "icon": "abilities-assets/god-tier/mid-god-tier/time/icon/time.png"
       },
 
       "levels": {
@@ -2112,7 +2112,7 @@
 
     "Command": {
       "assets": {
-        "icon": "/abilities-assets/god-tier/high-god-tier/command/icon/command.png"
+        "icon": "abilities-assets/god-tier/high-god-tier/command/icon/command.png"
       },
 
       "levels": {
@@ -2154,7 +2154,7 @@
   "Event/Special": {
     "Festive": {
       "assets": {
-        "icon": "/abilities-assets/high-tier/low-high-tier/Festive/icon/festive.png"
+        "icon": "abilities-assets/high-tier/low-high-tier/Festive/icon/festive.png"
       },
       "levels": {
         "5.9": {"Pow": 8.1,"Spd": 4.6,"Trick": 4.6,"Recv": 4.6,"Def": 3.7},
@@ -2174,7 +2174,7 @@
 
     "Pumpkins": {
       "assets": {
-        "icon": "/abilities-assets/god-tier/low-god-tier/pumpkins/icon/pumpkins.png"
+        "icon": "abilities-assets/god-tier/low-god-tier/pumpkins/icon/pumpkins.png"
       },
       "levels": {
         "6.0": {"Pow": 6.5,"Spd": 1.0,"Trick": 8.3,"Recv": 4.4,"Def": 5.6},
@@ -2198,7 +2198,7 @@
 
     "Candycleave": {
       "assets": {
-        "icon": "/abilities-assets/god-tier/mid-god-tier/candycleave/icon/candycleave.png"
+        "icon": "abilities-assets/god-tier/mid-god-tier/candycleave/icon/candycleave.png"
       },
       "levels": {
         "6.7": {"Pow": 9.6,"Spd": 1.0,"Trick": 5.8,"Recv": 4.8,"Def": 8.6},
@@ -2213,7 +2213,6 @@
     },
 
     "Vampire": {
-
       "levels": {
         "6.0": {"Pow": 7.4,"Spd": 3.7,"Trick": 5.6,"Recv": 4.6,"Def": 4.6},
         "6.1": {"Pow": 7.5,"Spd": 3.8,"Trick": 5.7,"Recv": 4.7,"Def": 4.7},
