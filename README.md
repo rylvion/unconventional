@@ -2,7 +2,7 @@
 
 **Unconventional Abilities Analyzer** is a comprehensive web-based interactive tool for visualizing and analyzing abilities from the **Roblox game *Unconventional***, inspired by *UnOrdinary*. This powerful analyzer features interactive Chart.js radar charts, multi-ability comparisons, progression tracking, advanced filtering systems, statistical distribution analysis, and extensive metadata displays.
 
-🔗 **Live Demo**: [https://rylvion.github.io/uncon-radar/](https://rylvion.github.io/uncon-radar/)
+🔗 **Live Demo**: [https://rylvion.github.io/unconventional/](https://rylvion.github.io/unconventional/)
 
 ---
 
@@ -48,10 +48,10 @@
 - **Target Rating System** - Numerical scores with detailed explanations and weakness breakdowns
 - **Ability States** - Track Copyable/Obtainable/Uncopyable status
 - **GIF Galleries** - Organized ability animation galleries by move type:
-  - F moves (Forward abilities)
-  - R moves (Reverse abilities)
-  - T moves (Transformation abilities)
-  - G moves (General abilities)
+  - F moves 
+  - R moves 
+  - T moves 
+  - G moves
   - Passive forms
 - **GIF Modal Viewer** - Click any GIF to view enlarged in fullscreen modal
 - **State Preservation** - Details sections remember open/closed state when switching levels
@@ -329,7 +329,7 @@ This checks for:
 ## 📁 File Structure
 
 ```
-uncon-radar/
+unconventional/
 ├── index.html              # Main HTML file with SEO-optimized head section
 ├── radar.js                # Core application logic (2100+ lines)
 │                            # - Chart rendering & state management
@@ -412,11 +412,11 @@ uncon-radar/
 
 Each ability folder contains:
 - `icon/` - Ability icon PNG
-- `f/` - Forward move GIFs
-- `r/` - Reverse move GIFs
-- `t/` - Transformation move GIFs
-- `g/` - General move GIFs
-- `passive/` - Passive form GIFs
+- `f/` - GIFs
+- `r/` - GIFs
+- `t/` -  GIFs
+- `g/` -  GIFs
+- `passive/` - GIFs
 
 ---
 
@@ -432,8 +432,8 @@ Each ability folder contains:
 
 1. **Clone the repository:**
 ```bash
-git clone https://github.com/rylvion/uncon-radar.git
-cd uncon-radar
+git clone https://github.com/rylvion/unconventional.git
+cd unconventional
 ```
 
 2. **Open in browser:**
@@ -768,9 +768,9 @@ copies of the Software...
 
 ## 📞 Support & Contact
 
-- **Issues**: [GitHub Issues](https://github.com/rylvion/uncon-radar/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/rylvion/uncon-radar/discussions)
-- **Website**: [https://rylvion.github.io/uncon-radar/](https://rylvion.github.io/uncon-radar/)
+- **Issues**: [GitHub Issues](https://github.com/rylvion/unconventional/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/rylvion/unconventional/discussions)
+- **Website**: [https://rylvion.github.io/unconventional/](https://rylvion.github.io/unconventional/)
 
 ---
 
@@ -797,6 +797,6 @@ Future enhancements under consideration:
 
 ⭐ Star this repo if you find it helpful!
 
-[Report Bug](https://github.com/rylvion/uncon-radar/issues) · [Request Feature](https://github.com/rylvion/uncon-radar/issues) · [View Demo](https://rylvion.github.io/uncon-radar/)
+[Report Bug](https://github.com/rylvion/unconventional/issues) · [Request Feature](https://github.com/rylvion/unconventional/issues) · [View Demo](https://rylvion.github.io/unconventional/)
 
 </div>
